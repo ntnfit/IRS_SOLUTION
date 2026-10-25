@@ -1,0 +1,12 @@
+
+
+CREATE PROCEDURE APZ_D_Delivery_GetBPNote (IN cardCode NVARCHAR(50))
+AS
+BEGIN
+
+	SELECT * FROM APZ_D_DLO5 WHERE "CardCode" = :cardCode;
+
+END
+
+
+

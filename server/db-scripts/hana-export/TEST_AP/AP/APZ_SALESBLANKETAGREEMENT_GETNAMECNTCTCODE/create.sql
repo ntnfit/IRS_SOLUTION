@@ -1,0 +1,15 @@
+
+CREATE PROCEDURE APZ_SalesBlanketAgreement_GetNameCntctCode (
+
+)
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+READS SQL DATA
+AS
+BEGIN
+	SELECT "CardCode", "CntctCode", "Name", "Tel1", "E_MailL" FROM OCPR;
+END;
+
+
+
+

@@ -1,0 +1,22 @@
+
+CREATE TABLE APZ_ORSC
+(
+	"ResCode" NVARCHAR(50) NOT NULL,
+	"ResName" NVARCHAR(254) NULL,
+	"FrgnName" NVARCHAR(254) NULL,
+	"ResGroup" NVARCHAR(254) NULL,
+	"DeptCode" INT NULL,
+	"CardCode" NVARCHAR(50) NULL,
+	"CardName" NVARCHAR(254) NULL,
+	"Valid" CHAR(1) NULL,
+	"OcrCode" NVARCHAR(8) NULL,
+	"OcrCode2" NVARCHAR(8) NULL,
+	"OcrCode3" NVARCHAR(8) NULL,
+	"OcrCode4" NVARCHAR(8) NULL,
+	"OcrCode5" NVARCHAR(8) NULL,
+	"Project" NVARCHAR(20) NULL,
+	"BarCode" NVARCHAR(20) NULL,
+	"CalCode" INT NULL,
+	"Untilization" NUMERIC(19, 6) NULL,
+	PRIMARY KEY("ResCode")
+)

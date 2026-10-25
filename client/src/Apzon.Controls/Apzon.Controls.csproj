@@ -1,0 +1,121 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Apzon.Controls</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraEditors.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraGrid.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1">
+      <HintPath>$(LibDir)DevExpress.Utils.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    
+    
+    <Reference Include="DevExpress.Data.v20.1">
+      <HintPath>$(LibDir)DevExpress.Data.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    <Reference Include="DevExpress.XtraTreeList.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraTreeList.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core">
+      <HintPath>$(LibDir)DevExpress.PivotGrid.v20.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.1.Core">
+      <HintPath>$(LibDir)DevExpress.Printing.v20.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraBars.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraLayout.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>$(LibDir)EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraRichEdit.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v20.1">
+      <HintPath>$(LibDir)DevExpress.XtraWizard.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>$(LibDir)System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="DevExpress.Images.v20.1">
+      <HintPath>$(LibDir)DevExpress.Images.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(LibDir)Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>$(LibDir)System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apzon.HttpClientHelper\Apzon.HttpClientHelper.csproj" />
+    <ProjectReference Include="..\Apzon.Entities\Apzon.Entities.csproj" />
+    <ProjectReference Include="..\Apzon.Commons\Apzon.Commons.csproj" />
+    <ProjectReference Include="..\Apzon.Global\Apzon.Global.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core">
+      <HintPath>$(LibDir)DevExpress.RichEdit.v20.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1">
+      <HintPath>$(LibDir)DevExpress.Data.Desktop.v20.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Binary .resources copied from the original build (decompiler did not emit these .resx). -->
+    <EmbeddedResource Include="RecoveredResources/*.resources" LogicalName="%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

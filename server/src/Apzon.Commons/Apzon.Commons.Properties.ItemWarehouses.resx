@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="ExpOfstAct" xml:space="preserve"><value>Expense Offset Account</value></data>
+  <data name="ARCMAct" xml:space="preserve"><value>Sales Credit Account</value></data>
+  <data name="ShpdGdsAct" xml:space="preserve"><value>Shipped Goods Account</value></data>
+  <data name="PurBalAct" xml:space="preserve"><value>Purchase Balance Account</value></data>
+  <data name="APCMAct" xml:space="preserve"><value>Purchase Credit Account</value></data>
+  <data name="ARCMExpAct" xml:space="preserve"><value>Tax Exempt Credit Account</value></data>
+  <data name="WipAcct" xml:space="preserve"><value>WIP Inventory Account</value></data>
+  <data name="WhsCode" xml:space="preserve"><value>Warehouse Code</value></data>
+  <data name="WhICenAct" xml:space="preserve"><value>Incoming CENVAT Account (WH)</value></data>
+  <data name="CostRvlAct" xml:space="preserve"><value>Cost Inflation Account</value></data>
+  <data name="ExchangeAc" xml:space="preserve"><value>Exchange Rate Differences Account</value></data>
+  <data name="ARCMFrnAct" xml:space="preserve"><value>Sales Credit Account - Foreign</value></data>
+  <data name="VarianceAc" xml:space="preserve"><value>Variance Account</value></data>
+  <data name="Consig" xml:space="preserve"><value>Consignment Goods Whse</value></data>
+  <data name="EUExpensAc" xml:space="preserve"><value>Expense Account - EU</value></data>
+  <data name="OnHand" xml:space="preserve"><value>In Stock</value></data>
+  <data name="Object" xml:space="preserve"><value>Object Type - History</value></data>
+  <data name="PAReturnAc" xml:space="preserve"><value>Purchase Return Account</value></data>
+  <data name="Locked" xml:space="preserve"><value>Locked</value></data>
+  <data name="AvgPrice" xml:space="preserve"><value>Average Price</value></data>
+  <data name="ItemCode" xml:space="preserve"><value>Item No.</value></data>
+  <data name="PriceDifAc" xml:space="preserve"><value>Price Differences Account</value></data>
+  <data name="MinOrder" xml:space="preserve"><value>Min. Order</value></data>
+  <data name="MinStock" xml:space="preserve"><value>Minimum Inventory</value></data>
+  <data name="IsCommited" xml:space="preserve"><value>Defined</value></data>
+  <data name="SaleCostAc" xml:space="preserve"><value>Cost of Goods Sold Account</value></data>
+  <data name="RevRetAct" xml:space="preserve"><value>Revenue Returns Account</value></data>
+  <data name="BalanceAcc" xml:space="preserve"><value>Goods Clearing Account</value></data>
+  <data name="FrRevenuAc" xml:space="preserve"><value>Revenue Account - Foreign</value></data>
+  <data name="Counted" xml:space="preserve"><value>Counted Quantity</value></data>
+  <data name="ExpClrAct" xml:space="preserve"><value>Expense Clearing Account</value></data>
+  <data name="APCMEUAct" xml:space="preserve"><value>Purchase Credit Account - EU</value></data>
+  <data name="DecreasAc" xml:space="preserve"><value>Inventory Offset - Decrease Account</value></data>
+  <data name="DftBinAbs" xml:space="preserve"><value>Default Bin Internal Number</value></data>
+  <data name="CstOffsAct" xml:space="preserve"><value>Cost Inflation Offset Account</value></data>
+  <data name="DecresGlAc" xml:space="preserve"><value>G/L Decrease Account</value></data>
+  <data name="DftBinEnfd" xml:space="preserve"><value>Default Bin Enforced [Y/N]</value></data>
+  <data name="OnOrder" xml:space="preserve"><value>Ordered</value></data>
+  <data name="WhOCenAct" xml:space="preserve"><value>Outgoing CENVAT Account (WH)</value></data>
+  <data name="ReturnAc" xml:space="preserve"><value>Sales Returns Account</value></data>
+  <data name="StockOffst" xml:space="preserve"><value>Inventory Offset P&amp;L Account</value></data>
+  <data name="ExpensesAc" xml:space="preserve"><value>Expense Account</value></data>
+  <data name="FreezeDoc" xml:space="preserve"><value>INC Document Frozen By</value></data>
+  <data name="StockValue" xml:space="preserve"><value>Inventory Value</value></data>
+  <data name="UserSign" xml:space="preserve"><value>User Signature</value></data>
+  <data name="ARCMEUAct" xml:space="preserve"><value>Sales Credit Account - EU</value></data>
+  <data name="VatRevAct" xml:space="preserve"><value>VAT in Revenue Account</value></data>
+  <data name="MaxStock" xml:space="preserve"><value>Maximum Inventory</value></data>
+  <data name="EURevenuAc" xml:space="preserve"><value>Revenue Account - EU</value></data>
+  <data name="RevenuesAc" xml:space="preserve"><value>Revenue Account</value></data>
+  <data name="WipOffset" xml:space="preserve"><value>WIP Offset P&amp;L Account</value></data>
+  <data name="StokRvlAct" xml:space="preserve"><value>Stock Inflation Adjust Account</value></data>
+  <data name="StkOffsAct" xml:space="preserve"><value>Stock Inflation Offset Account</value></data>
+  <data name="BalInvntAc" xml:space="preserve"><value>Inventory Account</value></data>
+  <data name="ExmptIncom" xml:space="preserve"><value>Exempt Revenue Account</value></data>
+  <data name="APCMFrnAct" xml:space="preserve"><value>Purchase Credit Account - Foreign</value></data>
+  <data name="WasCounted" xml:space="preserve"><value>Counted Yes/No</value></data>
+  <data name="WipVarAcct" xml:space="preserve"><value>WIP Inventory Variance Account</value></data>
+  <data name="IncresGlAc" xml:space="preserve"><value>G/L Increase Account</value></data>
+  <data name="StkInTnAct" xml:space="preserve"><value>Stock In Transit Account</value></data>
+  <data name="IncreasAc" xml:space="preserve"><value>Inventory Offset - Increase Account</value></data>
+  <data name="TransferAc" xml:space="preserve"><value>Transfer Acct</value></data>
+  <data name="PurchOfsAc" xml:space="preserve"><value>Purchase Offset Account</value></data>
+  <data name="FrExpensAc" xml:space="preserve"><value>Expense Account - Foreign</value></data>
+  <data name="PurchaseAc" xml:space="preserve"><value>Purchase Account</value></data>
+  <data name="NegStckAct" xml:space="preserve"><value>Negative Inventory Adj. Acct</value></data>
+  <data name="Freezed" xml:space="preserve"><value>Item Frozen in Warehouse</value></data>
+  </root>

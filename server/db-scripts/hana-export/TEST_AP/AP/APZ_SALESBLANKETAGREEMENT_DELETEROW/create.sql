@@ -1,0 +1,15 @@
+
+CREATE PROCEDURE APZ_SalesBlanketAgreement_DeleteRow (
+	IN AgrNo int
+)
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+
+AS
+BEGIN
+	DELETE FROM OAT1 WHERE "AgrNo" = :AgrNo;
+END;
+
+
+
+

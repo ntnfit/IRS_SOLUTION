@@ -1,0 +1,11 @@
+
+
+CREATE  PROCEDURE SP_APZ_OUGP_CleanDefinition
+AS
+BEGIN
+	DELETE FROM UGP1 WHERE "UgpEntry" NOT IN (SELECT a."UgpEntry" FROM OUGP a);
+END
+
+
+
+

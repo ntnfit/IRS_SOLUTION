@@ -1,0 +1,10 @@
+
+CREATE PROCEDURE APZ_KPIGroup_CFLKPIIndicator
+AS
+BEGIN
+	SELECT "Code", "Name" FROM APZ_OKIR WHERE "Active" = 'Y';
+END
+
+
+
+

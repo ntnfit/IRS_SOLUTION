@@ -1,0 +1,12 @@
+PROCEDURE
+BASE_SCHEMA: "TEST_AP"
+TABLE: "TEST_AP"."OCLG"
+TABLE: "TEST_AP"."CRSPPubDayItems_Activities"
+TABLE: "TEST_AP"."CRSPPubDayItems_Employees"
+TABLE: "TEST_AP"."CRSPPubDayItems_Users"
+TABLE: "TEST_AP"."CRSPPubDayItems_Calendar"
+PROCEDURE: "TEST_AP"."_TMSP_VALIDATESPPARAM"
+TABLE: "TEST_AP"."CRSPPubDayItems_CalM"
+TABLE: "TEST_AP"."CRSPPubDayItems_CalT"
+TABLE: "TEST_AP"."CRSPPubDayItems_Instances"
+TABLE: "TEST_AP"."CRSPPubDayItems_ServiceCalls"

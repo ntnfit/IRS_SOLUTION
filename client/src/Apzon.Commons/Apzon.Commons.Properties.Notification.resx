@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="Title_Issue_Comment" xml:space="preserve"><value>COMMENTS on ISSUE</value></data>
+  <data name="Group_Comments" xml:space="preserve"><value>Unread Comments</value></data>
+  <data name="Group_Event" xml:space="preserve"><value>Upcoming Events</value></data>
+  <data name="Group_Alert" xml:space="preserve"><value>Alert Overview</value></data>
+  <data name="Group_Issue" xml:space="preserve"><value>Uncompleted Issues</value></data>
+  <data name="unread_icon" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA6QIAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7EAAAOxAGV
+Kw4bAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAmZJREFUOE+lk01PE1EU
+hvkN+i+MS3fGaOI/0Zi4M8TEjwa1hBIUicYgQaRojEYXLkwJBaao1Fba0g9CSKBgB1roAC39mjsz
+nZm203k5c4FQF7rhZN6byb33POc9ZzJdOGOcHSAIAgY8bgS/zyIwPfmXhGnfkfynCs8H8Nh1Hz6f
+7wiQSiZhWw0wJvMNtC16mrCaJpqmgYahwayrMOqKc4gfcwJWlhaRTMT59a5EfBENXUVdU7CeXuPJ
+BiXUVYXEuHSV4O0GXgwNIp/LQKsdIBqNnADiqCtVmLrGEyORBXLUhEmVWbUEpXqASlHC3e47/F0u
+74OVCx0AsqLJZapClcgF2i28845jX8qiZShYXVmCp88N2E2wSpEARah0PxaNngJUuQRNkcmuTBcK
+BCyhv68X3rdvMDY6QtAmlFqZS5UrMDSGWOwYkEwmoNYIwKqokT1pexO7O1uwWway4gZAA85tZcAo
+2RmkTu22dAVxap0DUscARv1JuU3sSTlexREskw/RmceetMPbeDg0ikfDH5CKLZwCNFZGPpuhvreP
+kskN0ILnJdm3G3zATtx7OgxvKI3XoT+44aEzCg4o7uZQLkgwNZm+OeNJt/tHMPY7g55XXn5xcPwT
+eoVVDARFXHdPYGM5yfe7RFGEMDONX8F5zAUE+P1TCEz5cPmWC8/CWfQE0rj55Dm6Z9JwhfK42PMe
+iZ+zcPI4gK8dYVkWTNMEDIZzDz7i0pd1XPuWxYWvOZz3TJI7OuuI//5MWTGDq5+X4Iof4MpEGPm1
+ZRh6nRc5iX8CbNt2VuilfeyK69gjFQsFqKraAQAOARJenGGJc5U4AAAAAElFTkSuQmCCCw==</value></data><data name="Title_Event_Comment" xml:space="preserve"><value>COMMENT on EVENT</value></data>
+  <data name="Title_Task_Comment" xml:space="preserve"><value>COMMENT on TASK</value></data>
+  <data name="Title_Note_Comment" xml:space="preserve"><value>COMMENT on NOTE</value></data>
+  <data name="Title_Issue" xml:space="preserve"><value>REPORTS an ISSUE</value></data>
+  <data name="Title_Event" xml:space="preserve"><value>invite you to EVENT</value></data>
+  <data name="Title_Task" xml:space="preserve"><value>assigns a TASK</value></data>
+  <data name="Title_Note" xml:space="preserve"><value>Create a NOTE</value></data>
+  <data name="dismissAll" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAvAEAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHH
+b6hkAAABXklEQVQ4T2PABgI6zmpGz7jaljTv5hwQjpl5pdWn54wGVBo3CJt0WT95wa0djTvffZx2
++s//GWf+gjGIXb/9zQeQXOCECzpQ5aggcubVgPL1z+7BNOHCZUA1UdOv+kO1QYB//3mDsg2ENcNw
+6fqnd/0nX9SFamdgADkNWcHSS6gasIklL7y1DazZr/uEFsjPyAr//f///+qrf3DFIDZIDNmQ+m2v
+P/h1nlJnAIUwcoDBNIAAiEZmI6uZdurPf5BehqT5N2cjS8AwTCMIoGuGYZBeyg2ImnWlhSIvgFJd
+w47XJAdiw7Y37wN6TqqBYyJlwa3tMAkQRo8ybGIp829tBWsGgeAJl/RK1z0hOiGVrHtyN2TiOS2o
+dggAJc/SdU8JGgJKhRhJGQZAGSV1wc3tDdvfvAcFEkwTiF0HFEtdcGtrcN95bahy3ACUdUEhnDzv
++hwQjp5+pRkeYCiAgQEALHGRUgVuNKoAAAAASUVORK5CYIIL</value></data><data name="Group_Task" xml:space="preserve"><value>Uncompleted Tasks</value></data>
+  </root>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Apzon.Kit</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    
+    
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Core" />
+    <Reference Include="Interop.SAPbobsCOM">
+      <HintPath>$(LibDir)Interop.SAPbobsCOM.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apzon.Entities\Apzon.Entities.csproj" />
+    <ProjectReference Include="..\Apzon.Commons\Apzon.Commons.csproj" />
+  </ItemGroup>
+</Project>

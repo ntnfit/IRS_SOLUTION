@@ -1,0 +1,19 @@
+<Project>
+  <!-- Shared settings for the decompiled APZON IRS API server (ApiIRS - TEST, build 2026-05-20). -->
+  <PropertyGroup>
+    <LibDir>$(MSBuildThisFileDirectory)lib\</LibDir>
+    <!-- WinForms .resx files hold images/icons; SDK builds for .NET Framework need preserialized resources. -->
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CS0162;CS0168;CS0169;CS0219;CS0414;CS0649;CS1998;MSB3277;NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- SAP DI API interop; the decompiler emitted embedded (NoPIA) copies, replaced by the real interop. -->
+    <Reference Include="Interop.SAPbobsCOM">
+      <HintPath>$(LibDir)Interop.SAPbobsCOM.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

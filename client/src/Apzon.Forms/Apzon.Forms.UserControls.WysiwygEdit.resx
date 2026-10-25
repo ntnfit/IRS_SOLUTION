@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="richEditor.EditValue" xml:space="preserve"><value>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;?mso-application progid="Word.Document"?&gt;&lt;w:wordDocument xml:space="preserve" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"&gt;&lt;o:DocumentProperties&gt;&lt;o:Author&gt;DESKTOP-E5J15P4\Ngoannt&lt;/o:Author&gt;&lt;o:Revision&gt;1&lt;/o:Revision&gt;&lt;o:Created&gt;2022-03-23T07:36:18Z&lt;/o:Created&gt;&lt;/o:DocumentProperties&gt;&lt;w:lists /&gt;&lt;w:styles&gt;&lt;w:style w:type="paragraph" w:styleId="P0" w:default="on"&gt;&lt;w:name w:val="Normal" /&gt;&lt;w:pPr /&gt;&lt;w:rPr /&gt;&lt;/w:style&gt;&lt;w:style w:type="character" w:styleId="C0" w:default="on"&gt;&lt;w:name w:val="Default Paragraph Font" /&gt;&lt;w:semiHidden /&gt;&lt;w:rPr /&gt;&lt;/w:style&gt;&lt;w:style w:type="character" w:styleId="C1"&gt;&lt;w:name w:val="Line Number" /&gt;&lt;w:basedOn w:val="C0" /&gt;&lt;w:semiHidden /&gt;&lt;w:rPr /&gt;&lt;/w:style&gt;&lt;w:style w:type="character" w:styleId="C2"&gt;&lt;w:name w:val="Hyperlink" /&gt;&lt;w:rPr&gt;&lt;w:color w:val="0000FF" /&gt;&lt;w:u w:val="single" /&gt;&lt;/w:rPr&gt;&lt;/w:style&gt;&lt;w:style w:type="table" w:styleId="T0" w:default="on"&gt;&lt;w:name w:val="Normal Table" /&gt;&lt;w:tblPr&gt;&lt;w:tblCellMar&gt;&lt;w:top w:w="0" w:type="dxa" /&gt;&lt;w:left w:w="108" w:type="dxa" /&gt;&lt;w:bottom w:w="0" w:type="dxa" /&gt;&lt;w:right w:w="108" w:type="dxa" /&gt;&lt;/w:tblCellMar&gt;&lt;/w:tblPr&gt;&lt;w:trPr /&gt;&lt;w:tcPr /&gt;&lt;/w:style&gt;&lt;w:style w:type="table" w:styleId="T1"&gt;&lt;w:name w:val="Table Simple 1" /&gt;&lt;w:basedOn w:val="T0" /&gt;&lt;w:tblPr&gt;&lt;w:tblBorders&gt;&lt;w:top w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;w:left w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;w:bottom w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;w:right w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;w:insideH w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;w:insideV w:val="single" w:sz="4" w:space="0" w:shadow="off" w:frame="off" w:color="000000" /&gt;&lt;/w:tblBorders&gt;&lt;w:tblCellMar&gt;&lt;w:top w:w="0" w:type="dxa" /&gt;&lt;w:left w:w="108" w:type="dxa" /&gt;&lt;w:bottom w:w="0" w:type="dxa" /&gt;&lt;w:right w:w="108" w:type="dxa" /&gt;&lt;/w:tblCellMar&gt;&lt;/w:tblPr&gt;&lt;w:trPr /&gt;&lt;w:tcPr /&gt;&lt;/w:style&gt;&lt;/w:styles&gt;&lt;w:docPr&gt;&lt;w:view w:val="print" /&gt;&lt;w:displayBackgroundShape w:val="off" /&gt;&lt;w:defaultTabStop w:val="720" /&gt;&lt;w:autoHyphenation w:val="off" /&gt;&lt;w:evenAndOddHeaders w:val="off" /&gt;&lt;w:clrSchemeMapping w:bg1="light1" w:t1="dark1" w:bg2="light2" w:t2="dark2" w:accent1="accent1" w:accent2="accent2" w:accent3="accent3" w:accent4="accent4" w:accent5="accent5" w:accent6="accent6" w:hyperlink="hyperlink" w:followedHyperlink="followedHyperlink" /&gt;&lt;/w:docPr&gt;&lt;w:body&gt;&lt;wx:sect xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint"&gt;&lt;w:p /&gt;&lt;w:sectPr&gt;&lt;w:type w:val="next-page" /&gt;&lt;w:pgMar w:left="1700" w:right="850" w:top="1133" w:bottom="1133" w:header="708" w:footer="708" w:gutter="0" /&gt;&lt;/w:sectPr&gt;&lt;/wx:sect&gt;&lt;/w:body&gt;&lt;/w:wordDocument&gt;</value></data>
+  <data name="textRibbonPageGroup1.ImageOptions.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAPQMAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAC9ElEQVQ4T03SSUwTURgH
+8Hc2MUaFePDgwZPeNCbGGD2YaIwXlwvRCwcQIUIIIBQoe1EKtZS1QBARRQQubIagQXYELKsXjbIY
+trYUukyXmXam/fvNtBhf5pc3LzP5vu997zFjx9JYY+d3yBo6V8I+rMDYsayol72XLaGunbxbRC2p
+IfqWmUlmpJ8PRygUgiRJkIJBBIMhZU1PZA4heIi+yQytJrBaiiqPgChhddOGcw+0uPTwBdxeP7y+
+AHyCCAP9Y3i7hEpZ26IiIAahe/UNrLptAZQEXn8ATV3juJPcgLO3czG7vAqXW4CXF2G1+2Cx8zDL
+8wEPu0uAEAhC2zQLpn9jUsrk3DxiMupQWNuDG3EGlDb04MDhgdsnQdc6D23LPMpbTIqyZhN4v4TS
++imwiuY5ZT/bFjvO3y9F3/A80nRduBmrgcXqgssrYmffR7zYtvkUNgdPW5NQVDMBVtbwFaIoomto
+DlGXExB9JQlnbqlx+moyfqxtw+EJQEOlahpnUWKcRbFxBsX1M1SZCLV+DKykbgq8ICCxqBXXY3Kw
+vmXB9MJPnLqWgtfdwzhw+7Fp9eCPhZjDzFSNXJlK+wWssGocPp7HhXtZSNW0wHzgxo7ViYt30xCb
+WQWb04+C6mnk10whj+a86kmoq6aUyjKefwbL1Y0oR2i2cdglNidPnfZh0+IkDlidAtZ33ViTbXNY
+JVtUkZ0qS9UMgWWWDdPFCSGfouYZwtFlufSeUzmBbJKjp1k/DtXLsCzdGPZdfqQUDIKll36CKIWw
+YaYMOzIuksmtZPu9yeGXwvXPxq4HexQgKf8jWGrxIJ1CECrKotJR9EiGzApSPoZn5aNh2lFkaEeQ
+HmG1+5GQ2w/2tHBQuZYeunEcHQ1H3XV5A9QkUdmnnfNjnwtQbwTsUUOtdAcsDgG7dgHx2b1gcVnd
+44l5A3iiHkCCul+JGp/dj8c5fWGqPsSR+KzeiB5ak8wePEppn2Y0jpBj5HjEiYiT/4mKiP4PrdnR
+v++ZBoWI8WKoAAAAAElFTkSuQmCCCw==</value></data><data name="stylesRibbonPageGroup1.ImageOptions.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAcAMAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAADJ0lEQVQ4T2VTWUxTURC9
+vFdaqlYoi2wWSktZLFAtBNAEDJEglrbsig8KBaEWRQERQxQRgRSLlYhhVRACVQFxi6KJJv4Y+TMx
+MaIR/DHBiFGjfKgfxnFu41LwJJM3d2bOuXfm3kdUlcNEZRoiMRWDBMHEV4/kbT48CdHGvkVR0CZh
+OHeWhO06SxQ7z5DQ3A4iy7YSAPhrJLr8AokqHSBKYz8V4CVUj91KrJuAGNMQSPXNHBWV5yAxs52E
+6C1Eqm1bLrChuIdEGLop2UWuqfKNOzj2Lb7myo/Y/aMg07ffxzhfqmsjQZoWIklvJpK0E8sFIrgu
+xxERrNLQVbWhuHtWbR66F3vADor8zh/esbvDMcfQgt9wQaNr1vENzbNhbzaa4IflnXkcnHHcquSs
+Jep9o6A09IF/cm0H5lxpAYKSXZ+Uc73P9ho+XZbK8x19IRi5tj4yOKMV1sWXJrh5rvfYaLr4UbVn
+CNanHnvnKvJfS2vQ+DNc9tj8kUr4fHsSpiRBH4hE00wFeHh8C075JfpeaGIl1zkcgwJSnQXE0VwR
+xlbbdQn2V9UVsHT3GtzWbYc9DHPRMRiEMDTn9GtZphUJp0CqtUCU8TxElZ6HiIJzIN5Y8mBy95ar
+T/YWwNLNcbijTYMiljfhS8gaSmblGQ0pfsn1sFaxPRHXImq8VWK/SK5nMRIFigtrfj6ydcCX8VG4
+kZYCeQx71ZOQP20RQYi2ZdA7zvwc/dU08BurZJrGQZO5EaanH8HCp+9gK6kBDeMy5UGIO+aZHbTK
+V50Trsjt/OylLhvBJT0SnbTgaLJ7em9mwItL+X7wZnEJKk/eB5+wuutuDB/5hJnP0pKt6JDAbU0Q
+kNIIXmoziEKzCjDkdihRlDJllH+dmz4AM01S6E/3BG/ZQTvL9xFTslwYRBLQiaMCCLorPRLtXZgk
+EQQP6HzeLsw0wJc5O/QmCeFQDP895ujtMI7X54xlzxJ3tyStufGwdSvMTlRBV6o7NKhcYVcIW4s5
+gVPdP6wQ4GNxYZmCd6dcwT41yFj7jkBGj3E6XDqb/7FCgBbx0Whb9JookT5j53/BCYT8AoEOOv6X
+1dB+AAAAAElFTkSuQmCCCw==</value></data></root>

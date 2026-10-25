@@ -1,0 +1,11 @@
+PROCEDURE
+BASE_SCHEMA: "TEST_AP"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsEmployees"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsInstances"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsServiceCalls"
+TABLE: "TEST_AP"."OCLG"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsEmployeesAbsEdu"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsCalendarMD"
+TABLE: "TEST_AP"."CRSPCalendarDailyAcrossItemsUsers"
+TABLE: "TEST_AP"."HLD1"
+PROCEDURE: "TEST_AP"."_TMSP_VALIDATESPPARAM"

@@ -1,0 +1,1 @@
+CREATE GLOBAL TEMPORARY ROW TABLE "TEST_AP"."UpgradeOIVLNonBaseDocsUpdateAllocation_temp"  ( "ObjType" NVARCHAR(20)  CS_STRING, "DocEntry" INT CS_INT, "LineNum" INT CS_INT, "StockSum" INT CS_INT )  ON COMMIT PRESERVE ROWS 

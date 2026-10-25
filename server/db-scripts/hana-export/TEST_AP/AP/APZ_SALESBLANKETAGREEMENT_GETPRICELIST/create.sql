@@ -1,0 +1,15 @@
+
+CREATE PROCEDURE APZ_SalesBlanketAgreement_GetPriceList (
+
+)
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+READS SQL DATA
+AS
+BEGIN
+	SELECT "ListNum", "ListName" FROM OPLN;
+END;
+
+
+
+

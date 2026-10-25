@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="msg_ChangeDue" xml:space="preserve"><value>Tiền trả lại khách</value></data>
+  <data name="msg_SignOutConfirm" xml:space="preserve"><value>Bạn có chắc chắn muốn đăng xuất?</value></data>
+  <data name="msg_ItemCodeNotExist" xml:space="preserve"><value>Mã hàng không tồn tại trong hệ thống!</value></data>
+  <data name="msg_DialogYes" xml:space="preserve"><value>Có</value></data>
+  <data name="msg_DialogNo" xml:space="preserve"><value>Không</value></data>
+  <data name="msg_DialogOk" xml:space="preserve"><value>Đồng ý</value></data>
+  <data name="msg_VoidCurrentTrans" xml:space="preserve"><value>Hủy đơn hàng hiện tại?</value></data>
+  <data name="msg_InvalidRefundQty" xml:space="preserve"><value>Số lượng hàng đổi trả không được vượt quá số hàng đã mua!</value></data>
+  <data name="msg_CusNotFound" xml:space="preserve"><value>Không tìm thấy thông tin thành viên!</value></data>
+  <data name="msg_Hold" xml:space="preserve"><value>Tạm dừng đơn hàng</value></data>
+  <data name="msg_HoldSuccess" xml:space="preserve"><value>Tạm dừng thành công!</value></data>
+  <data name="msg_MemberNotChosen" xml:space="preserve"><value>Không có thành viên nào được chọn!</value></data>
+  <data name="msg_ExitConfirm" xml:space="preserve"><value>Bạn có muốn thoát khỏi hệ thống?</value></data>
+  <data name="msg_DialogIgnore" xml:space="preserve"><value>Lờ đi</value></data>
+  <data name="msg_NoItemInList" xml:space="preserve"><value>Không có mặt hàng nào được chọn!</value></data>
+  <data name="msg_BillRptNotFound" xml:space="preserve"><value>Chưa thiết lập mẫu in hóa đơn!</value></data>
+  <data name="msg_DialogCancel" xml:space="preserve"><value>Bỏ qua</value></data>
+  <data name="msg_DocEntNotExist" xml:space="preserve"><value>Mã hóa đơn không tồn tại! Vui lòng thử lại!</value></data>
+  <data name="msg_GetTableStrucErr" xml:space="preserve"><value>Lỗi lấy cấu trúc dữ liệu! Liên hệ nhân viên hỗ trợ để khắc phục trước khi tiếp tục</value></data>
+  <data name="msg_NoRefundLines" xml:space="preserve"><value>Không có mặt hàng nào để đổi trả!</value></data>
+  <data name="msg_GetStoreErr" xml:space="preserve"><value>Lỗi lấy dữ liệu thông tin về cửa hàng! Vui lòng xem lại các thiết lập!</value></data>
+  <data name="msg_ItemNotInRefund" xml:space="preserve"><value>Mặt hàng không tồn tại trong đơn hàng!</value></data>
+  <data name="msg_DialogAbort" xml:space="preserve"><value>Hủy bỏ</value></data>
+  <data name="msg_DialogRetry" xml:space="preserve"><value>Thử lại</value></data>
+  <data name="msg_VoidTransErr" xml:space="preserve"><value>Không thể hủy đơn hàng do đã có thông tin thanh toán!</value></data>
+  <data name="msg_VoidTransSuc" xml:space="preserve"><value>Hủy đơn hàng thành công!</value></data>
+  <data name="msg_OpenDrawerErr" xml:space="preserve"><value>Không mở được ngăn đựng tiền. Vui lòng liên hệ kỹ thuật viên để được hỗ trợ!</value></data>
+  <data name="msg_Print" xml:space="preserve"><value>Bạn có muốn in biên lai không?</value></data>
+  <data name="msg_PaySuccess" xml:space="preserve"><value>Thanh toán hoàn tất!</value></data>
+  <data name="msg_ShutDown" xml:space="preserve"><value>Bạn có chắc chắn muốn kết thúc bán hàng?</value></data>
+  <data name="msg_ItemCodeNotInList" xml:space="preserve"><value>Mã hàng đã xóa hoặc không tồn tại trên danh sách!</value></data>
+  </root>

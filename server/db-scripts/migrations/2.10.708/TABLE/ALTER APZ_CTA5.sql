@@ -1,0 +1,2 @@
+
+ALTER TABLE APZ_CTA5 ALTER("Required" char(1) NULL);

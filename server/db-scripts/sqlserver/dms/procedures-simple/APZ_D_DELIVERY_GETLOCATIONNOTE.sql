@@ -1,0 +1,10 @@
+USE [SBODemoAU];
+GO
+CREATE OR ALTER PROCEDURE dbo.[APZ_D_Delivery_GetLocationNote]
+    @shipCode NVARCHAR(50)
+AS
+BEGIN
+    SET NOCOUNT ON;
+SELECT * FROM APZ_D_DLO4 WHERE [ShipCode] = @shipCode;
+END;
+GO

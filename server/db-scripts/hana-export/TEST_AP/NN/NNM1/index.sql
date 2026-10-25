@@ -1,0 +1,1 @@
+CREATE UNIQUE CPBTREE INDEX "NNM1_SER_NAME" ON "TEST_AP"."NNM1" ( "ObjectCode" ASC, "DocSubType" ASC, "SeriesName" ASC, "SeriesType" ASC )

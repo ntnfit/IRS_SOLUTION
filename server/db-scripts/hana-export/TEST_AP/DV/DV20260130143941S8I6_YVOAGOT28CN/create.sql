@@ -1,0 +1,1 @@
+CREATE VIEW "TEST_AP"."DV20260130143941S8I6_YVOAGOT28CN" ( "Country" ) AS SELECT T1."Country" FROM  "TEST_AP"."OCRD" T0  INNER  JOIN "TEST_AP"."CRD1" T1  ON  T0."BillToDef" = T1."Address"  AND  T1."CardCode" = T0."CardCode"  AND  T1."AdresType" = 'B'   WHERE T0."CardCode" = ('100016' ) WITH READ ONLY

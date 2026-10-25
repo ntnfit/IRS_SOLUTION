@@ -1,0 +1,10 @@
+
+CREATE PROCEDURE Util_Cfl_User
+AS
+BEGIN
+	SELECT USERID AS "Id", USER_CODE AS "Code", U_NAME AS "Name", "Department" FROM OUSR;
+
+END
+
+
+

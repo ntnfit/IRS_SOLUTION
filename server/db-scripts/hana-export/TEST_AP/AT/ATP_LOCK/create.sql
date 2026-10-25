@@ -1,0 +1,1 @@
+CREATE ROW TABLE "TEST_AP"."ATP_LOCK"  ( "ItemCode" NVARCHAR(50)  CS_STRING, "WhsCode" NVARCHAR(8)  CS_STRING, PRIMARY KEY ( "ItemCode", "WhsCode" ) ) 

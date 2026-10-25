@@ -1,0 +1,313 @@
+CREATE VIEW "TEST_AP"."AZ_ODOC" ( "ObjType", "DocEntry", "DocNum", "TransId", "BPLId", "CardCode", "CardName", "DocDate", "CANCELED", "Comments", "U_JVNumber" ) AS ((((((((((((((((((((((((select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																								from ORDR a) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																								from ODLN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																							from ORDN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																						from OINV a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																					from ORIN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																				from ODPI a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																			from OPOR a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																		from OPDN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																	from ORPD a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+																from OPCH a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+															from ORPC a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+														from ODPO a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+													from OIGN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+												from OIGE a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."CANCELED",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+											from OWTR a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."Canceled",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+										from ORCT a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 a."CardCode",
+	 a."CardName",
+	 a."DocDate",
+	 a."Canceled",
+	 a."Comments",
+	 a."U_JVNumber" U_JVNumber 
+									from OVPM a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 NULL,
+	 NULL,
+	 a."DocDate",
+	 (CASE a."DocStatus" when 'C' 
+									then 'Y' 
+									else 'N' 
+									end),
+	 a."Comments",
+	 NULL U_JVNumber 
+								from OACQ a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 NULL,
+	 NULL,
+	 a."DocDate",
+	 (CASE a."DocStatus" when 'C' 
+								then 'Y' 
+								else 'N' 
+								end),
+	 a."Comments",
+	 NULL U_JVNumber 
+							from OACD a)) UNION ALL (select
+	 '1470000071',
+	 a."DocEntry",
+	 a."DocNum",
+	 NULL,
+	 NULL,
+	 NULL,
+	 NULL,
+	 a."RefDate",
+	 (CASE a."Status" when 'C' 
+							then 'Y' 
+							else 'N' 
+							end),
+	 a."Remarks",
+	 NULL U_JVNumber 
+						from ODRN a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 NULL,
+	 NULL,
+	 a."DocDate",
+	 (CASE a."DocStatus" when 'C' 
+						then 'Y' 
+						else 'N' 
+						end),
+	 a."Comments",
+	 NULL U_JVNumber 
+					from OMDP a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 NULL,
+	 NULL,
+	 a."DocDate",
+	 (CASE a."DocStatus" when 'C' 
+					then 'Y' 
+					else 'N' 
+					end),
+	 a."Comments",
+	 NULL U_JVNumber 
+				from ORTI a)) UNION ALL (select
+	 a."ObjType",
+	 a."DocEntry",
+	 a."DocNum",
+	 a."TransId",
+	 a."BPLId",
+	 NULL,
+	 NULL,
+	 a."DocDate",
+	 (CASE a."DocStatus" when 'C' 
+				then 'Y' 
+				else 'N' 
+				end),
+	 a."Comments",
+	 NULL U_JVNumber 
+			from OFTR a)) UNION ALL (select
+	 a."ObjType",
+	 a."TransId",
+	 a."Number",
+	 a."TransId",
+	 NULL,
+	 NULL,
+	 NULL,
+	 a."RefDate",
+	 (CASE when a."StornoToTr" is not null 
+			then 'C' when b."TransId" is not null 
+			then 'Y' 
+			else 'N' 
+			end),
+	 a."Memo",
+	 a."U_JVNumber" U_JVNumber 
+		from OJDT a 
+		left join OJDT b on a."TransId" = b."StornoToTr" 
+		where a."ObjType" = '30')) WITH READ ONLY

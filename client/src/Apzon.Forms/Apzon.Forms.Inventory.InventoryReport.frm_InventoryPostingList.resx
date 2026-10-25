@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="btn_Search.ImageOptions.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAACQIAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEV
+KEqAAAAAEnRFWHRUaXRsZQBGaW5kO1NlYXJjaDutB49iAAABjUlEQVQ4T6WRS0sCURTH/RTOaBPj
+I4Vo39ZdtAg0Gh0f+cpHzDeI3ETpwr5KKyHQHGech20CsT5BIS3KNkJgm4HTueOEDmok/eAMl3vu
+/3cf4wCAf9X0Y7FV0kK+otbAevUWVFINT14LWW0bC4JASasEyjoET3twWBtA5GoA/lIPPDkV2KxS
+MRfNYROQnQMlHcLVAQw/vnBqChkfXPSBzXSByXb3rawJtmcC3EnfEe5t4R+e3yYQLKrApKVbK2uC
+rZnAV9THiesnsn4p0dojMCl5ZGVNcHpOUNDG8fpqAYdXY1Kd1QLPiapvCzq8vE/IehvkCv6CAu7k
+L1cgv4rNawZ5sOFo7hFxvHf+ABvJDriSUtXKmmB7JiCw2e4Z/i7w5hSIXPYhjMWmZQzLJAyuhGS4
+eZE3FyMLAgKT6exuppUmcyyP3WksPLY7IdUxjAI8RbxjUJZkqWAVNN8WMAw0LwLNiQbFifxaAgLN
+tQUq1gIqJgJ11PxcW0BwRu/KVKw5dnKtG5vgP7V08u8Fjm8agRzoiLyjzwAAAABJRU5ErkJgggs=</value></data><data name="editorButtonImageOptions1.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAASQEAAAJHSUY4OWEMAAkA
+hQAAAAAA/////dcn/dxD/eFb4slWtqJF/eJi/eRp/eRr/uRt/uZ1/ud5/ud7/ud9/uiC/umE/umI
+/uqN/uqO/uuS/uuU/uyZ/vCu/vK7/vTC/vXG5sxX175RybJM3cRU0LhPwqxKu6ZH/ud+//XI//XJ
+////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIf8LTkVUU0NBUEUyLjADAQEAACH5BAEAACUALAAAAAAM
+AAkAAAhTAEsIHLhhw8CDAws8KDDQg8OHHiwo8CCQwwgSGjJguDDBwQAOJT4wEBGBQgUJDhIQEPCh
+wwEECx5AaKBSQIcSIHLqBLESBMKBIQSE+DnQgIGDAQEAOws=</value></data><data name="editorButtonImageOptions2.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAASQEAAAJHSUY4OWEMAAkA
+hQAAAAAA/////dcn/dxD/eFb4slWtqJF/eJi/eRp/eRr/uRt/uZ1/ud5/ud7/ud9/uiC/umE/umI
+/uqN/uqO/uuS/uuU/uyZ/vCu/vK7/vTC/vXG5sxX175RybJM3cRU0LhPwqxKu6ZH/ud+//XI//XJ
+////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIf8LTkVUU0NBUEUyLjADAQEAACH5BAEAACUALAAAAAAM
+AAkAAAhTAEsIHLhhw8CDAws8KDDQg8OHHiwo8CCQwwgSGjJguDDBwQAOJT4wEBGBQgUJDhIQEPCh
+wwEECx5AaKBSQIcSIHLqBLESBMKBIQSE+DnQgIGDAQEAOws=</value></data><data name="editorButtonImageOptions3.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAASQEAAAJHSUY4OWEMAAkA
+hQAAAAAA/////dcn/dxD/eFb4slWtqJF/eJi/eRp/eRr/uRt/uZ1/ud5/ud7/ud9/uiC/umE/umI
+/uqN/uqO/uuS/uuU/uyZ/vCu/vK7/vTC/vXG5sxX175RybJM3cRU0LhPwqxKu6ZH/ud+//XI//XJ
+////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIf8LTkVUU0NBUEUyLjADAQEAACH5BAEAACUALAAAAAAM
+AAkAAAhTAEsIHLhhw8CDAws8KDDQg8OHHiwo8CCQwwgSGjJguDDBwQAOJT4wEBGBQgUJDhIQEPCh
+wwEECx5AaKBSQIcSIHLqBLESBMKBIQSE+DnQgIGDAQEAOws=</value></data><data name="btn_OK.ImageOptions.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARQEAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAGXRFWHRTb2Z0d2FyZQBB
+ZG9iZSBJbWFnZVJlYWR5ccllPAAAACF0RVh0VGl0bGUAQXBwbHk7T0s7Q2hlY2s7QmFycztSaWJi
+b247ZGPIaAAAAKpJREFUOE+lzrENwkAMBdBEVLRImYBFKINERXahYRBGYBOyAg1TICSonP+lM/Lp
+7CgHxdPdOflfbkTkL+6wRjE4XS9LtHr/paCHG2z4ri1g+A0CI7Q1BTbMcw/5BhisOHS4YbLhLdxh
+px+TMEwaXsMD+NMLtGQ2THaDAT6gJWewYZZlYfoWpJIjaIkKw5QVOCU8i7Utr4BY8oRDeoeiAurM
+PVQU1HKHy0kzAVhSYKpsRkalAAAAAElFTkSuQmCCCw==</value></data></root>

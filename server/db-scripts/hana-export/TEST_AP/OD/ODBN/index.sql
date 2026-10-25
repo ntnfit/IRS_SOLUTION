@@ -1,0 +1,1 @@
+CREATE CPBTREE INDEX "ODBN_DIST_KEY" ON "TEST_AP"."ODBN" ( "ItemCode" ASC, "DistNumber" ASC )

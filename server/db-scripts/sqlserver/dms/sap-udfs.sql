@@ -1,0 +1,13 @@
+USE [SBODemoAU];
+GO
+
+IF COL_LENGTH(N'dbo.OCRD', N'U_SubType') IS NULL ALTER TABLE dbo.OCRD ADD U_SubType nvarchar(10) NULL;
+IF COL_LENGTH(N'dbo.OCRD', N'U_Latitude') IS NULL ALTER TABLE dbo.OCRD ADD U_Latitude nvarchar(50) NULL;
+IF COL_LENGTH(N'dbo.OCRD', N'U_Longitude') IS NULL ALTER TABLE dbo.OCRD ADD U_Longitude nvarchar(50) NULL;
+IF COL_LENGTH(N'dbo.OCRD', N'U_MapAddress') IS NULL ALTER TABLE dbo.OCRD ADD U_MapAddress nvarchar(254) NULL;
+IF COL_LENGTH(N'dbo.OCRD', N'U_Province') IS NULL ALTER TABLE dbo.OCRD ADD U_Province nvarchar(100) NULL;
+GO
+
+IF COL_LENGTH(N'dbo.ORDR', N'U_GUID') IS NULL ALTER TABLE dbo.ORDR ADD U_GUID nvarchar(254) NULL;
+IF COL_LENGTH(N'dbo.OINV', N'U_GUID') IS NULL ALTER TABLE dbo.OINV ADD U_GUID nvarchar(254) NULL;
+GO

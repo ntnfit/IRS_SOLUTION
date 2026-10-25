@@ -1,0 +1,9 @@
+
+CREATE PROCEDURE RA_CONNECTION_GET (IN UserName nvarchar(50))
+AS
+BEGIN
+    SELECT * FROM "@RA_CONN";
+END;
+
+
+

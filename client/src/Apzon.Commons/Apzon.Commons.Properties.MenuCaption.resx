@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="SalesEmployeeBuyers" xml:space="preserve"><value>Sales Employees/Buyer</value></data>
+  <data name="DashboardManagement" xml:space="preserve"><value>Dashboard Management</value></data>
+  <data name="SalesOpportunityPartner" xml:space="preserve"><value>Partners</value></data>
+  <data name="CompanyDetails" xml:space="preserve"><value>Company Details</value></data>
+  <data name="GenPurchaseFromAtp" xml:space="preserve"><value>Generate Purchase From Atp</value></data>
+  <data name="ReportCompletion" xml:space="preserve"><value>Report Completion</value></data>
+  <data name="PurchaseRequest" xml:space="preserve"><value>Purchase Request</value></data>
+  <data name="Banking" xml:space="preserve"><value>Banking</value></data>
+  <data name="ImportData" xml:space="preserve"><value>Import Data</value></data>
+  <data name="STDPriceLists" xml:space="preserve"><value>Price List</value></data>
+  <data name="WorkingTable" xml:space="preserve"><value>Working Table</value></data>
+  <data name="Operation" xml:space="preserve"><value>Operation</value></data>
+  <data name="GenPOFromSchedule" xml:space="preserve"><value>Generate Production Order </value></data>
+  <data name="Export" xml:space="preserve"><value>Export</value></data>
+  <data name="UserDefault" xml:space="preserve"><value>User Default</value></data>
+  <data name="VoucherMasterData" xml:space="preserve"><value>Voucher Master Data</value></data>
+  <data name="QueryGenerator" xml:space="preserve"><value>Query Generator</value></data>
+  <data name="IssueForProduction" xml:space="preserve"><value>Issue For Production</value></data>
+  <data name="DiscountGroup1" xml:space="preserve"><value>Discount Groups</value></data>
+  <data name="Resources" xml:space="preserve"><value>Resources</value></data>
+  <data name="UserDefinedTexts" xml:space="preserve"><value>Predefined Texts</value></data>
+  <data name="Configuration" xml:space="preserve"><value>Configuration</value></data>
+  <data name="DataOwnerShipAuthorization" xml:space="preserve"><value>Data Ownership Authorization</value></data>
+  <data name="CreditPaymentMethods" xml:space="preserve"><value>Credit Card Payment Methods</value></data>
+  <data name="PurchaseOder" xml:space="preserve"><value>Purchase Order</value></data>
+  <data name="ServiceCall" xml:space="preserve"><value>Service Call</value></data>
+  <data name="SalesOpportunityReason" xml:space="preserve"><value>Reasons</value></data>
+  <data name="UnitOfMeasure" xml:space="preserve"><value>Unit Of Measure</value></data>
+  <data name="TaxGroups" xml:space="preserve"><value>Tax Group</value></data>
+  <data name="SetupHumanResouces" xml:space="preserve"><value>Human Resources</value></data>
+  <data name="NoteManagement" xml:space="preserve"><value>Note Management</value></data>
+  <data name="InventoryReport" xml:space="preserve"><value>Inventory Report</value></data>
+  <data name="CouponMasterData" xml:space="preserve"><value>Coupon Master Data</value></data>
+  <data name="ProcessDIServer" xml:space="preserve"><value>Process DI Server</value></data>
+  <data name="GoodReceiptPO" xml:space="preserve"><value>Goods Receipt PO</value></data>
+  <data name="SetupGeneral" xml:space="preserve"><value>General</value></data>
+  <data name="ProductionOrder" xml:space="preserve"><value>Production Order</value></data>
+  <data name="ARCreditMemos" xml:space="preserve"><value>A/R Credit Memo</value></data>
+  <data name="Module" xml:space="preserve"><value>Module</value></data>
+  <data name="SetupAuthorization" xml:space="preserve"><value>Authorization</value></data>
+  <data name="AttrCodes" xml:space="preserve"><value>Bin Location Attribute Codes</value></data>
+  <data name="ObjectsRegistrationWizard" xml:space="preserve"><value>Objects Registration Wizard</value></data>
+  <data name="PurchaseQuotation" xml:space="preserve"><value>Purchase Quotation</value></data>
+  <data name="Integrate_Document_GR_ARCreditMemo" xml:space="preserve"><value>Goods Receipt - A/R Credit</value></data>
+  <data name="Service" xml:space="preserve"><value>CRM</value></data>
+  <data name="SetupBp" xml:space="preserve"><value>Business Partner</value></data>
+  <data name="Qualifications" xml:space="preserve"><value>Qualifications</value></data>
+  <data name="JVInterviewStatus" xml:space="preserve"><value>Interview Status</value></data>
+  <data name="WHSubMan" xml:space="preserve"><value>Warehouse Sublevel Codes Management</value></data>
+  <data name="Territory" xml:space="preserve"><value>Territory</value></data>
+  <data name="WorkScheduling" xml:space="preserve"><value>Work Scheduling</value></data>
+  <data name="JVApplicants" xml:space="preserve"><value>Applicants</value></data>
+  <data name="SalesAR" xml:space="preserve"><value>Sales</value></data>
+  <data name="SalaryCalculation" xml:space="preserve"><value>Salary Calculation</value></data>
+  <data name="Braches" xml:space="preserve"><value>Branches</value></data>
+  <data name="SystemInitialization" xml:space="preserve"><value>System Initialization</value></data>
+  <data name="ProductionOrderImportTool" xml:space="preserve"><value>Production Order Import Tool</value></data>
+  <data name="BusinessMasterData" xml:space="preserve"><value>Business Partner Master Data</value></data>
+  <data name="FtpServerSetting" xml:space="preserve"><value>FTP Server</value></data>
+  <data name="Queries" xml:space="preserve"><value>Queries</value></data>
+  <data name="InventoryTransaction" xml:space="preserve"><value>Inventory Transaction</value></data>
+  <data name="JobVacancy" xml:space="preserve"><value>Job Vacancy</value></data>
+  <data name="LandedCosts" xml:space="preserve"><value>Landed Cost</value></data>
+  <data name="SalaryInfo" xml:space="preserve"><value>Employee Salary Information</value></data>
+  <data name="EmpPenalization" xml:space="preserve"><value>Employee Penalty/Bonus</value></data>
+  <data name="Weight" xml:space="preserve"><value>Weight</value></data>
+  <data name="Window" xml:space="preserve"><value>Window</value></data>
+  <data name="Integrate_InventoryTransfer" xml:space="preserve"><value>Inventory Transfer</value></data>
+  <data name="PluginManager" xml:space="preserve"><value>Plugin Manager</value></data>
+  <data name="ShipDoc" xml:space="preserve"><value>Shipping</value></data>
+  <data name="Schedule" xml:space="preserve"><value>Schedule</value></data>
+  <data name="Retail" xml:space="preserve"><value>Retail</value></data>
+  <data name="Return" xml:space="preserve"><value>Return</value></data>
+  <data name="BusinessPartnerPriorities" xml:space="preserve"><value>Business Priorities</value></data>
+  <data name="AdvanceForecast" xml:space="preserve"><value>Forecast</value></data>
+  <data name="CustomizationTools" xml:space="preserve"><value>Customization Tools</value></data>
+  <data name="PriceLists" xml:space="preserve"><value>Price Lists</value></data>
+  <data name="Dimension" xml:space="preserve"><value>Dimensions</value></data>
+  <data name="System" xml:space="preserve"><value>System</value></data>
+  <data name="Salary" xml:space="preserve"><value>Salary</value></data>
+  <data name="ItemGroups" xml:space="preserve"><value>Item Group</value></data>
+  <data name="PeriodAndVolumeDiscounts" xml:space="preserve"><value>Period and Volume Discounts</value></data>
+  <data name="TrackingIssue" xml:space="preserve"><value>Tracking Issue</value></data>
+  <data name="Plugin" xml:space="preserve"><value>Plugin</value></data>
+  <data name="Administration" xml:space="preserve"><value>Administration</value></data>
+  <data name="EventManagement" xml:space="preserve"><value>Event Management</value></data>
+  <data name="Preview" xml:space="preserve"><value>Preview</value></data>
+  <data name="AdvertisementSource" xml:space="preserve"><value>Advertisement Source</value></data>
+  <data name="Project" xml:space="preserve"><value>Project</value></data>
+  <data name="LicenseManager" xml:space="preserve"><value>License Manager</value></data>
+  <data name="MaterialShortageReport" xml:space="preserve"><value>Material Shortage Report</value></data>
+  <data name="Delivery" xml:space="preserve"><value>Delivery</value></data>
+  <data name="UpdateReport" xml:space="preserve"><value>UpdateReport</value></data>
+  <data name="GenPurchaseFromSchedule" xml:space="preserve"><value>Generate Purchase Order</value></data>
+  <data name="Production" xml:space="preserve"><value>Production</value></data>
+  <data name="SetupAdmin" xml:space="preserve"><value>Admin Password</value></data>
+  <data name="APDownpaymentInvoice" xml:space="preserve"><value>A/P Downpayment Invoice</value></data>
+  <data name="SytemLogMessage" xml:space="preserve"><value>SytemLogMessage</value></data>
+  <data name="LanguageVn" xml:space="preserve"><value>Vietnamese</value></data>
+  <data name="LanguageEn" xml:space="preserve"><value>English</value></data>
+  <data name="SalaryCalcResult" xml:space="preserve"><value>Salary Calculation Result</value></data>
+  <data name="JobType" xml:space="preserve"><value>Job Types</value></data>
+  <data name="InventoryCounting" xml:space="preserve"><value>Inventory Counting</value></data>
+  <data name="SalaryParameters" xml:space="preserve"><value>Salary Paramters</value></data>
+  <data name="ChangeUser" xml:space="preserve"><value>Change User</value></data>
+  <data name="GoodsIssue" xml:space="preserve"><value>Goods Issue</value></data>
+  <data name="Solution" xml:space="preserve"><value>Solutions</value></data>
+  <data name="PickAndPack" xml:space="preserve"><value>Pick And Pack</value></data>
+  <data name="ReportManager" xml:space="preserve"><value>Report Manager</value></data>
+  <data name="SpecialPrices" xml:space="preserve"><value>Special Prices</value></data>
+  <data name="PaymentForInvoice" xml:space="preserve"><value>Payment for the Invoice</value></data>
+  <data name="JVQuestion" xml:space="preserve"><value>Question library</value></data>
+  <data name="InventoryTranfer" xml:space="preserve"><value>Inventory Transfer</value></data>
+  <data name="CheckForUpdate" xml:space="preserve"><value>CheckForUpdate</value></data>
+  <data name="SearchMenu" xml:space="preserve"><value>Search menu</value></data>
+  <data name="TimeSheeting" xml:space="preserve"><value>Time Sheeting</value></data>
+  <data name="PreviewGridview" xml:space="preserve"><value>Preview Gridview</value></data>
+  <data name="DocumentNumbering" xml:space="preserve"><value>Document Numbering</value></data>
+  <data name="UserDefineFields" xml:space="preserve"><value>User - Defined Fields Management</value></data>
+  <data name="GenPurchaseFromMaterialShortage" xml:space="preserve"><value>Generator Purchase From Material Shortage</value></data>
+  <data name="GoodsReceipt" xml:space="preserve"><value>Goods Receipt</value></data>
+  <data name="InventoryTranferRequest" xml:space="preserve"><value>Inventory Transfer Request</value></data>
+  <data name="Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Manufacturer" xml:space="preserve"><value>Manufacturers</value></data>
+  <data name="CostCenters" xml:space="preserve"><value>Cost Centers</value></data>
+  <data name="BusinessPartnerProperties" xml:space="preserve"><value>Business Properties</value></data>
+  <data name="Packing" xml:space="preserve"><value>Packing</value></data>
+  <data name="UnitOfMeasureGroups" xml:space="preserve"><value>Unit Of Measure Group</value></data>
+  <data name="SetupInventory" xml:space="preserve"><value>Inventory</value></data>
+  <data name="CustomerGroup" xml:space="preserve"><value>Customer Group</value></data>
+  <data name="PreviewLayout" xml:space="preserve"><value>PreviewLayout</value></data>
+  <data name="GenProductionFormAtp" xml:space="preserve"><value>Generate Production Order From Atp</value></data>
+  <data name="BusinessPartnerCatalogNumbers" xml:space="preserve"><value>Business Partner Catalog Numbers</value></data>
+  <data name="LandedCostsSetup" xml:space="preserve"><value>Landed Costs</value></data>
+  <data name="GoodsReturn" xml:space="preserve"><value>Goods Return</value></data>
+  <data name="Dashboard" xml:space="preserve"><value>Dashboard</value></data>
+  <data name="ARInvoices" xml:space="preserve"><value>A/R Invoice</value></data>
+  <data name="AvailableToPromise" xml:space="preserve"><value>Available To Promise</value></data>
+  <data name="SalesOpportunityStage" xml:space="preserve"><value>Opportunity Stages</value></data>
+  <data name="SalesOpportunityRelationship" xml:space="preserve"><value>Relationships</value></data>
+  <data name="ARDownpaymentInvoice" xml:space="preserve"><value>A/R Downpayment Invoice</value></data>
+  <data name="RoutingResources" xml:space="preserve"><value>Routing &amp;&amp; Resources</value></data>
+  <data name="QueryPreview" xml:space="preserve"><value>Query Preview</value></data>
+  <data name="SalesQuotation" xml:space="preserve"><value>Sales Quotation</value></data>
+  <data name="OvertimeType" xml:space="preserve"><value>Overtime Type</value></data>
+  <data name="AR_ReserveInvoices" xml:space="preserve"><value>A/R Reserve Invoice</value></data>
+  <data name="OutSourcing" xml:space="preserve"><value>Outsourcing</value></data>
+  <data name="DefinedShift" xml:space="preserve"><value>Defined Shift</value></data>
+  <data name="SalesOrder" xml:space="preserve"><value>Sales Order</value></data>
+  <data name="CycleCountDetermination" xml:space="preserve"><value>Cycle Count Determination</value></data>
+  <data name="CashItemMasterData" xml:space="preserve"><value>Cash Item Master Data</value></data>
+  <data name="SetupOpportunities" xml:space="preserve"><value>Opportunities</value></data>
+  <data name="BP" xml:space="preserve"><value>Business Partners</value></data>
+  <data name="PM" xml:space="preserve"><value>Project Management</value></data>
+  <data name="FacebookCRM" xml:space="preserve"><value>Facebook CRM</value></data>
+  <data name="AllowanceType" xml:space="preserve"><value>Allowance Type</value></data>
+  <data name="ViewSystemInformation" xml:space="preserve"><value>ViewSystemInformation</value></data>
+  <data name="TaskManagement" xml:space="preserve"><value>Task Management</value></data>
+  <data name="WorkPeriod" xml:space="preserve"><value>Work Period</value></data>
+  <data name="JVBenefits" xml:space="preserve"><value>Benefit</value></data>
+  <data name="VenderGroup" xml:space="preserve"><value>Vendor Group</value></data>
+  <data name="Operations" xml:space="preserve"><value>Operations</value></data>
+  <data name="FieldActivation" xml:space="preserve"><value>Bin Location Field Activation</value></data>
+  <data name="AutoReportComplete" xml:space="preserve"><value>Report Complete by Barcode</value></data>
+  <data name="ItemSummary" xml:space="preserve"><value>Item Summary</value></data>
+  <data name="ExchangeRatesAndIndexs" xml:space="preserve"><value>Exchange Rates And Indexes</value></data>
+  <data name="WareHouses" xml:space="preserve"><value>Warehouse</value></data>
+  <data name="Integrate_Document_ARCreditMemo" xml:space="preserve"><value>A/R Credit Memo</value></data>
+  <data name="FormSetting" xml:space="preserve"><value>Form Setting</value></data>
+  <data name="MRP" xml:space="preserve"><value>MRP</value></data>
+  <data name="UDT" xml:space="preserve"><value>User - Defined Tables Management</value></data>
+  <data name="UDO" xml:space="preserve"><value>User Defined Object</value></data>
+  <data name="HRM" xml:space="preserve"><value>Human Resources</value></data>
+  <data name="QualificationsGroup" xml:space="preserve"><value>Qualifications Group</value></data>
+  <data name="Lines" xml:space="preserve"><value>Lines</value></data>
+  <data name="Users" xml:space="preserve"><value>User</value></data>
+  <data name="WHSub" xml:space="preserve"><value>Warehouse Sublevel Codes</value></data>
+  <data name="Setup" xml:space="preserve"><value>Setup</value></data>
+  <data name="Sales" xml:space="preserve"><value>Sales</value></data>
+  <data name="Print" xml:space="preserve"><value>Print</value></data>
+  <data name="DocumentDraftsRP" xml:space="preserve"><value>Document Drafts Report</value></data>
+  <data name="BinLocations" xml:space="preserve"><value>Bin Locations</value></data>
+  <data name="Shipping" xml:space="preserve"><value>Shipping Types</value></data>
+  <data name="BankingPayment" xml:space="preserve"><value>Banking</value></data>
+  <data name="DistributeRule" xml:space="preserve"><value>Distribute Rules</value></data>
+  <data name="PersonalIncomeTax" xml:space="preserve"><value>Personal Income Tax Level</value></data>
+  <data name="SalesBlanketAgreement" xml:space="preserve"><value>Sales Blanket Agreement</value></data>
+  <data name="SalesOpportunityCompetitor" xml:space="preserve"><value>Competitors</value></data>
+  <data name="APDownpaymentRequest" xml:space="preserve"><value>A/P Downpayment Request</value></data>
+  <data name="Contract" xml:space="preserve"><value>Service Contract</value></data>
+  <data name="ItemProperties" xml:space="preserve"><value>Item Properties</value></data>
+  <data name="SetupReport" xml:space="preserve"><value>Report</value></data>
+  <data name="Integrate_Document_ARInvoice" xml:space="preserve"><value>A/R Invoice</value></data>
+  <data name="DashboardDesigner" xml:space="preserve"><value>Dashboard Designer</value></data>
+  <data name="Authorization" xml:space="preserve"><value>General Authorization</value></data>
+  <data name="StockRequest" xml:space="preserve"><value>Stock Request</value></data>
+  <data name="PlanningMRP" xml:space="preserve"><value>Planning &amp; MRP</value></data>
+  <data name="DeductionType" xml:space="preserve"><value>Deduction Type</value></data>
+  <data name="GeneSetting" xml:space="preserve"><value>General Setting</value></data>
+  <data name="BatchesControl" xml:space="preserve"><value>Batches Control</value></data>
+  <data name="ImportDataWizard" xml:space="preserve"><value>Import Data Wizard</value></data>
+  <data name="APInvoices" xml:space="preserve"><value>A/P Invoice</value></data>
+  <data name="APCreditMemos" xml:space="preserve"><value>A/P Credit Memo</value></data>
+  <data name="Vehicle" xml:space="preserve"><value>Vehicle</value></data>
+  <data name="Locations" xml:space="preserve"><value>Locations</value></data>
+  <data name="SalesOpportunity" xml:space="preserve"><value>Sales Opportunity</value></data>
+  <data name="SpecialforBP" xml:space="preserve"><value>Special Prices for Business Partners</value></data>
+  <data name="APReserveInvoice" xml:space="preserve"><value>A/P Reserve Invoice</value></data>
+  <data name="CategoriesDAB" xml:space="preserve"><value>Dashboard Category</value></data>
+  <data name="Integrated_MapCode1" xml:space="preserve"><value>Map Code</value></data>
+  <data name="PickAndPack1" xml:space="preserve"><value>Pick anh Pack</value></data>
+  <data name="VehicleType" xml:space="preserve"><value>Vehicle Type</value></data>
+  <data name="GoodsReturnRequest" xml:space="preserve"><value>Goods Return Request</value></data>
+  <data name="BlanketAgreement" xml:space="preserve"><value>Blanket Agreement</value></data>
+  <data name="PreviewExternalReport" xml:space="preserve"><value>Preview External Crystal Reports File</value></data>
+  <data name="PickingDocument" xml:space="preserve"><value>Pick List</value></data>
+  <data name="JVInterviewTypes" xml:space="preserve"><value>Interview Types</value></data>
+  <data name="SerialNumberDetail" xml:space="preserve"><value>Serial Number Details</value></data>
+  <data name="ManagerQuery" xml:space="preserve"><value>Query Manager</value></data>
+  <data name="ItemMasterData" xml:space="preserve"><value>Items Master Data</value></data>
+  <data name="CreditCardSetup" xml:space="preserve"><value>Credit Card</value></data>
+  <data name="Reports" xml:space="preserve"><value>Reports</value></data>
+  <data name="BillOfMaterials" xml:space="preserve"><value>Bill Of Materials</value></data>
+  <data name="Integrate_BusinessPartner" xml:space="preserve"><value>Business Partners</value></data>
+  <data name="GenTranferRequestFromMrp" xml:space="preserve"><value>Generate Inventory Transfer</value></data>
+  <data name="DashboardViewer" xml:space="preserve"><value>Dashboard Viewer</value></data>
+  <data name="CustomGroup" xml:space="preserve"><value>Customs Groups</value></data>
+  <data name="Currencies" xml:space="preserve"><value>Currencies</value></data>
+  <data name="Financial" xml:space="preserve"><value>Financial</value></data>
+  <data name="ServiceCallSetting" xml:space="preserve"><value>Service Call Setting</value></data>
+  <data name="PrintLayout" xml:space="preserve"><value>Layout</value></data>
+  <data name="DocumentSettings" xml:space="preserve"><value>Document Settings</value></data>
+  <data name="BatchDetail" xml:space="preserve"><value>Batch Details</value></data>
+  <data name="HumanResources" xml:space="preserve"><value>Employee Master Data</value></data>
+  <data name="ItemManagement" xml:space="preserve"><value>Item Management</value></data>
+  <data name="UserDefinedProcedure" xml:space="preserve"><value>DIY Script</value></data>
+  <data name="InventoryRevaluation" xml:space="preserve"><value>Inventory Revaluation</value></data>
+  <data name="ARDownpaymentRequest" xml:space="preserve"><value>A/R Downpayment Request</value></data>
+  <data name="EmpToken" xml:space="preserve"><value>Employee Token</value></data>
+  <data name="Routing" xml:space="preserve"><value>Routing</value></data>
+  <data name="CycleCountRecommendations" xml:space="preserve"><value>Cycle Count Recommendations</value></data>
+  <data name="InventoryCycles" xml:space="preserve"><value>Inventory Cycles</value></data>
+  <data name="ReceiptFromProduction" xml:space="preserve"><value>Receipt From Production</value></data>
+  <data name="Opportunity" xml:space="preserve"><value>Sales Opportunity</value></data>
+  <data name="PenalType" xml:space="preserve"><value>Penalty/Bonus Type</value></data>
+  <data name="ScheduleForAtp" xml:space="preserve"><value>Schedule For Atp</value></data>
+  <data name="LengthAndWidth" xml:space="preserve"><value>Length and Width</value></data>
+  <data name="ProcurementConfirm" xml:space="preserve"><value>Procurement Confirm</value></data>
+  <data name="ReturnRequest" xml:space="preserve"><value>Return Request</value></data>
+  <data name="ItemQuotaArrangement" xml:space="preserve"><value>Item Quota for Purchase</value></data>
+  <data name="PrintBarCode" xml:space="preserve"><value>Print BarCode</value></data>
+  <data name="BarcodeConfig" xml:space="preserve"><value>Barcode Config</value></data>
+  <data name="AdvanceBillOfMaterials" xml:space="preserve"><value>Advance Bill Of Materials</value></data>
+  <data name="WorkCode" xml:space="preserve"><value>Work Code</value></data>
+  <data name="WorkType" xml:space="preserve"><value>Work Type</value></data>
+  <data name="PaymentTerms" xml:space="preserve"><value>Payment Terms</value></data>
+  <data name="ReceiptBin" xml:space="preserve"><value>Goods Receipt - Bin</value></data>
+  <data name="TimeSheetingHour" xml:space="preserve"><value>Time Sheeting OT</value></data>
+  <data name="Inventory" xml:space="preserve"><value>Inventory</value></data>
+  <data name="Countries" xml:space="preserve"><value>Countries</value></data>
+  <data name="Integrated_MapCode" xml:space="preserve"><value>Integrated</value></data>
+  <data name="Purchasing" xml:space="preserve"><value>Purchasing</value></data>
+  <data name="PurchaseAP" xml:space="preserve"><value>Purchasing</value></data>
+  <data name="PickingRequest" xml:space="preserve"><value>Picking Request</value></data>
+  <data name="FilterSetting" xml:space="preserve"><value>Filter</value></data>
+  <data name="DiscountGroup" xml:space="preserve"><value>Discount Group</value></data>
+  <data name="RetailStore" xml:space="preserve"><value>Store</value></data>
+  <data name="LogViewer" xml:space="preserve"><value>LogViewer</value></data>
+  <data name="LeaveParameter" xml:space="preserve"><value>Leave Parameter</value></data>
+  <data name="Freight" xml:space="preserve"><value>Freight</value></data>
+  <data name="Exit" xml:space="preserve"><value>Exit</value></data>
+  <data name="Help" xml:space="preserve"><value>Help</value></data>
+  </root>

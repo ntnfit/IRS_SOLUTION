@@ -1,0 +1,5 @@
+CREATE COLUMN TABLE "TEST_AP"."OBPD" ("AbsEntry" INTEGER CS_INT NOT NULL , "DatSubType" NVARCHAR(4), "DatSubKey" NVARCHAR(15), "DatSubKey2" NVARCHAR(50), "TableName" NVARCHAR(20), "KeyValue1" NVARCHAR(50), "KeyValue2" NVARCHAR(50), "KeyValue3" NVARCHAR(50), "KeyValue4" NVARCHAR(50), "KeyValue5" NVARCHAR(50), "FieldName" NVARCHAR(50), "EncryptVal" NCLOB MEMORY THRESHOLD 1000, "EncryptIV" NVARCHAR(100), "CreateDate" LONGDATE CS_LONGDATE, "CreateTime" INTEGER CS_INT, PRIMARY KEY ("AbsEntry")) UNLOAD PRIORITY 5  AUTO MERGE ;
+ALTER TABLE "TEST_AP"."OBPD" WITH PARAMETERS ('CONCAT_ATTRIBUTE'=('$DatSubType$DatSubKey$DatSubKey2$','DatSubType','DatSubKey','DatSubKey2'));
+ALTER TABLE "TEST_AP"."OBPD" WITH PARAMETERS ('CONCAT_ATTRIBUTE'=('$TableName$KeyValue1$KeyValue2$KeyValue3$KeyValue4$KeyValue5$FieldName$','TableName','KeyValue1','KeyValue2','KeyValue3','KeyValue4','KeyValue5','FieldName'));
+CREATE INDEX "OBPD_DATA_SUBJ" ON "TEST_AP"."OBPD" ( "DatSubType" ASC, "DatSubKey" ASC, "DatSubKey2" ASC );
+CREATE INDEX "OBPD_TABL_FIELD" ON "TEST_AP"."OBPD" ( "TableName" ASC, "KeyValue1" ASC, "KeyValue2" ASC, "KeyValue3" ASC, "KeyValue4" ASC, "KeyValue5" ASC, "FieldName" ASC )

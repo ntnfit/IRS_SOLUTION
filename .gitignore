@@ -1,0 +1,27 @@
+# Build and IDE output
+**/bin/
+**/obj/
+**/.vs/
+**/packages/
+**/.dev-site/
+*.user
+*.suo
+*.log
+
+# Vendor binaries are licensed separately
+client/lib/
+server/lib/
+
+# Local configuration, credentials, and generated licenses
+**/Web.config
+**/Web.Dev.config
+**/*.lic
+**/*.aef
+**/*.bak
+**/private.pem
+**/*.pfx
+
+# Database backups and local exports
+**/*.bak
+**/*.mdf
+**/*.ldf

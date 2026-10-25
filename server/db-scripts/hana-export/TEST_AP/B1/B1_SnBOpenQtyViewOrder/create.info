@@ -1,0 +1,4 @@
+VIEW
+TABLE: "TEST_AP"."ITL1"
+VIEW: "TEST_AP"."B1_SnBOpenQtyInnerViewOrder"
+TABLE: "TEST_AP"."OITL"

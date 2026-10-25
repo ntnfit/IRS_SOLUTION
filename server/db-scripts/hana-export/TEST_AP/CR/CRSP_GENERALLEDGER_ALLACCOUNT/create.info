@@ -1,0 +1,9 @@
+PROCEDURE
+BASE_SCHEMA: "TEST_AP"
+TABLE: "TEST_AP"."CRSPGeneralLedgerAllAccountAcctFatherSonResult"
+TABLE: "TEST_AP"."CRSPGeneralLedgerAllAccountDateTable"
+TABLE: "TEST_AP"."OACT"
+TABLE: "TEST_AP"."CRSPGeneralLedgerAllAccountAcctFatherSon"
+TABLE: "TEST_AP"."CRSPGeneralLedgerAllAccountAcctFatherSonTable"
+TABLE: "TEST_AP"."JDT1"
+PROCEDURE: "TEST_AP"."_TMSP_VALIDATESPPARAM"

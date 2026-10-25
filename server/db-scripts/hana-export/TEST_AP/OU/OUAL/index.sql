@@ -1,0 +1,2 @@
+CREATE CPBTREE INDEX "OUAL_TIME" ON "TEST_AP"."OUAL" ( "ActionDate" ASC, "ActionTime" ASC );
+CREATE CPBTREE INDEX "OUAL_ID_KEY" ON "TEST_AP"."OUAL" ( "ObjectId" ASC, "ObjectKey" ASC )

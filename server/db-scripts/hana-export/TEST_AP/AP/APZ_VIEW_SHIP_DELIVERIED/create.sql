@@ -1,0 +1,3 @@
+CREATE VIEW "TEST_AP"."APZ_VIEW_SHIP_DELIVERIED" ( "BatchSerialEntry", "DocEntry" ) AS SELECT DISTINCT T3."BatchSerialEntry", T3."DocEntry" FROM ITL1 T0 INNER JOIN OSRN T2 ON T0."MdAbsEntry" = T2."AbsEntry" 
+			INNER JOIN APZ_SHIP1 T3 ON T3."BatchSerialEntry" = T2."AbsEntry" AND T3."ItemCode" = T2."ItemCode" AND T3."SysNumber" = T2."SysNumber" 
+			INNER JOIN OITL T1 ON T0."LogEntry" = T1."LogEntry" WHERE T0."Quantity" <> 0 AND T1."DocType" = '15' WITH READ ONLY

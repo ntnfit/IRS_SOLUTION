@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="SurOver" xml:space="preserve"><value>Surcharge Overlook</value></data>
+  <data name="DflBranch" xml:space="preserve"><value>Default Branch</value></data>
+  <data name="MailBlock" xml:space="preserve"><value>Ship-to Block</value></data>
+  <data name="KBKCode" xml:space="preserve"><value>KBK Budget Classification Code</value></data>
+  <data name="DflBankKey" xml:space="preserve"><value>Default Bank Key</value></data>
+  <data name="MailStrNo" xml:space="preserve"><value>Ship-to Street No.</value></data>
+  <data name="UpdateDate" xml:space="preserve"><value>Date of Update</value></data>
+  <data name="Balance" xml:space="preserve"><value>Account Balance</value></data>
+  <data name="VatGroup" xml:space="preserve"><value>Tax Code</value></data>
+  <data name="VatIDNum" xml:space="preserve"><value>VAT ID Number</value></data>
+  <data name="LicTradNum" xml:space="preserve"><value>Federal Tax ID</value></data>
+  <data name="E_Mail" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="DflAgrmnt" xml:space="preserve"><value>Default Blanket Agreement No.</value></data>
+  <data name="PlngGroup" xml:space="preserve"><value>Planning Group</value></data>
+  <data name="DflAccount" xml:space="preserve"><value>Default Account</value></data>
+  <data name="frozenFor" xml:space="preserve"><value>Inactive</value></data>
+  <data name="ECVatGroup" xml:space="preserve"><value>Tax Group</value></data>
+  <data name="VendorOcup" xml:space="preserve"><value>Vendor Occupation</value></data>
+  <data name="OtrCtlAcct" xml:space="preserve"><value>Other Receivable/Payable</value></data>
+  <data name="FeeAcc" xml:space="preserve"><value>Fee Account</value></data>
+  <data name="Box1099" xml:space="preserve"><value>1099 Box</value></data>
+  <data name="BNKCounter" xml:space="preserve"><value>BNK Counter</value></data>
+  <data name="PartDelivr" xml:space="preserve"><value>Partial Delivery</value></data>
+  <data name="Cellular" xml:space="preserve"><value>Mobile Phone</value></data>
+  <data name="BalanceFC" xml:space="preserve"><value>BP Balance in FC</value></data>
+  <data name="DunnDate" xml:space="preserve"><value>Dunning Date</value></data>
+  <data name="DdgKey" xml:space="preserve"><value>Withholding Tax Deduction Grp</value></data>
+  <data name="DdtKey" xml:space="preserve"><value>Current Deduction Hierarchy</value></data>
+  <data name="OrdersBal" xml:space="preserve"><value>Open Orders Balance</value></data>
+  <data name="CntctPrsn" xml:space="preserve"><value>Contact Person</value></data>
+  <data name="BoEOnClct" xml:space="preserve"><value>Bill of Exchange on Collection</value></data>
+  <data name="CmpPrivate" xml:space="preserve"><value>Company/Private/Government</value></data>
+  <data name="ConnBP" xml:space="preserve"><value>Linked Business Partner</value></data>
+  <data name="County" xml:space="preserve"><value>Bill-to County</value></data>
+  <data name="BoEDiscnt" xml:space="preserve"><value>Customer BoE Discounted</value></data>
+  <data name="QryGroup11" xml:space="preserve"><value>Property 11</value></data>
+  <data name="QryGroup10" xml:space="preserve"><value>Property 10</value></data>
+  <data name="QryGroup13" xml:space="preserve"><value>Property 13</value></data>
+  <data name="QryGroup12" xml:space="preserve"><value>Property 12</value></data>
+  <data name="QryGroup15" xml:space="preserve"><value>Property 15</value></data>
+  <data name="QryGroup14" xml:space="preserve"><value>Property 14</value></data>
+  <data name="QryGroup17" xml:space="preserve"><value>Property 17</value></data>
+  <data name="QryGroup16" xml:space="preserve"><value>Property 16</value></data>
+  <data name="QryGroup19" xml:space="preserve"><value>Property 19</value></data>
+  <data name="QryGroup18" xml:space="preserve"><value>Property 18</value></data>
+  <data name="QryGroup33" xml:space="preserve"><value>Property 33</value></data>
+  <data name="QryGroup32" xml:space="preserve"><value>Property 32</value></data>
+  <data name="QryGroup31" xml:space="preserve"><value>Property 31</value></data>
+  <data name="QryGroup30" xml:space="preserve"><value>Property 30</value></data>
+  <data name="QryGroup37" xml:space="preserve"><value>Property 37</value></data>
+  <data name="QryGroup36" xml:space="preserve"><value>Property 36</value></data>
+  <data name="QryGroup35" xml:space="preserve"><value>Property 35</value></data>
+  <data name="QryGroup34" xml:space="preserve"><value>Property 34</value></data>
+  <data name="QryGroup39" xml:space="preserve"><value>Property 39</value></data>
+  <data name="QryGroup38" xml:space="preserve"><value>Property 38</value></data>
+  <data name="QryGroup22" xml:space="preserve"><value>Property 22</value></data>
+  <data name="QryGroup23" xml:space="preserve"><value>Property 23</value></data>
+  <data name="QryGroup20" xml:space="preserve"><value>Property 20</value></data>
+  <data name="QryGroup21" xml:space="preserve"><value>Property 21</value></data>
+  <data name="QryGroup26" xml:space="preserve"><value>Property 26</value></data>
+  <data name="QryGroup27" xml:space="preserve"><value>Property 27</value></data>
+  <data name="QryGroup24" xml:space="preserve"><value>Property 24</value></data>
+  <data name="QryGroup25" xml:space="preserve"><value>Property 25</value></data>
+  <data name="QryGroup28" xml:space="preserve"><value>Property 28</value></data>
+  <data name="QryGroup29" xml:space="preserve"><value>Property 29</value></data>
+  <data name="QryGroup55" xml:space="preserve"><value>Property 55</value></data>
+  <data name="QryGroup54" xml:space="preserve"><value>Property 54</value></data>
+  <data name="QryGroup57" xml:space="preserve"><value>Property 57</value></data>
+  <data name="QryGroup56" xml:space="preserve"><value>Property 56</value></data>
+  <data name="QryGroup51" xml:space="preserve"><value>Property 51</value></data>
+  <data name="QryGroup50" xml:space="preserve"><value>Property 50</value></data>
+  <data name="QryGroup53" xml:space="preserve"><value>Property 53</value></data>
+  <data name="QryGroup52" xml:space="preserve"><value>Property 52</value></data>
+  <data name="QryGroup59" xml:space="preserve"><value>Property 59</value></data>
+  <data name="QryGroup58" xml:space="preserve"><value>Property 58</value></data>
+  <data name="QryGroup44" xml:space="preserve"><value>Property 44</value></data>
+  <data name="QryGroup45" xml:space="preserve"><value>Property 45</value></data>
+  <data name="QryGroup46" xml:space="preserve"><value>Property 46</value></data>
+  <data name="QryGroup47" xml:space="preserve"><value>Property 47</value></data>
+  <data name="QryGroup40" xml:space="preserve"><value>Property 40</value></data>
+  <data name="QryGroup41" xml:space="preserve"><value>Property 41</value></data>
+  <data name="QryGroup42" xml:space="preserve"><value>Property 42</value></data>
+  <data name="QryGroup43" xml:space="preserve"><value>Property 43</value></data>
+  <data name="QryGroup48" xml:space="preserve"><value>Property 48</value></data>
+  <data name="QryGroup49" xml:space="preserve"><value>Property 49</value></data>
+  <data name="QryGroup64" xml:space="preserve"><value>Property 64</value></data>
+  <data name="QryGroup62" xml:space="preserve"><value>Property 62</value></data>
+  <data name="QryGroup63" xml:space="preserve"><value>Property 63</value></data>
+  <data name="QryGroup60" xml:space="preserve"><value>Property 60</value></data>
+  <data name="QryGroup61" xml:space="preserve"><value>Property 61</value></data>
+  <data name="BankCode" xml:space="preserve"><value>Default Bank</value></data>
+  <data name="CDPNum" xml:space="preserve"><value>Closing Date Procedure Number</value></data>
+  <data name="BalTrnsfrd" xml:space="preserve"><value>Balances transferred</value></data>
+  <data name="InMatchNum" xml:space="preserve"><value>Last Int. Reconciliation No.</value></data>
+  <data name="FrozenComm" xml:space="preserve"><value>Inactive Remarks</value></data>
+  <data name="HsBnkIBAN" xml:space="preserve"><value>House Bank IBAN</value></data>
+  <data name="Territory" xml:space="preserve"><value>Territory</value></data>
+  <data name="Number" xml:space="preserve"><value>Number</value></data>
+  <data name="OpCode347" xml:space="preserve"><value>347 Operation Code</value></data>
+  <data name="ZipCode" xml:space="preserve"><value>Bill-to Zip Code</value></data>
+  <data name="OwnerCode" xml:space="preserve"><value>Document Owner</value></data>
+  <data name="PrevYearAc" xml:space="preserve"><value>Previous Year Balance</value></data>
+  <data name="LocMth" xml:space="preserve"><value>LC Reconciliation</value></data>
+  <data name="LogInstanc" xml:space="preserve"><value>Log Instance</value></data>
+  <data name="IntrntSite" xml:space="preserve"><value>Web Site</value></data>
+  <data name="RefDetails" xml:space="preserve"><value>Reference Details</value></data>
+  <data name="ExpireDate" xml:space="preserve"><value>Expiration Date</value></data>
+  <data name="Priority" xml:space="preserve"><value>Priority</value></data>
+  <data name="MinIntrst" xml:space="preserve"><value>Min. Interest Letter Amount</value></data>
+  <data name="SlpCode" xml:space="preserve"><value>Sales Employee Code</value></data>
+  <data name="BoEPrsnt" xml:space="preserve"><value>Customer Bill of Exchang Pres</value></data>
+  <data name="LetterNum" xml:space="preserve"><value>Tax Exemption Letter No.</value></data>
+  <data name="SefazCheck" xml:space="preserve"><value>Check BP Status on SEFAZ</value></data>
+  <data name="CrCardNum" xml:space="preserve"><value>Credit Card No.</value></data>
+  <data name="SefazReply" xml:space="preserve"><value>Reply from SEFAZ</value></data>
+  <data name="VerifNum" xml:space="preserve"><value>WTax Verification No.</value></data>
+  <data name="GroupCode" xml:space="preserve"><value>Group Code</value></data>
+  <data name="BackOrder" xml:space="preserve"><value>Backorder</value></data>
+  <data name="SCAdjust" xml:space="preserve"><value>SC Adjustment</value></data>
+  <data name="WTCode" xml:space="preserve"><value>WTax Code</value></data>
+  <data name="ToDate" xml:space="preserve"><value>Exemption Validity Date To</value></data>
+  <data name="DateTill" xml:space="preserve"><value>Relationship Final Date</value></data>
+  <data name="DateFrom" xml:space="preserve"><value>Relationship Initial Date</value></data>
+  <data name="DebtLine" xml:space="preserve"><value>Payable Limit</value></data>
+  <data name="DebPayAcct" xml:space="preserve"><value>Accounts Receivable/Payable</value></data>
+  <data name="RegNum" xml:space="preserve"><value>Company Reg. No. (CRN)</value></data>
+  <data name="State2" xml:space="preserve"><value>Ship-to State</value></data>
+  <data name="State1" xml:space="preserve"><value>Bill-to State</value></data>
+  <data name="QryGroup1" xml:space="preserve"><value>Property 1</value></data>
+  <data name="QryGroup2" xml:space="preserve"><value>Property 2</value></data>
+  <data name="QryGroup3" xml:space="preserve"><value>Property 3</value></data>
+  <data name="QryGroup4" xml:space="preserve"><value>Property 4</value></data>
+  <data name="QryGroup5" xml:space="preserve"><value>Property 5</value></data>
+  <data name="QryGroup6" xml:space="preserve"><value>Property 6</value></data>
+  <data name="QryGroup7" xml:space="preserve"><value>Property 7</value></data>
+  <data name="QryGroup8" xml:space="preserve"><value>Property 8</value></data>
+  <data name="QryGroup9" xml:space="preserve"><value>Property 9</value></data>
+  <data name="Series" xml:space="preserve"><value>Series</value></data>
+  <data name="IntrstRate" xml:space="preserve"><value>Interest % on Liabilities</value></data>
+  <data name="CardType" xml:space="preserve"><value>BP Type</value></data>
+  <data name="CardCode" xml:space="preserve"><value>BP Code</value></data>
+  <data name="CardName" xml:space="preserve"><value>BP Name</value></data>
+  <data name="Phone1" xml:space="preserve"><value>Telephone 1</value></data>
+  <data name="Phone2" xml:space="preserve"><value>Telephone 2</value></data>
+  <data name="WTLiable" xml:space="preserve"><value>Subject to Withholding Tax</value></data>
+  <data name="frozenFrom" xml:space="preserve"><value>Inactive From</value></data>
+  <data name="DdctStatus" xml:space="preserve"><value>Liable for Ded. at Source</value></data>
+  <data name="DfTcnician" xml:space="preserve"><value>Default Technician</value></data>
+  <data name="StreetNo" xml:space="preserve"><value>Bill-to Street No.</value></data>
+  <data name="AutoPost" xml:space="preserve"><value>Automatic Posting</value></data>
+  <data name="AvrageLate" xml:space="preserve"><value>Average Payment Delay in Days</value></data>
+  <data name="PymCode" xml:space="preserve"><value>Payment Method Code</value></data>
+  <data name="CertWHT" xml:space="preserve"><value>Withholding Tax Certified</value></data>
+  <data name="MailCounty" xml:space="preserve"><value>Ship-to County</value></data>
+  <data name="MailCountr" xml:space="preserve"><value>Ship-to Country</value></data>
+  <data name="Industry" xml:space="preserve"><value>Industry</value></data>
+  <data name="BalanceSys" xml:space="preserve"><value>Balance in Account Currency</value></data>
+  <data name="ITWTCode" xml:space="preserve"><value>Income Tax WTax Code</value></data>
+  <data name="Country" xml:space="preserve"><value>Bill-to Country</value></data>
+  <data name="HsBnkSwift" xml:space="preserve"><value>House Bank BIC/SWIFT Code</value></data>
+  <data name="HierchDdct" xml:space="preserve"><value>Hierarchical Deduction</value></data>
+  <data name="ResidenNum" xml:space="preserve"><value>Residence Number</value></data>
+  <data name="WHShaamGrp" xml:space="preserve"><value>Withholding Shaam Group</value></data>
+  <data name="Password" xml:space="preserve"><value>Password</value></data>
+  <data name="MailBuildi" xml:space="preserve"><value>Ship to Building/Floor/Room</value></data>
+  <data name="AgentCode" xml:space="preserve"><value>Agent Code</value></data>
+  <data name="MailAddrTy" xml:space="preserve"><value>Ship-to Address Type</value></data>
+  <data name="MailAddres" xml:space="preserve"><value>Ship-to Street</value></data>
+  <data name="RateDifAct" xml:space="preserve"><value>Rate Differences Account</value></data>
+  <data name="CollecAuth" xml:space="preserve"><value>Collection Authorization</value></data>
+  <data name="WTTaxCat" xml:space="preserve"><value>Withholding Tax Cat.</value></data>
+  <data name="FatherCard" xml:space="preserve"><value>BP Summary</value></data>
+  <data name="FatherType" xml:space="preserve"><value>Parent Summary Type</value></data>
+  <data name="DataSource" xml:space="preserve"><value>Data Source</value></data>
+  <data name="DocEntry" xml:space="preserve"><value>Internal Number</value></data>
+  <data name="LangCode" xml:space="preserve"><value>Language Code</value></data>
+  <data name="ProjectCod" xml:space="preserve"><value>Project Code</value></data>
+  <data name="Chrctrstcs" xml:space="preserve"><value>Properties</value></data>
+  <data name="CardValid" xml:space="preserve"><value>Credit Card Validity</value></data>
+  <data name="CardFName" xml:space="preserve"><value>Foreign Name</value></data>
+  <data name="GTSBankAct" xml:space="preserve"><value>GTS Bank Account</value></data>
+  <data name="DeferrTax" xml:space="preserve"><value>Deferred Tax</value></data>
+  <data name="SefazDate" xml:space="preserve"><value>Date of Update from SEFAZ</value></data>
+  <data name="Deleted" xml:space="preserve"><value>Deleted</value></data>
+  <data name="MailZipCod" xml:space="preserve"><value>Ship-to Zip Code</value></data>
+  <data name="DatevAcct" xml:space="preserve"><value>DATEV Account</value></data>
+  <data name="AutoCalBCG" xml:space="preserve"><value>Auto Calculated Bank Charges</value></data>
+  <data name="MailCity" xml:space="preserve"><value>Ship-to City</value></data>
+  <data name="ThreshOver" xml:space="preserve"><value>Threshold Overlook</value></data>
+  <data name="IsResident" xml:space="preserve"><value>Is Resident</value></data>
+  <data name="DiscRel" xml:space="preserve"><value>Disc. Relations</value></data>
+  <data name="DatevFirst" xml:space="preserve"><value>First Data Entry</value></data>
+  <data name="TaxIdIdent" xml:space="preserve"><value>Tax ID Category</value></data>
+  <data name="DNoteBalSy" xml:space="preserve"><value>Open DN Balance in SC</value></data>
+  <data name="DNoteBalFC" xml:space="preserve"><value>Open DN Balance in BP Curr.</value></data>
+  <data name="DflIBAN" xml:space="preserve"><value>Default Bank IBAN</value></data>
+  <data name="CommGrCode" xml:space="preserve"><value>Commission Group</value></data>
+  <data name="Picture" xml:space="preserve"><value>Picture</value></data>
+  <data name="DunnLevel" xml:space="preserve"><value>Dunning Level</value></data>
+  <data name="ValidUntil" xml:space="preserve"><value>Expiration Date for -% of Deduction</value></data>
+  <data name="GTSBilAddr" xml:space="preserve"><value>GTS Billing Address</value></data>
+  <data name="DdctFileNo" xml:space="preserve"><value>Tax Deduction File Number</value></data>
+  <data name="ISRBillId" xml:space="preserve"><value>ISR Biller ID</value></data>
+  <data name="EDocExpFrm" xml:space="preserve"><value>Electronic Doc. Export Format</value></data>
+  <data name="ObjType" xml:space="preserve"><value>Object Type</value></data>
+  <data name="BlockDunn" xml:space="preserve"><value>Block Dunning</value></data>
+  <data name="SPPCounter" xml:space="preserve"><value>SPP Counter</value></data>
+  <data name="Equ" xml:space="preserve"><value>Equalization Tax</value></data>
+  <data name="Fax" xml:space="preserve"><value>Fax Number</value></data>
+  <data name="DME" xml:space="preserve"><value>DME Identification</value></data>
+  <data name="AddID" xml:space="preserve"><value>Additional ID No.</value></data>
+  <data name="Block" xml:space="preserve"><value>Bill-to Block</value></data>
+  <data name="CpnNo" xml:space="preserve"><value>Campaign No.</value></data>
+  <data name="NINum" xml:space="preserve"><value>Registration No.</value></data>
+  <data name="Notes" xml:space="preserve"><value>Remarks</value></data>
+  <data name="OKATO" xml:space="preserve"><value>OKATO</value></data>
+  <data name="OKTMO" xml:space="preserve"><value>OKTMO</value></data>
+  <data name="Pager" xml:space="preserve"><value>Pager</value></data>
+  <data name="PyBlckDesc" xml:space="preserve"><value>Payment Block Description</value></data>
+  <data name="Business" xml:space="preserve"><value>Business</value></data>
+  <data name="ShipType" xml:space="preserve"><value>Shipping Type</value></data>
+  <data name="ShipToDef" xml:space="preserve"><value>Ship-to-Default</value></data>
+  <data name="AccCritria" xml:space="preserve"><value>Accrual</value></data>
+  <data name="VatStatus" xml:space="preserve"><value>Tax Definition</value></data>
+  <data name="DdctOffice" xml:space="preserve"><value>Deduction Approval Office</value></data>
+  <data name="UnpaidBoE" xml:space="preserve"><value>Unpaid Bill of Exchange</value></data>
+  <data name="Free_Text" xml:space="preserve"><value>Free Text</value></data>
+  <data name="UserSign" xml:space="preserve"><value>User Signature</value></data>
+  <data name="InstrucKey" xml:space="preserve"><value>Instruction Key</value></data>
+  <data name="Address" xml:space="preserve"><value>Bill-to Street</value></data>
+  <data name="UseShpdGd" xml:space="preserve"><value>Use Shipped Goods Account</value></data>
+  <data name="DunTerm" xml:space="preserve"><value>Dunning Term</value></data>
+  <data name="TypeOfOp" xml:space="preserve"><value>Type of Operation</value></data>
+  <data name="FromDate" xml:space="preserve"><value>Exemption Validity Date From</value></data>
+  <data name="OrderBalFC" xml:space="preserve"><value>Open Orders Bal. in BP Curr.</value></data>
+  <data name="OrderBalSy" xml:space="preserve"><value>Open Orders Bal. in SC</value></data>
+  <data name="ChecksBal" xml:space="preserve"><value>Open Checks Balance</value></data>
+  <data name="Commission" xml:space="preserve"><value>Commission % for Customer</value></data>
+  <data name="DscntRel" xml:space="preserve"><value>Discounts Ratio</value></data>
+  <data name="Discount" xml:space="preserve"><value>Discount %</value></data>
+  <data name="Currency" xml:space="preserve"><value>BP Currency</value></data>
+  <data name="TaxRndRule" xml:space="preserve"><value>Tax Rounding Rule</value></data>
+  <data name="GTSRegNum" xml:space="preserve"><value>GTS Registration Number</value></data>
+  <data name="SysMatchNo" xml:space="preserve"><value>Last Sys. Reconciliation No.</value></data>
+  <data name="SinglePaym" xml:space="preserve"><value>Single Payment</value></data>
+  <data name="CreateDate" xml:space="preserve"><value>Creation Date</value></data>
+  <data name="DdctPrcnt" xml:space="preserve"><value>Withholding Tax Deduction %</value></data>
+  <data name="DpmIntAct" xml:space="preserve"><value>DPM Interim Account</value></data>
+  <data name="MltMthNum" xml:space="preserve"><value>Last Multi. Reconciliation No.</value></data>
+  <data name="CertBKeep" xml:space="preserve"><value>Bookkeeping Certified</value></data>
+  <data name="GlblLocNum" xml:space="preserve"><value>Global Location Number</value></data>
+  <data name="NTSWebSite" xml:space="preserve"><value>E-Tax Web Site</value></data>
+  <data name="validTo" xml:space="preserve"><value>Active To</value></data>
+  <data name="TolrncDays" xml:space="preserve"><value>Tolerance Days</value></data>
+  <data name="Protected" xml:space="preserve"><value>Protected BP</value></data>
+  <data name="VATRegNum" xml:space="preserve"><value>VAT Reg. Number</value></data>
+  <data name="ExMatchNum" xml:space="preserve"><value>Last Ext. Reconciliation No.</value></data>
+  <data name="VendTID" xml:space="preserve"><value>Vender Type ID</value></data>
+  <data name="SCNCounter" xml:space="preserve"><value>SCN Counter</value></data>
+  <data name="Indicator" xml:space="preserve"><value>Indicator</value></data>
+  <data name="validFrom" xml:space="preserve"><value>Active From</value></data>
+  <data name="HouseBank" xml:space="preserve"><value>House Bank</value></data>
+  <data name="sEmployed" xml:space="preserve"><value>Self-Employed</value></data>
+  <data name="PaymBlock" xml:space="preserve"><value>Payment Block</value></data>
+  <data name="MaxAmount" xml:space="preserve"><value>Max. Exemption Amount</value></data>
+  <data name="IndustryC" xml:space="preserve"><value>Industry</value></data>
+  <data name="CreditLine" xml:space="preserve"><value>Credit Limit</value></data>
+  <data name="CreditCard" xml:space="preserve"><value>Credit Cards</value></data>
+  <data name="ExemptNo" xml:space="preserve"><value>Exempt No.</value></data>
+  <data name="frozenTo" xml:space="preserve"><value>Inactive To</value></data>
+  <data name="ListNum" xml:space="preserve"><value>Price List No.</value></data>
+  <data name="MivzExpSts" xml:space="preserve"><value>Mivzak Export Status</value></data>
+  <data name="BillToDef" xml:space="preserve"><value>Bill-to Default</value></data>
+  <data name="DNotesBal" xml:space="preserve"><value>Open Del. Notes\GRPO Balance</value></data>
+  <data name="validFor" xml:space="preserve"><value>Active</value></data>
+  <data name="AtcEntry" xml:space="preserve"><value>Attachment Entry</value></data>
+  <data name="NoDiscount" xml:space="preserve"><value>No Discounts</value></data>
+  <data name="Building" xml:space="preserve"><value>Bill-to Building/Floor/Room</value></data>
+  <data name="DiscInRet" xml:space="preserve"><value>Allow Doc Discount in Returns</value></data>
+  <data name="FormCode" xml:space="preserve"><value>1099 Form Code</value></data>
+  <data name="HousCtlKey" xml:space="preserve"><value>House Bank Control Number</value></data>
+  <data name="BCACode" xml:space="preserve"><value>Bank Charges Allocation Codes</value></data>
+  <data name="Attachment" xml:space="preserve"><value>Attachment</value></data>
+  <data name="BankCountr" xml:space="preserve"><value>Bank Country</value></data>
+  <data name="BankCtlKey" xml:space="preserve"><value>Default Bank Internal ID</value></data>
+  <data name="HousBnkCry" xml:space="preserve"><value>House Bank Country</value></data>
+  <data name="HousBnkAct" xml:space="preserve"><value>House Bank Account</value></data>
+  <data name="HousBnkBrn" xml:space="preserve"><value>House Bank Branch</value></data>
+  <data name="OwnerIdNum" xml:space="preserve"><value>ID Number</value></data>
+  <data name="HousActKey" xml:space="preserve"><value>House Bank Account Key</value></data>
+  <data name="OprCount" xml:space="preserve"><value>Open Opportunities</value></data>
+  <data name="VatIdUnCmp" xml:space="preserve"><value>Unified Federal Tax ID</value></data>
+  <data name="DflSwift" xml:space="preserve"><value>Default Bank BIC/SWIFT Code</value></data>
+  <data name="ExportCode" xml:space="preserve"><value>Data Export Code</value></data>
+  <data name="RepName" xml:space="preserve"><value>Representative Name</value></data>
+  <data name="chainStore" xml:space="preserve"><value>Belongs to Retail Store</value></data>
+  <data name="RelCode" xml:space="preserve"><value>Relationship Code</value></data>
+  <data name="SenderID" xml:space="preserve"><value>EDI Message Sender ID</value></data>
+  <data name="AliasName" xml:space="preserve"><value>Alias Name</value></data>
+  <data name="SPGCounter" xml:space="preserve"><value>SPG Counter</value></data>
+  <data name="InsurOp347" xml:space="preserve"><value>347 Insurance Operation</value></data>
+  <data name="RcpntID" xml:space="preserve"><value>EDI Message Recipient ID</value></data>
+  <data name="UserSign2" xml:space="preserve"><value>Updating User</value></data>
+  <data name="ChannlBP" xml:space="preserve"><value>Channel BP</value></data>
+  <data name="TypWTReprt" xml:space="preserve"><value>BP Type for WTax Report</value></data>
+  <data name="IntrAcc" xml:space="preserve"><value>Interest Account</value></data>
+  <data name="ValidComm" xml:space="preserve"><value>Active Remarks</value></data>
+  <data name="MTHCounter" xml:space="preserve"><value>MTH Counter</value></data>
+  <data name="Transfered" xml:space="preserve"><value>Year Transfer</value></data>
+  <data name="Profession" xml:space="preserve"><value>Profession</value></data>
+  <data name="AddrType" xml:space="preserve"><value>Bill-to Address Type</value></data>
+  <data name="DscntObjct" xml:space="preserve"><value>Object for Discounts</value></data>
+  <data name="SelfInvoic" xml:space="preserve"><value>Self Invoice</value></data>
+  <data name="HldCode" xml:space="preserve"><value>Holidays Name</value></data>
+  <data name="GroupNum" xml:space="preserve"><value>Payment Terms Code</value></data>
+  <data name="IsDomestic" xml:space="preserve"><value>Is Domestic</value></data>
+  <data name="City" xml:space="preserve"><value>Bill-to City</value></data>
+  <data name="IBAN" xml:space="preserve"><value>IBAN</value></data>
+  <data name="DpmClear" xml:space="preserve"><value>Payment Advances</value></data>
+  <data name="Affiliate" xml:space="preserve"><value>Affiliate</value></data>
+  <data name="CrtfcateNO" xml:space="preserve"><value>Certificate No.</value></data>
+  <data name="MainUsage" xml:space="preserve"><value>Main Usage</value></data>
+  </root>

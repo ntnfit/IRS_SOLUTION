@@ -1,0 +1,517 @@
+Id;FatherId;Code;Name;LanguageKey;MenuType
+1;-1;barSub_Administration;Administration;Administration;N
+2;1;frm_ExchangeRatesAndIndexs;Exchange Rates And Indexes;ExchangeRatesAndIndexs;F
+3;1;frm_AssetMasterData;Asset Master Data;AssetMasterData;F
+4;1;barSub_Setup;Setup;Setup;N
+5;4;barSub_SetupGeneral;General;SetupGeneral;N
+6;5;frm_Users;User;Users;F
+7;5;frm_ChangePassword;Change Password;ChangePassword;F
+8;5;frm_SalesEmployeeBuyers;Sales Employees/Buyer;SalesEmployeeBuyers;F
+9;5;frm_Freight;Freight;Freight;F
+10;5;frm_UserDefinedTexts;Predefined Texts;UserDefinedTexts;F
+11;5;frm_SetupAdmin;Admin Password;SetupAdmin;F
+12;5;frm_BarcodeConfig;Barcode Config;BarcodeConfig;F
+13;5;frm_FilterSetting;Filter;FilterSetting;F
+14;5;frm_FtpServerSetting;FTP Server;FtpServerSetting;F
+15;5;frm_LicenseManager;License Manager;LicenseManager;F
+16;5;frm_MailSetting;E-Mail Setting;MailSetting;F
+17;5;frm_NotificationSetting;Notification Setting;NotificationSetting;F
+18;5;frm_AutoSelectBatchSerialConfig;Automated selection setting for Batch and Serial Number;AutoSelectBatchSerialConfig;F
+19;5;frm_ExternalRouting;URI for Outgoing Data;ExternalRouting;F
+20;5;frm_ContextActionPublishService;URI for Incoming Data;ContextActionPublishService;F
+21;5;frm_JobsManagement;Jobs Management;JobsManagement;F
+22;4;frm_GeneSetting;General Setting;GeneSetting;F
+23;4;frm_CompanyDetails;Company Details;CompanyDetails;F
+24;4;frm_Territory;Territory;Territory;F
+25;4;barSub_SetupBp;Business Partner;SetupBp;N
+26;25;frm_Countries;Countries;Countries;F
+27;25;frm_CustomerGroup;Customer Group;CustomerGroup;F
+28;25;frm_VendorGroup;Vendor Group;VendorGroup;F
+29;25;frm_BusinessPartnerProperties;Business Properties;BusinessPartnerProperties;F
+30;25;frm_BusinessPartnerPriorities;Business Priorities;BusinessPartnerPriorities;F
+31;25;frm_PaymentTerms;Payment Terms;PaymentTerms;F
+32;4;barSub_SetupBanking;Banking;SetupBanking;N
+33;4;barSub_Financial;Financial;Financial;N
+34;33;frm_Braches;Branches;Braches;F
+35;33;frm_CostCenters;Cost Centers;CostCenters;F
+36;33;frm_Currencies;Currencies;Currencies;F
+37;33;frm_Dimension;Dimensions;Dimension;F
+38;33;frm_DistributeRule;Distribute Rules;DistributeRule;F
+39;33;frm_TaxGroups;Tax Group;TaxGroups;F
+40;33;frm_Project;Project;Project;F
+41;4;barSub_Sales;Sales;Sales;N
+42;4;barSub_Purcharsing;Purchasing;Purcharsing;N
+43;42;frm_LandedCostsSetup;Landed Costs;LandedCostsSetup;F
+44;4;barSub_SetupInventory;Inventory;SetupInventory;N
+45;44;frm_ItemGroups;Item Group;ItemGroups;F
+46;44;frm_ItemProperties;Item Properties;ItemProperties;F
+47;44;frm_WareHouses;Warehouse;WareHouses;F
+48;44;frm_UnitOfMeasure;Unit Of Measure;UnitOfMeasure;F
+49;44;frm_UnitOfMeasureGroups;Unit Of Measure Group;UnitOfMeasureGroups;F
+50;44;frm_Shipping;Shipping Types;Shipping;F
+51;44;frm_LengthAndWidth;Length and Width;LengthAndWidth;F
+52;44;frm_Weight;Weight;Weight;F
+53;44;frm_CustomsGroup;Customs Groups;CustomsGroup;F
+54;44;frm_Manufacturer;Manufacturers;Manufacturer;F
+55;44;frm_Locations;Locations;Locations;F
+56;44;frm_CycleCountDetermination;Cycle Count Determination;CycleCountDetermination;F
+57;44;frm_InventoryCycles;Inventory Cycles;InventoryCycles;F
+58;44;frm_Vehicle;Vehicle;Vehicle;F
+59;44;frm_VehicleType;Vehicle Type;VehicleType;F
+60;44;barSub_BinLocationSetup;Bin Locations;BinLocationSetup;N
+61;60;frm_FieldActivation;Bin Location Field Activation;FieldActivation;F
+62;60;frm_AttrCodeSetup;Bin Location Attribute Codes;AttrCodeSetup;F
+63;60;frm_WHSubSetup;Warehouse Sublevel Codes;WHSubSetup;F
+64;60;frm_WHSubManager;Warehouse Sublevel Code Management;WHSubManager;F
+65;4;barSub_SetupHumanResouces;Human Resources;SetupHumanResouces;N
+66;65;barSubItem2;Job Vacancy;barSubItem2;N
+67;66;frm_QualificationsGroup;Qualifications Group;QualificationsGroup;F
+68;66;frm_Qualifications;Qualifications;Qualifications;F
+69;66;frm_JobType;Job Types;JobType;F
+70;66;frm_AdvertisementSource;Advertisement Source;AdvertisementSource;F
+71;66;frm_JVApplicants;Applicants;JVApplicants;F
+72;66;frm_JVInterviewStatus;Interview Status;JVInterviewStatus;F
+73;66;frm_JVInterviewTypes;Interview Types;JVInterviewTypes;F
+74;66;frm_JVQuestion;Question library;JVQuestion;F
+75;66;frm_JVBenefits;Benefit;JVBenefits;F
+76;65;barSubItem4;Time Sheeting;barSubItem4;N
+77;76;frm_WorkType;Work Type;WorkType;F
+78;76;frm_WorkCode;Work Code;WorkCode;F
+79;76;frm_WorkPeriod;Work Period;WorkPeriod;F
+80;76;frm_OvertimeType;Overtime Type;OvertimeType;F
+81;76;frm_HolidaySetup;Holidays;HolidaySetup;F
+82;76;frm_InOutMethod;In/Out Pickup Method;InOutMethod;F
+83;76;frm_WorkShift;Work Shift;WorkShift;F
+84;76;frm_WorkScheduleSetup;Work Schedule Setup;WorkScheduleSetup;F
+85;76;frm_WorkScheduleRegister;Schedule Register;WorkScheduleRegister;F
+86;76;frm_AboutRangeTime;About Range Time;AboutRangeTime;F
+87;65;barSubItem6;Salary;barSubItem6;N
+88;87;frm_AllowanceType;Allowance Type;AllowanceType;F
+89;87;frm_DeductionType;Deduction Type;DeductionType;F
+90;87;frm_PersonalIncomeTax;Personal Income Tax Level;PersonalIncomeTax;F
+91;87;frm_SalaryParameters;Salary Paramters;SalaryParameters;F
+92;87;frm_LeaveParameter;Leave Parameter;LeaveParameter;F
+93;87;frm_PenalType;Penalty/Bonus Type;PenalType;F
+94;65;frm_BiometricConfiguration;Biometric Devices Config;BiometricConfiguration;F
+95;4;barSub_SetupReport;Report;SetupReport;N
+96;95;frm_PrintLayout;Layout;PrintLayout;F
+97;95;frm_ReportManager;Report Manager;ReportManager;F
+98;4;barSub_Opportunities;Opportunities;Opportunities;N
+99;98;frm_SalesOpportunityStage;Opportunity Stages;SalesOpportunityStage;F
+100;98;frm_SalesOpportunityPartner;Partners;SalesOpportunityPartner;F
+101;98;frm_SalesOpportunityCompetitor;Competitors;SalesOpportunityCompetitor;F
+102;98;frm_SalesOpportunityRelationship;Relationships;SalesOpportunityRelationship;F
+103;98;frm_SalesOpportunityReason;Reasons;SalesOpportunityReason;F
+104;4;barSubItem1;Service;barSubItem1;N
+105;104;frm_ContractTemplate;Contract Templates;ContractTemplate;F
+106;4;barSub_ProjectManagement;Project Management;ProjectManagement;N
+107;106;frm_WBSTemplate;WBSTemplate;WBSTemplate;F
+108;4;frm_AdditionalGeneralSettings;Additional General Settings;AdditionalGeneralSettings;F
+109;4;frm_ThirdPartyToken;Third Party Token;ThirdPartyToken;F
+110;1;barSub_Authorization;Authorization;Authorization;N
+111;110;frm_Authorization;Authorization;Authorization;F
+112;110;frm_DataOwnerShipAuthorization;Data Ownership Authorization;DataOwnerShipAuthorization;F
+113;1;barSub_SystemInitialization;System Initialization;SystemInitialization;N
+114;113;frm_DocumentNumbering;Document Numbering;DocumentNumbering;F
+115;113;frm_DocumentSettings;Document Settings;DocumentSettings;F
+116;113;frm_MenuStructure;Menu Structure;MenuStructure;F
+117;1;barSub_ApprovalProcess;Approval Process;ApprovalProcess;N
+118;117;frm_ApprovalStages;Approval Stages;ApprovalStages;F
+119;117;frm_ApprovalTemplates;Approval Templates;ApprovalTemplates;F
+120;117;frm_WorkingProcess;Working Process;WorkingProcess;F
+121;1;frm_EmpToken;Employee Token;EmpToken;F
+122;1;barSub_PlugIn;PlugIn;FPlugIn;N
+123;122;frm_PluginManager;Plugin Manager;PluginManager;F
+124;1;frm_AccessLog;Access Log;AccessLog;F
+125;-1;barSub_Dashboard;Dashboard;Dashboard;N
+126;125;frm_DashboardManager;Dashboard Management;DashboardManager;F
+127;125;frm_DashboardDesigner;Dashboard Designer;DashboardDesigner;F
+128;125;frm_WidgetManagement;Wiget Management;WidgetManagement;F
+129;-1;barSub_SalesAR;Sales;SalesAR;N
+130;129;frm_SalesBlanketAgreement;Sales Blanket Agreement;SalesBlanketAgreement;F
+131;129;frm_SalesQuotationForBatch;Sales Quotation;SalesQuotation;F
+132;129;frm_SalesOrder;Sales Order;SalesOrder;F
+133;129;frm_Delivery;Delivery;Delivery;F
+134;129;frm_ReturnRequest;Return Request;ReturnRequest;F
+135;129;frm_Return;Return;Return;F
+136;129;frm_DownPaymentRequest;A/R Down Payment Request;DownPaymentRequest;F
+137;129;frm_DownPaymentInvoice;A/R Down Payment Invoice;DownPaymentInvoice;F
+138;129;frm_AR_ReserveInvoices;A/R Reserve Invoice;AR_ReserveInvoices;F
+139;129;frm_ARInvoices;A/R Invoice;ARInvoices;F
+140;129;frm_ARCreditMemos;A/R Credit Memo;ARCreditMemos;F
+141;129;frm_AvailableToPromise;Available To Promise;AvailableToPromise;F
+142;129;frm_GenPurchaseFromAtp;Generate Purchase From Atp;GenPurchaseFromAtp;F
+143;129;frm_ScheduleForAtp;Schedule For Atp;ScheduleForAtp;F
+144;129;frm_GenProductionFormAtp;Generate Production Order From Atp;GenProductionFormAtp;F
+145;129;barSub_SalesReports;Sales Reports;SalesReports;N
+146;145;frm_SalesDraftsReport;Document Drafts Report;SalesDraftsReport;F
+147;-1;barSub_PurchaseAP;Purchasing;PurchaseAP;N
+148;147;frm_PurchaseBlanketAgreement;Purchase Blanket Agreement;PurchaseBlanketAgreement;F
+149;147;frm_PurchaseRequest;Purchase Request;PurchaseRequest;F
+150;147;frm_PurchaseQuotation;Purchase Quotation;PurchaseQuotation;F
+151;147;frm_PurchaseOder;Purchase Order;PurchaseOder;F
+152;147;frm_GoodReceiptPO;Goods Receipt PO;GoodReceiptPO;F
+153;147;frm_GoodsReceiptPOByBarcode;Goods Receipt PO by Barcode;GoodsReceiptPOByBarcode;F
+154;147;frm_GoodsReturnRequest;Goods Return Request;GoodsReturnRequest;F
+155;147;frm_GoodsReturn;Goods Return;GoodsReturn;F
+156;147;frm_PurchaseDownPaymentRequest;A/P Down Payment Request;PurchaseDownPaymentRequest;F
+157;147;frm_PurchaseDownPaymentInvoice;A/P Down Payment Invoice;PurchaseDownPaymentInvoice;F
+158;147;frm_APInvoices;A/P Invoice;APInvoices;F
+159;147;frm_APCreditMemos;A/P Credit Memo;APCreditMemos;F
+160;147;frm_APReserveInvoices;A/P Reserve Invoice;APReserveInvoices;F
+161;147;frm_LandedCosts;Landed Cost;LandedCosts;F
+162;147;barSub_PurchasingReports;Purchasing Reports;PurchasingReports;N
+163;162;frm_PurchaseDraftReport;Document Drafts Report;PurchaseDraftReport;F
+164;-1;barSub_BP;Business Partners;BP;N
+165;164;frm_BusinessMasterData;Business Partner Master Data;BusinessMasterData;F
+166;164;frm_ActivitiesForOpportunity;Activity;ActivitiesForOpportunity;F
+167;164;frm_FacebookCRM;Facebook CRM;FacebookCRM;F
+168;164;barSub_BPReports;Business Partner Reports;BPReports;N
+169;164;frm_QuickCreationBPMasterData;Quick Creation Business Partner Master Data;QuickCreationBPMasterData;F
+170;164;frm_FacebookManager;Facebook Chanel Management;FacebookManager;F
+171;-1;barSub_Inventory;Inventory;Inventory;N
+172;171;frm_ItemMasterData;Items Master Data;ItemMasterData;F
+173;171;barSub_InventoryTransaction;Inventory Transaction;InventoryTransaction;N
+174;173;frm_GoodsReceipt;Goods Receipt;GoodsReceipt;F
+175;173;frm_GoodsIssue;Goods Issue;GoodsIssue;F
+176;173;frm_InventoryTranferRequest;Inventory Transfer Request;InventoryTranferRequest;F
+177;173;frm_InventoryTranfer;Inventory Transfer;InventoryTranfer;F
+178;173;frm_InventoryTransferByBarcode;Inventory Transfer by Barcode;InventoryTransferByBarcode;F
+179;173;frm_InventoryCountingBin;Inventory Counting Bin;InventoryCountingBin;F
+180;173;frm_InventoryRevaluation;Inventory Revaluation;InventoryRevaluation;F
+181;173;frm_InventoryCountingRequest;Inventory Counting Request;InventoryCountingRequest;F
+182;173;frm_InventoryCounting;Inventory Counting;InventoryCounting;F
+183;173;frm_BarcodeInventoryCounting;Barcode Inventory Counting;BarcodeInventoryCounting;F
+184;171;barSub_ItemManagement;Item Management;ItemManagement;N
+185;184;frm_BatchDetail;Batch Details;BatchDetail;F
+186;184;frm_SerialNumberDetail;Serial Number Details;SerialNumberDetail;F
+187;184;frm_BatchDetailManagement;Batch Details Management;BatchDetailManagement;F
+188;184;frm_SerialNumberDetailManagement;Serial Details Management;SerialNumberDetailManagement;F
+189;184;frm_AlternativeItems;Alternative Item;AlternativeItems;F
+190;171;frm_BusinessPartnerCatalogNumbers;Business Partner Catalog Numbers;BusinessPartnerCatalogNumbers;F
+191;171;barSub_PriceLists;Price Lists;PriceLists;N
+192;191;frm_STDPriceLists;Price List;STDPriceLists;F
+193;191;frm_PeriodAndVolumeDiscounts;Period and Volume Discounts;PeriodAndVolumeDiscounts;F
+194;191;frm_DiscountGroup;Discount Groups;DiscountGroup;F
+195;191;barSubItem13;Special Prices;barSubItem13;N
+196;195;frm_SpecialforBP;Special Prices for Business Partners;SpecialforBP;F
+197;171;barSub_PickAndPack;Pick anh Pack;PickAndPack;N
+198;197;frm_PickingRequest;Picking Request;PickingRequest;F
+199;197;frm_PickingDocument;Pick List;PickingDocument;F
+200;197;frm_Packing;Packing;Packing;F
+201;197;frm_ShipDoc;Shipping;ShipDoc;F
+202;197;frm_PackingByBarcode;Packing by Barcode;PackingByBarcode;F
+203;171;barSub_InventoryReport;Inventory Reports;InventoryReport;N
+204;203;frm_InventoryDraftsReport;Document Drafts Reports;InventoryDraftsReport;F
+205;203;frm_InventoryPostingList;Inventory Posting List;InventoryPostingList;F
+206;203;frm_StockMovementSummary;Stock Movement Summary;StockMovementSummary;F
+207;203;frm_BatchTransaction;Batch Transaction Report;BatchTransaction;F
+208;203;frm_SerialNumberTransaction;Serial Transaction Report;SerialNumberTransaction;F
+209;171;barSub_BinLocation;Bin Locations;BinLocation;N
+210;209;frm_BinLocMasterData;Bin Location Master Data;BinLocMasterData;F
+211;-1;barSub_Production;Production;Production;N
+212;211;frm_BillOfMaterials;Bill Of Materials;BillOfMaterials;F
+213;211;frm_AdvanceBillOfMaterials;Advance Bill Of Materials;AdvanceBillOfMaterials;F
+214;211;frm_ProductionOrder;Production Order;ProductionOrder;F
+215;211;frm_ProductionOrderImportTool;Production Order Import Tool;ProductionOrderImportTool;F
+216;211;frm_ReceiptFromProduction;Receipt From Production;ReceiptFromProduction;F
+217;211;frm_ReceiptFromPOByBarcode;Receipt From Production by Barcode;ReceiptFromPOByBarcode;F
+218;211;frm_IssueForProduction;Issue For Production;IssueForProduction;F
+219;211;frm_MaterialShortageReport;Material Shortage Report;MaterialShortageReport;F
+220;211;frm_GenPurchaseFromMaterialShortage;Generator Purchase From Material Shortage;GenPurchaseFromMaterialShortage;F
+221;211;frm_OutSourcing;Outsourcing;OutSourcing;F
+222;211;barSub_ProductionReports;Production Reports;ProductionReports;N
+223;211;frm_IssueAndReceiptLackQtyForProduction;Issue And Receipt lack Quantity For Production;IssueAndReceiptLackQtyForProduction;F
+224;-1;barSub_MTO;MTO Manufacturing;MTO;N
+225;-1;barSub_MRP;MRP;MRP;N
+226;225;FrmDefinedShift;Defined Shift;menu_FrmDefinedShift;F
+227;225;FrmWorkScheduling;Work Scheduling;menu_FrmWorkScheduling;F
+228;225;frm_Lines;Lines;Lines;F
+229;225;frm_ItemQuotaArrangement;Item Quota for Purchase;ItemQuotaArrangement;F
+230;225;frm_AdvanceForecast;Forecast;AdvanceForecast;F
+231;225;frm_MRP;MRP;MRP;F
+232;225;frm_Schedule;Schedule;Schedule;F
+233;225;frm_GenPOFromSchedule;Generate Production Order;GenPOFromSchedule;F
+234;225;frm_PrintBarCode;Print BarCode;PrintBarCode;F
+235;225;frm_AutoReportComplete;Report Complete by Barcode;AutoReportComplete;F
+236;225;frm_GenPurchaseFromSchedule;Generate Purchase Order;GenPurchaseFromSchedule;F
+237;225;frm_GenTranferRequestFromMrp;Generate Inventory Transfer;GenTranferRequestFromMrp;F
+238;225;barSub_MRPReports;Planning && MRP Reports;MRPReports;N
+239;-1;barSub_RoutingResources;Routing && Resources;RoutingResources;N
+240;239;barSub_ResourcesReports;Resources Reports;ResourcesReports;N
+241;239;frm_ResourceWorkCenter;Resource Work Center;ResourceWorkCenter;F
+242;239;frm_Operations;Operations;Operations;F
+243;239;frm_AdvanceRouting;Advance Routing;AdvanceRouting;F
+244;239;frm_ResourceWorkScheduling;Resource Work Scheduling;ResourceWorkScheduling;F
+245;-1;barSub_PackingManagement;Packing Management;PackingManagement;N
+246;245;frm_CreateTypeCase;Create Type Case;CreateTypeCase;F
+247;245;frm_PackingOrder;Packing Order;PackingOrder;F
+248;245;frm_PrintBillWrap;Wrap Case;PrintBillWrap;F
+249;245;frm_Traceability;Traceability;Traceability;F
+250;-1;barSub_Service;CRM;Service;N
+251;250;frm_SalesOpportunity;Opportunity;SalesOpportunity;F
+252;250;frm_Solution;Solutions;Solution;F
+253;250;frm_ServiceCalls;Service Call;ServiceCalls;F
+254;250;frm_Contract;Service Contract;Contract;F
+255;250;frm_ServiceCallSetting;Service Call Setting;ServiceCallSetting;F
+256;250;frm_TaskManagement;Task Management;TaskManagement;F
+257;250;frm_NoteManagement;Note Management;NoteManagement;F
+258;250;frm_EventManagement;Event Management;EventManagement;F
+259;250;barSub_OpportunitiesReport;CRM Reports;OpportunitiesReport;N
+260;250;barSub_ServicesReports;Services Reports;ServicesReports;N
+261;250;frm_WarrantyCard;Warranty Card;WarrantyCard;F
+262;250;frm_ServiceLevelAgreement;Service Level Agreement;ServiceLevelAgreement;F
+263;250;frm_ServiceContractTemplate;Service Contract Template;ServiceContractTemplate;F
+264;250;frm_MarketingCampaign;Marketing Campaign;MarketingCampaign;F
+265;-1;barSub_BankingPayment;Banking;BankingPayment;N
+266;265;frm_CashItemMasterData;Cash Item Master Data;CashItemMasterData;F
+267;265;frm_CouponMasterData;Coupon Master Data;CouponMasterData;F
+268;265;frm_VoucherMasterData;Voucher Master Data;VoucherMasterData;F
+269;265;barSub_BankingReports;Banking Reports;BankingReports;N
+270;265;frm_AdvanceInPayment;Advance Incoming Payment;AdvanceInPayment;F
+271;265;frm_AdvanceOutPayment;Advance Outgoing Payment;AdvanceOutPayment;F
+272;265;frm_IncomingPaymentWizard;Incoming Payment Wizard;IncomingPaymentWizard;F
+273;265;frm_AdvancePaymentWizard;Advance Payment Wizard;AdvancePaymentWizard;F
+274;-1;barSub_Retail;Retail;Retail;N
+275;274;frm_PosProcessBar;Point Of Sales;PosProcessBar;F
+276;274;frm_LayoutSetup;POS Layout Setup;LayoutSetup;F
+277;274;frm_CmdConfig;ButtonCommands Config;CmdConfig;F
+278;274;frm_RetailStore;Retail Stores;RetailStore;F
+279;274;frm_PosMaster;POS Master Data;PosMaster;F
+280;274;frm_PosAssignment;POS Assignment;PosAssignment;F
+281;-1;barSub_HRM;Human Resources;HRM;N
+282;281;frm_HumanResources;Employee Master Data;HumanResources;F
+283;281;frm_JobVacancy;Job Vacancy;JobVacancy;F
+284;281;frm_SalaryInfo;Employee Salary Information;SalaryInfo;F
+285;281;frm_TimeSheeting;Time Sheeting;TimeSheeting;F
+286;281;frm_TimeSheetingHour;Time Sheeting OT;TimeSheetingHour;F
+287;281;frm_SalaryCalculation;Salary Calculation;SalaryCalculation;F
+288;281;frm_EmpPenalization;Employee Penalty/Bonus;EmpPenalization;F
+289;281;frm_LeaveInformation;Employee Leave Information;LeaveInformation;F
+290;281;barSub_HRMReports;Human Resources Reports;HRMReports;N
+291;281;frm_LeaveCalculation;Leave Calculation;LeaveCalculation;F
+292;281;barSubItem9;Employee Appearance Tracking;barSubItem9;N
+293;292;frm_BiometricData;BioMetric Data;BiometricData;F
+294;292;frm_TimeSheetInOut;TimeSheet In/Out;TimeSheetInOut;F
+295;292;frm_BiometricEmpMapping;Biometric Mapping;BiometricEmpMapping;F
+296;-1;barSub_PM;Project Management;PM;N
+297;296;frm_ProjectManager;Project Manager;ProjectManager;F
+298;296;frm_TrackingIssue;Tracking Issue;TrackingIssue;F
+299;296;barSub_ProjectReports;Project Management Reports;ProjectReports;N
+300;299;frm_ProjectReportCompletion;Project Report Completion;ProjectReportCompletion;F
+301;299;frm_ProjectConfirm;Project Confirm;ProjectConfirm;F
+302;-1;barSub_DMS;DMS;DMS;N
+303;302;barSubItem10;Cài đặt;barSubItem10;N
+304;303;frm_SettingReport;Cài đặt báo cáo;SettingReport;F
+305;303;frm_SettingApprovalDetail;Cài đặt chi tiết phê duyệt;SettingApprovalDetail;F
+306;303;frm_DMSSettingUDF;Cài đặt UDF;DMSSettingUDF;F
+307;303;frm_DMSAuth;Phân quyền;DMSAuth;F
+308;303;frm_ImageAlbum;Album ảnh;ImageAlbum;F
+309;303;frm_QuestionMasterData;Bộ câu hỏi;QuestionMasterData;F
+310;303;frm_Marker;Marker;Marker;F
+311;303;frm_AlertTemplate;Mẫu thông báo;AlertTemplate;F
+312;303;frm_NotificationEventManager;Sự kiện thông báo;NotificationEventManager;F
+313;302;barSub_Danhmuc;Danh mục;Danhmuc;N
+314;313;frm_Geography;Vị trí địa lý;Geography;F
+315;313;frm_Channel;Kênh bán hàng;Channel;F
+316;313;frm_UploadItemImage;Tải ảnh sản phẩm;UploadItemImage;F
+317;313;frm_ImageViewer;Xem ảnh báo cáo;ImageViewer;F
+318;313;frm_UserOnlineDashboard;Trạng thái trực tuyến;UserOnlineDashboard;F
+319;313;frm_ItemImageViewer;Xem danh sách sản phẩm;ItemImageViewer;F
+320;313;frm_AdminUploadAttachment;Tải lên tệp đính kèm;AdminUploadAttachment;F
+321;302;frm_SalesRoute;Tuyến bán hàng;SalesRoute;F
+322;302;barSubItem15;Promotions;barSubItem15;N
+323;322;frm_PromotionSetup;Promotion Type;PromotionSetup;F
+324;322;frm_PromotionCondition;Promotion Conditions;PromotionCondition;F
+325;322;frm_PromotionBenefit;Promotion Benefits;PromotionBenefit;F
+326;322;frm_PromotionProgram;Promotion Programs;PromotionProgram;F
+327;302;barSubItem16;Ghé thăm;barSubItem16;N
+328;327;frm_OutletVisitingFrequency;Lịch ghé thăm cửa hàng;OutletVisitingFrequency;F
+329;302;barSubItem17;Báo cáo;barSubItem17;N
+330;329;frm_SalesCoverageGoogleMap;Bản đồ phủ thị trường;SalesCoverageGoogleMap;F
+331;302;frm_DMSDelivery;Quản lý giao hàng;DMSDelivery;F
+332;-1;barSub_KPI;KPI;KPI;N
+333;332;frm_KPIsMasterData;Khai báo KPI;KPIsMasterData;F
+334;332;frm_SetIndicatorKPIs;Bộ chỉ tiêu KPIs;SetIndicatorKPIs;F
+335;332;frm_KPIsSetting;Cài đặt điểm chuẩn KPI;KPIsSetting;F
+336;332;frm_ListPointKPIs;Chấm điểm KPIs;ListPointKPIs;F
+337;332;frm_KPIPlan;KPI Plans;KPIPlan;F
+338;332;frm_KPIScope;KPI Scopes;KPIScope;F
+339;332;frm_KPIIndicator;KPI Indicators;KPIIndicator;F
+340;332;frm_KPIGroup;KPI Groups;KPIGroup;F
+341;332;frm_KPISetup;KPI Setups;KPISetup;F
+342;332;frm_KPIScore;KPI Scores (Manual);KPIScore;F
+343;-1;barSub_Integrated;Integrated;Integrated;N
+344;-1;barSub_Queries;Queries;Queries;N
+345;344;frm_ManagerQuery;Query Manager;ManagerQuery;L
+346;344;frm_QueryGenerator;Query Generator;QueryGenerator;L
+347;344;frm_QueryPreview;Query Preview;QueryPreview;L
+348;344;barSub_QueriesSystem;System Queries;QueriesSystem;N
+349;344;barSub_QueriesUser;User Queries;QueriesUser;N
+350;-1;barSub_CustomizationTools;Customization Tools;CustomizationTools;N
+351;350;frm_UserDefineFieldsManagement;User - Defined Fields Management;UserDefineFieldsManagement;L
+352;350;frm_UDTManager;User - Defined Tables Management;UDTManager;L
+353;350;frm_ORW;Objects Registration Wizard;ORW;L
+354;350;frm_UserDefinedProcedure;DIY Script;UserDefinedProcedure;L
+355;350;frm_UDR;Reports Registration Wizard;UDR;L
+356;350;frm_TemplateWizard;Design Form Wizard;TemplateWizard;L
+357;-1;barSub_ImportData;Import Data;ImportData;N
+358;357;frm_ImportDataWizard;Import Data Wizard;ImportDataWizard;L
+359;357;frm_ImportFiles;Import Files;ImportFiles;L
+360;-1;frm_ChangeLogList;Change Log;ChangeLogList;L
+361;-1;barSub_UDO;User Defined Object;UDO;N
+362;361;UDO_PAYTERM;Tiến độ thanh toán;;O
+363;361;UDO_Dependent_Ins;Bảo hiểm cho người thân;;O
+364;361;UDO_TRANS_AC;Nhóm kết chuyển;;O
+365;361;UDO_APZ_OIPF;Khai báo tờ khai hải quan;;O
+366;361;UDO_NghiPhep;Quản lý nghỉ phép;;O
+367;361;UDO_TransType;Transaction Type;;O
+368;361;UDO_FunctionLocked;Function Locked;;O
+369;361;UDO_MaintenManageme;MA02. Maintenance - High Risk Equipment Plan;;O
+370;361;UDO_Calibration;MA03. Calibration;;O
+371;361;UDO_BOMaintenance;MA01.EquipmentBOM;;O
+372;361;UDO_ProductionJounal;Production Journal;;O
+373;361;UDO_QC_WEIGHING;QAO08. Weighing;;O
+374;361;UDO_QC_INSPECTIONBY;QAO09. Inspection by;;O
+375;361;UDO_QC_PLACE;QAO10. Place of inspection;;O
+376;361;UDO_TempCosting;Temporary Costing;;O
+377;361;UDO_INVENTORYCOUNTING;INVILD - ENTORYCOUNTING;;O
+378;361;UDO_QC_CHAR_TYPE;QAO11. Characteristic type;;O
+379;361;UDO_QC_METHOD;QAO01. Methods;;O
+380;361;UDO_QC_INS_STAGE;QAO02. Inspection stage;;O
+381;361;UDO_QC_INS_POINT;QAO12. Inspection point;;O
+382;361;UDO_QC_FREQUENCY;QAO07. Frequency;;O
+383;361;UDO_QC_CHAR_GRP;QAO03. Characteristic classification;;O
+384;361;UDO_QAQCCharacteristics;QAO04. Characteristics;;O
+385;361;UDO_QAQCTemplate;QAO05. Plan;;O
+386;361;UDO_QAQCResult;QAO06. Result;;O
+387;361;UDO_CountingLocked;Counting Locked;;O
+388;361;UDO_TEMPLATE_MA_GEN;MA07.Template_auto_gen;;O
+389;361;UDO_UOM_List;Danh sách UOM;;O
+390;361;UDO_UCD_PO;Updating Clearance Date;;O
+391;361;UDO_ProductType;Product Type;;O
+392;361;UDO_OFTPRICESTFORM;Offtake Price Setting;;O
+393;361;UDO_FC_INCOTERM;Delivery Term;;O
+394;-1;barSub_UserDefineWindow;User-Defined Windows;UserDefineWindow;N
+395;394;UDT_CLASSIFICATION;CLASSIFICATION - Classification;;T
+396;394;UDT_DEDUCT_AREA;DEDUCT_AREA - Deduction Area;;T
+397;394;UDT_DEPARTMENT_ADD;DEPARTMENT_ADD - DEPARTMENT_ADD;;T
+398;394;UDT_DINHKHOANLUONG;DINHKHOANLUONG - Định khoản lương;;T
+399;394;UDT_EINVOICE;EINVOICE - Thông số hóa đơn điện tử;;T
+400;394;UDT_FORMULAR;FORMULAR - FORMULAR;;T
+401;394;UDT_MAINTENANCE_AC_TYPE;MAINTENANCE_AC_TYPE - MAW01. Activity type;;T
+402;394;UDT_OFFTAKE_GRN;OFFTAKE_GRN - Danh sách group name;;T
+403;394;UDT_OTHERSETINGS;OTHERSETINGS - Other Setings (Thiết lập khác);;T
+404;394;UDT_PRDCOST_TYPE;PRDCOST_TYPE - Product Cost Type;;T
+405;394;UDT_QC_INS_TYPE;QC_INS_TYPE - QAW01. Inspection type;;T
+406;394;UDT_QC_RESULT_LOG;QC_RESULT_LOG - QC_RESULT_LOG;;T
+407;394;UDT_QC_UDCODE;QC_UDCODE - QAW02. UD Code;;T
+408;394;UDT_RA_TAB;RA_TAB - REPORT TAB;;T
+409;394;UDT_SALARYIRSTOSAP;SALARYIRSTOSAP - Salary IRS To Sap;;T
+410;394;UDT_SQLSER;SQLSER - Danh mục dữ liệu;;T
+411;394;UDT_TASKLISTTEMPLATE;TASKLISTTEMPLATE - MAW02. TaskList TemPlate;;T
+412;394;UDT_TBL_OUTS_DOCNUM;TBL_OUTS_DOCNUM - Outsourcing;;T
+413;394;UDT_TYGIA_HRM;TYGIA_HRM - Tỷ giá khai báo HRM;;T
+414;394;UDT_UTILSQL;UTILSQL - Apzon Util Sql;;T
+415;-1;barSub_UserReport;Report;UserReport;N
+416;415;barSub_CrystalReport;Crystal Report;CrystalReport;N
+417;416;frm_RCRI0054;iLD.Inventory Counting;;R
+418;290;frm_RCRI0052;ILD.BangChamCongMay;;R
+419;222;frm_RCRI0055;iLD.Label.TonKhoHienTai;;R
+420;415;barSub_FormReport;Form Report;FormReport;N
+473;-1;barSub_System;System;System;N
+474;473;barSub_PreviewLayout;Preview Layouts;System;L
+475;350;barSub_ContextAction;Context Action;ContextAction;L
+476;113;barSub_NumberingSeries;Numbering Series;?;N
+477;476;barSub_SeriesGroup1;Series - Group No. 1;?;L
+478;476;barSub_SeriesGroup2;Series - Group No. 2;?;L
+479;476;barSub_SeriesGroup3;Series - Group No. 3;?;L
+480;476;barSub_SeriesGroup4;Series - Group No. 4;?;L
+481;476;barSub_SeriesGroup5;Series - Group No. 5;?;L
+482;476;barSub_SeriesGroup6;Series - Group No. 6;?;L
+483;476;barSub_SeriesGroup7;Series - Group No. 7;?;L
+484;476;barSub_SeriesGroup8;Series - Group No. 8;?;L
+485;476;barSub_SeriesGroup9;Series - Group No. 9;?;L
+486;476;barSub_SeriesGroup10;Series - Group No. 10;?;L
+487;344;barSub_QueryAuthGroup;Query Authorization Groups;?;N
+488;487;barSub_QueryAuthGrp-15;ILD;?;L
+489;487;barSub_QueryAuthGrp-14;Saved Queries - Group No.2;?;L
+490;487;barSub_QueryAuthGrp-13;Saved Queries - Group No.3;?;L
+491;487;barSub_QueryAuthGrp-12;Saved Queries - Group No.4;?;L
+492;487;barSub_QueryAuthGrp-11;Saved Queries - Group No.5;?;L
+493;487;barSub_QueryAuthGrp-10;Saved Queries - Group No.6;?;L
+494;487;barSub_QueryAuthGrp-9;Saved Queries - Group No.7;?;L
+495;487;barSub_QueryAuthGrp-8;Saved Queries - Group No.8;?;L
+496;487;barSub_QueryAuthGrp-7;Saved Queries - Group No.9;?;L
+497;487;barSub_QueryAuthGrp-6;Saved Queries - Group No.10;?;L
+498;487;barSub_QueryAuthGrp-5;Saved Queries - Group No.11;?;L
+499;487;barSub_QueryAuthGrp-4;Saved Queries - Group No.12;?;L
+500;487;barSub_QueryAuthGrp-3;Saved Queries - Group No.13;?;L
+501;487;barSub_QueryAuthGrp-2;Saved Queries - Group No.14;?;L
+502;487;barSub_QueryAuthGrp-1;Saved Queries - Group No.15;?;L
+503;487;barSub_QueryAuthGrp1;Purchase;?;L
+504;487;barSub_QueryAuthGrp2;Saved Queries - Group No.16;?;L
+505;487;barSub_QueryAuthGrp3;Master Data;?;L
+506;487;barSub_QueryAuthGrp4;Costing;?;L
+507;487;barSub_QueryAuthGrp5;HRM;?;L
+508;1;barSub_CancelDocGenCancelation;Cancel Marketing Documents by Generating Cancelation Documents;?;L
+509;1;barSub_CancelOtherDoc;Cancel Other Documents;?;L
+510;1;barSub_CloseDocument;Close Document;?;L
+511;1;frm_FormSetting;Form Setting;FormSetting;L
+512;1;frm_ReportFormSettings;Report Form Setting;Report FormSetting;L
+459;420;frm_QAResult_Char;QAR06. Testing Result;;C
+460;420;frm_Traceability_Solution;QAR05. Traceability - Finish Goods;;C
+461;420;frm_QA.08_TheoDoiKQQAQC;Theo dõi kết quả QAQC;;C
+462;420;frm_Traceability_Xuoi;QAR04. Traceability - Materials;;C
+463;420;frm_APZUDR_DSDenHanHieuChuan;MAR07. Danh sách đến hạn hiệu chuẩn;;C
+464;420;frm_QA13_QAQC FGoods;QAR03. QAQC Finish Goods;;C
+465;420;frm_QA12_QAQC Materials;QAR02. QAQC Materials;;C
+466;420;frm_QATongHop;QAR01. Stock QAQC Result (Sum);;C
+467;420;frm_UDR_MT_PlanDetail;MAR04. Maintenance - High Risk Equipment (Detail);;C
+468;420;frm_BCTaiSan6Level;MAR02. 6 Levels of Equipment;;C
+469;420;frm_UDR_DSDenHanBaoTri;MAR03. Danh sách đến hạn bảo trì - bảo dưỡng;;C
+470;420;frm_UDR_MaintenancePlan;MAR05. Maintenance - High Risk Equipment (Sum);;C
+471;420;frm_QAChiTiet;QAR00. Stock QAQC Result (Detail);;C
+472;420;frm_UDR_MT.KiemDinh;MAR06. Calibration;;C
+448;281;frm_SalaryPosted;Salary Posted;;C
+449;281;frm_SalaryToJEVoucher;Salary to JE Voucher;;C
+450;290;frm_KhenThuongKyLuat;Danh sách khen thưởng/ kỷ luật;;C
+451;290;frm_NguonTuyenDung;Báo cáo nguồn tuyển dụng;;C
+452;290;frm_HealthStatus;Theo dõi sức khỏe nhân viên;;C
+453;290;frm_CostCenter;Cost Center;;C
+454;290;frm_HopDong;Danh sách hợp đồng;;C
+455;290;frm_ILD_BaoCaoPhepNam;ILD_BaoCaoPhepNam;;C
+456;290;frm_DSUngVien;Danh sách ứng viên;;C
+425;203;frm_USP_RPT_INVNT_04;WH04. Tuổi hàng tồn kho;;C
+426;203;frm_USP_RPT_INVNT_05;WH05. Tổng hợp theo nghiệp vụ;;C
+427;203;frm_USP_RPT_INVNT_01;WH01. Tổng hợp tồn kho;;C
+428;203;frm_USP_RPT_INVNT_06;WH06. Điều chuyển kho nội bộ;;C
+429;203;frm_USP_RPT_INVNT_02;WH02. Tổng hợp nhập xuất tồn;;C
+430;203;frm_WH12.InventoryCounting;WH12. Inventory Counting;;C
+431;203;frm_USP_RPT_INVNT_03;WH03. Chi tiết nhập xuất tồn;;C
+432;203;frm_WH00.TransferRequestOpen;WH00. Transfer Request Open;;C
+433;203;frm_USP_RPT_INVNT_07;WH07. Báo cáo chi tiết nhập xuất tồn theo batch;;C
+434;203;frm_R_PKKKVCNB;WH13. Phiếu xuất kho kiêm vận chuyển nội bộ;;C
+435;222;frm_RcpProd;PRO09. Danh sách LSX đã nhập thành phẩm;;C
+436;222;frm_Pro11;Standard Cost;;C
+437;222;frm_Pro13_Costing_Standard;PRO11. Costing Stand Cost;;C
+438;222;frm_DinhMucSanXuat;PRO01. Định mức sản xuất;;C
+439;222;frm_PRO12.SearchSSCC;PRO12. Danh sách SSCC theo Doctype;;C
+440;222;frm_DanhSachLSX;PRO10. Danh sách lệnh sản xuất;;C
+441;222;frm_USP_RPT_PROD_04;PRO04. Chi tiết nhập kho sản xuất;;C
+442;222;frm_USP_RPT_PROD_02;PRO02. Kế hoạch và thực tế kết quả sản xuất;;C
+443;222;frm_RlsProduct;PRO08. Danh sách LSX đã ban hành;;C
+444;222;frm_PlnPrO;PRO07. Danh sách LSX kế hoạch;;C
+445;222;frm_USP_RPT_PROD_03;PRO03. Kế hoạch và thực tế xuất NVL cho SX;;C
+446;222;frm_MRPSanXuat;PRO06. MRP Sản Xuất;;C
+447;222;frm_USP_RPT_PROD_05;PRO05. Chi tiết xuất kho theo lệnh sản xuất;;C
+423;162;frm_PU.01_TrackingPO;PU01. Tracking PO;;C
+424;162;frm_OfftakePrice;Offtake Price;;C
+421;145;frm_SA02_Reversed_COGS;SA02.Reversed COGS;;C
+422;145;frm_SA01.ChiTietBanHangTheoBatch;SA01. Báo cáo chi tiết bán hàng theo batch;;C
+457;415;frm_SA03_JE_Reversed_COGS;SA03. JE for Reversed COGS;;C
+458;415;frm_SA04_Reversed_JE;SA04. Reversed JE_SA03;;C
+513;361;UDO_PO_DOC_GR;PO Document Group;en-En;O
+514;361;UDO_PO_RECEIVER;PO Receiver/Buyer List;en-En;O
+515;162;frm_GET_WEIGHTGOODS_PO;WEIGHTGOODS PO;EN-en;C
+516;145;frm_GET_WEIGHTGOODS_SO;WEIGHTGOODS SO;EN-en;C

@@ -1,0 +1,9 @@
+
+CREATE PROCEDURE APZ_PromotionProgram_CFLType
+AS
+BEGIN
+	SELECT ID, "Name", "Descr" FROM APZ_D_OPRT;
+END
+
+
+

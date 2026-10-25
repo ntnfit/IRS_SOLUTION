@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Apzon.DataServices</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net462</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    
+    <Reference Include="System.Xml">
+      <HintPath>$(LibDir)System.Xml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data">
+      <HintPath>$(LibDir)System.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>$(LibDir)RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(LibDir)Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    <Reference Include="System.Transactions">
+      <HintPath>$(LibDir)System.Transactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>$(LibDir)CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Configuration">
+      <HintPath>$(LibDir)System.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>$(LibDir)System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>$(LibDir)CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>$(LibDir)Microsoft.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apzon.Entities\Apzon.Entities.csproj" />
+    <ProjectReference Include="..\Apzon.Commons\Apzon.Commons.csproj" />
+    <ProjectReference Include="..\Apzon.Services\Apzon.Services.csproj" />
+    <ProjectReference Include="..\Apzon.HDBConnection\Apzon.HDBConnection.csproj" />
+  </ItemGroup>
+</Project>

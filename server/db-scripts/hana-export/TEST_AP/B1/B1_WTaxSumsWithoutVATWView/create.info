@@ -1,0 +1,4 @@
+VIEW
+TABLE: "TEST_AP"."WTX1"
+TABLE: "TEST_AP"."OWTX"
+VIEW: "TEST_AP"."B1_WTaxSumsPerWhtTypeView"

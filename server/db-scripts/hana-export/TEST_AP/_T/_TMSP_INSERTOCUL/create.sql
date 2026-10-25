@@ -1,0 +1,20 @@
+CREATE PROCEDURE _TmSp_InsertOCUL( IN StartRef int,
+	 IN EventType int,
+	 IN DateTime nvarchar(20),
+	 OUT ID int) 
+LANGUAGE SQLSCRIPT 
+SQL SECURITY INVOKER
+AS 
+BEGIN 
+SELECT
+	 OCUL_S.NEXTVAL 
+INTO ID 
+FROM DUMMY;
+INSERT INTO OCUL VALUES (:ID,
+	 :StartRef,
+	 :EventType,
+	 :DateTime);
+
+END
+
+

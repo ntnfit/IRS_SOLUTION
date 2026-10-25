@@ -1,0 +1,46 @@
+using Apzon.Services.Repository.Inventory.InventoryTransaction;
+
+namespace Apzon.Services.HanaRepository.Inventory.InventoryTransaction;
+
+public class HanaGoodsIssueItRespository : GoodsIssueItRespository
+{
+	public HanaGoodsIssueItRespository(IDatabaseService databaseService)
+		: base(databaseService)
+	{
+	}
+
+	protected override string GetDepartmentQuery(string requester)
+	{
+		string text = "SELECT A.\"Requester\", A.\"ReqName\", B.\"Name\", IFNULL(B.\"Code\", 0) AS \"Code\"\r\n                                FROM OIGE A\r\n                                LEFT OUTER JOIN OUDP B ON B.\"Code\" = A.\"Department\"\r\n                                WHERE 1 = 1";
+		if (!string.IsNullOrEmpty(requester))
+		{
+			text = text + " AND A.\"Requester\" ='" + requester + "'";
+		}
+		return text + ";";
+	}
+
+	protected override string GetBranchQuery(string requester)
+	{
+		string text = "SELECT A.\"Requester\", A.\"ReqName\", C.\"Name\", IFNULL(C.\"Code\", 0) AS \"Code\" \r\n                        FROM OIGE A\r\n                        LEFT OUTER JOIN OUBR C ON C.\"Code\" = A.\"Branch\"\r\n                        WHERE 1 = 1";
+		if (!string.IsNullOrEmpty(requester))
+		{
+			text = text + " AND A.\"Requester\" ='" + requester + "'";
+		}
+		return text + ";";
+	}
+
+	protected override string GetInStockQuery(string itemCode)
+	{
+		string text = "SELECT IFNULL(A.\"OnHand\", 0) AS \"QuantityOnStock\" \r\n                            FROM OITM A\r\n                            LEFT OUTER JOIN IGE1 B ON A.\"ItemCode\" = B.\"ItemCode\"\r\n                                WHERE 1 = 1 ";
+		if (!string.IsNullOrEmpty(itemCode))
+		{
+			text = text + " AND A.\"ItemCode\" ='" + itemCode + "'";
+		}
+		return text + ";";
+	}
+
+	protected override string GetMaxDocEntryQuery()
+	{
+		return "SELECT IFNULL(MAX(\"DocEntry\"), 0) AS \"MaxDocEntry\" FROM OIGE;";
+	}
+}

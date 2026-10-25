@@ -1,0 +1,190 @@
+using System;
+using System.ComponentModel;
+using System.Windows.Forms;
+using Apzon.Commons;
+using Apzon.Commons.Enums;
+using Apzon.Controls.Interfaces;
+
+namespace Apzon.Controls.Editor;
+
+[ToolboxItem(true)]
+public class TextBoxEx : TextBox, IEditControlEx, IControlEx
+{
+	private bool _isUserChangeValue;
+
+	private bool _isKeyDown;
+
+	private string _oldValue;
+
+	private bool _isAddControl = true;
+
+	private string _fieldName;
+
+	public bool IsSearchControl { get; set; }
+
+	public override string Text
+	{
+		get
+		{
+			return base.Text;
+		}
+		set
+		{
+			if (!Function.ToString(base.Text).Equals(Function.ToString(value)))
+			{
+				base.Text = value;
+				if (!_isKeyDown)
+				{
+					_isUserChangeValue = false;
+					this.ChangeDataSourceWhenEditValueControl(value);
+				}
+				else
+				{
+					_isUserChangeValue = true;
+				}
+			}
+		}
+	}
+
+	public string FieldName
+	{
+		get
+		{
+			return _fieldName;
+		}
+		set
+		{
+			_fieldName = value;
+			this.AddControllProcessSource(value);
+		}
+	}
+
+	[Browsable(false)]
+	public bool SettingReadonly { get; set; }
+
+	[Browsable(false)]
+	public bool SettingInVisible { get; set; }
+
+	public new bool Visible
+	{
+		get
+		{
+			return base.Visible;
+		}
+		set
+		{
+			if (SettingInVisible)
+			{
+				base.Visible = false;
+			}
+			else
+			{
+				base.Visible = value;
+			}
+		}
+	}
+
+	public new bool ReadOnly
+	{
+		get
+		{
+			return base.ReadOnly;
+		}
+		set
+		{
+			if (SettingReadonly)
+			{
+				base.ReadOnly = true;
+			}
+			else
+			{
+				base.ReadOnly = value;
+			}
+		}
+	}
+
+	[Browsable(false)]
+	public object EditValue
+	{
+		get
+		{
+			return Text;
+		}
+		set
+		{
+			Text = Function.ToString(value);
+		}
+	}
+
+	[Browsable(false)]
+	public IEditControlEx EditControl { get; set; }
+
+	protected override void InitLayout()
+	{
+		if (_isAddControl)
+		{
+			_isAddControl = this.AddControllProcessSource(FieldName);
+		}
+		base.InitLayout();
+	}
+
+	protected override void OnLayout(LayoutEventArgs levent)
+	{
+		if (_isAddControl)
+		{
+			_isAddControl = this.AddControllProcessSource(FieldName);
+		}
+		base.OnLayout(levent);
+	}
+
+	protected override void OnValidated(EventArgs e)
+	{
+		_oldValue = "";
+		base.OnValidated(e);
+		if (_isUserChangeValue)
+		{
+			this.ChangeDataSourceWhenEditValueControl(Text);
+			_isUserChangeValue = false;
+		}
+		_isKeyDown = false;
+	}
+
+	protected override void OnValidating(CancelEventArgs e)
+	{
+		base.OnValidating(e);
+		if (_isUserChangeValue)
+		{
+			this.ControlValueChanging(Text, _oldValue, e);
+			if (e.Cancel)
+			{
+				_isKeyDown = false;
+				_isUserChangeValue = false;
+				base.Text = _oldValue;
+			}
+		}
+	}
+
+	protected override void OnKeyDown(KeyEventArgs e)
+	{
+		if (!_isKeyDown)
+		{
+			_isKeyDown = true;
+			_oldValue = Text;
+		}
+		base.OnKeyDown(e);
+		if (e.KeyCode == Keys.Return)
+		{
+			this.ChangeDataSourceWhenEditValueControl(Text, Enums.EventId.OnKeyEnter);
+		}
+	}
+
+	bool IControlEx.Focus()
+	{
+		return Focus();
+	}
+
+	System.Windows.Forms.Form IControlEx.FindForm()
+	{
+		return FindForm();
+	}
+}

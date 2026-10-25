@@ -1,0 +1,445 @@
+{
+ "APZ_ADDITIONALGENERALSETTINGS_GETDATA": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator.Setup\\AdditionalGeneralSettingsRepository.cs",
+   "method": "public DataSet GetData()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_ADVANCEFORECAST_GETCOLUMNLINE": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Mrps\\AdvanceForecastRepository.cs",
+   "method": "public DataTable GetColumnLine()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_ADVANCEFORECAST_GETCOLUMNSDOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Mrps\\AdvanceForecastRepository.cs",
+   "method": "public DataTable GetColumnDoc()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_ALERT_GETBYUSER": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator\\AlertOverviewRepository.cs",
+   "method": "public DataTable GetAlert(string username, int mailtype)",
+   "parameters": [
+    "@MailType",
+    "@User",
+    "@UserCode",
+    "@UserName"
+   ],
+   "columnsRead": [
+    "Code",
+    "FromUser",
+    "Name",
+    "QString",
+    "RowCount",
+    "Subject",
+    "WasRead"
+   ],
+   "commandType": "StoredProcedure"
+  },
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator\\AlertOverviewRepository.cs",
+   "method": "public DataTable GetAlertUnread(string username, int mailtype)",
+   "parameters": [
+    "@MailType",
+    "@UserName"
+   ],
+   "columnsRead": [
+    "QString",
+    "RowCount"
+   ],
+   "commandType": "StoredProcedure"
+  },
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator\\AlertOverviewRepository.cs",
+   "method": "public int CheckCountAlertOverview(string username)",
+   "parameters": [
+    "@MailType",
+    "@UserName"
+   ],
+   "columnsRead": [
+    "QString"
+   ],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_AUTH_GETALLAUTH": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator.Setup\\AuthRepository.cs",
+   "method": "public DataTable GetAllAuth(string user, string lngCode = \"\")",
+   "parameters": [
+    "@lngCode",
+    "@userName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_AUTH_GETALLAUTHFORM": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator.Setup\\AuthRepository.cs",
+   "method": "public DataTable GetAllAuthForm(string user, string lngCode, string superUser)",
+   "parameters": [
+    "@lngCode",
+    "@superUser",
+    "@user"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_BOM_GETLINE": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Production\\BillOfMasterialsRepository.cs",
+   "method": "public DataTable ShowITT1(string BoMCode)",
+   "parameters": [
+    "@father"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_BOM_SEARCHADOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Production\\BillOfMasterialsRepository.cs",
+   "method": "public DataTable SearchADoc(string code)",
+   "parameters": [
+    "@Code"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_BUSINESSMASTERDATA_GETADOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.BusinessPartner\\BusinessMasterDataRepository.cs",
+   "method": "public DataTable GetADoc(string cardCode, string userName)",
+   "parameters": [
+    "@CardCode",
+    "@UserName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_COMMONS_GETDEFAULTDATA": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\CommonsRepository.cs",
+   "method": "public DataTable GetDefaultData(string userCode, int branch)",
+   "parameters": [
+    "@branch",
+    "@userName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_DASHBOARD_GETLISTDASHBOARDBYUSER": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.DashBoard\\DashBoardRepository.cs",
+   "method": "public List<int> GetListDashboardByUser(string userName)",
+   "parameters": [
+    "@userName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_DOCUMENT_GET": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Document\\DocumentRepository.cs",
+   "method": "public DataTable GetDocuments(DocumentsImpl doc, string tbl, string tblLine)",
+   "parameters": [
+    "@Branch",
+    "@Canceled",
+    "@CardCode",
+    "@DocDate",
+    "@DocEntry",
+    "@DocNum",
+    "@DocStatus",
+    "@EndDate",
+    "@ReqType",
+    "@Requester",
+    "@UserName",
+    "@isIns",
+    "@tbl",
+    "@tblLine"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_DOCUMENT_GETBRANCHLIST": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\CommonsRepository.cs",
+   "method": "public DataTable GetBranchList(string userCode)",
+   "parameters": [
+    "@UserCode"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_DOCUMENT_GETDOCLINE": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Document\\DocumentRepository.cs",
+   "method": "public DataTable GetDocLines(int docEntry, string tbl, string tblLine, string filterLine = \"\")",
+   "parameters": [
+    "@DocEntry",
+    "@tbl",
+    "@tblLine"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_FILTERSETTING_INSERTQUERY": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator\\FilterSettingRepository.cs",
+   "method": "public void InsertQueryFilter(string username)",
+   "parameters": [
+    "@UserName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_FORMSETTING_GET": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\FormSettingRepository.cs",
+   "method": "public DataTable GetFormSetting(string formId, string itemId, string user, string lngCode)",
+   "parameters": [
+    "@FormId",
+    "@Itemid",
+    "@UserSign",
+    "@lngCode"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_FUNC_OWNEROVERSHIP": [],
+ "APZ_FUN_ALERT_GETBYUSER": [],
+ "APZ_GENERALSETTING_GETFORMATSTRING": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator\\GeneralSettingRepository.cs",
+   "method": "public DataTable GetFormatString()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  },
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\ChangeLogRepository.cs",
+   "method": "public DataTable GetChangeLogDifferences(GetChangeLogParams pr)",
+   "parameters": [],
+   "columnsRead": [
+    "ArrayOffset",
+    "CL_UserChanged",
+    "ChangedField",
+    "Date",
+    "DateFormat",
+    "DateSep",
+    "LineNumber",
+    "NewValue",
+    "OldValue",
+    "UserName"
+   ],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_INTEGRATED_CHECKIRSAUTHORIZATIONS": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Integrated\\IntegratedRepository.cs",
+   "method": "public string CheckIRSAuthorizations()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_INTEGRATED_GETLISTCONFIG": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Integrated\\IntegratedRepository.cs",
+   "method": "public DataTable GetListConfig()",
+   "parameters": [],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_ITEMMASTER_GETADOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Inventory\\ItemMasterDataRepository.cs",
+   "method": "public DataTable GetADoc(string itmCode)",
+   "parameters": [
+    "@ItemCode"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_PRODUCTIONORDER_GETADOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Production\\ProductionOderRepository.cs",
+   "method": "public DataTable GetADoc(int docEntry)",
+   "parameters": [
+    "@DocEntry"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_PRODUCTIONORDER_SEARCHLINE": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Production\\ProductionOderRepository.cs",
+   "method": "public DataSet SearchLine(ProductionOder_LineImpl_WOR1 line)",
+   "parameters": [
+    "@DocEntry"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_PROJECTMANAGER_GETLINEBYID": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.PM\\ProjectManagerRepository.cs",
+   "method": "public DataSet GetDataById(int Id)",
+   "parameters": [
+    "@Id"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_QUERY_GETLISTQUERIES": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\QueriesRepository.cs",
+   "method": "public DataSet GetListQueries(string userName, string branch, string filter = \"\")",
+   "parameters": [
+    "@branch",
+    "@userName"
+   ],
+   "columnsRead": [],
+   "commandType": "?"
+  }
+ ],
+ "APZ_SALESBLANKETAGREEMENT_GETBLANKETAGREEMENTDETAILS": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Sales\\SalesBlanketAgreementRepository.cs",
+   "method": "public DataTable GetBlanketAgreementDetails(int AgrNo, int AgrLnNum)",
+   "parameters": [
+    "@AgrLnNum",
+    "@AgrNo"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_SALESBLANKETAGREEMENT_GETDOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Sales\\SalesBlanketAgreementRepository.cs",
+   "method": "public DataTable GetDoc(DocumentSBAImpl condiDoc, string username)",
+   "parameters": [
+    "@AbsID",
+    "@BpCode",
+    "@BpType",
+    "@FromDate",
+    "@Number",
+    "@Status",
+    "@ToDate",
+    "@UserCode"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_SALESBLANKETAGREEMENT_GETLINE": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Sales\\SalesBlanketAgreementRepository.cs",
+   "method": "public DataTable GetLine(int AbsId)",
+   "parameters": [
+    "@AgrNo"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_SALESOPPORTUNITY_GETDOC": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Opportunity\\OpportunityRepository.cs",
+   "method": "public DataTable GetDoc(int OpprId, string userCode)",
+   "parameters": [
+    "@OpprId",
+    "@UserName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_SALESOPPORTUNITY_GETITEMDETAIL": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Opportunity\\OpportunityRepository.cs",
+   "method": "public DataTable GetItemDetail(int OpprId)",
+   "parameters": [
+    "@OpprId"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_SUBACTIVITIES_GETALLNOTIFICATION": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Service\\SubActivitiesRepository.cs",
+   "method": "public DataTable GetAllNotification(int userId)",
+   "parameters": [
+    "@userId"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_UDT_GETLISTUDT": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\UDTRepository.cs",
+   "method": "public DataTable GetListUDT(string userName, string branch)",
+   "parameters": [
+    "@Branch",
+    "@UserName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "APZ_WORKINGTABLE_GETUSERSETTINGS": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Administrator.Setup\\WorkingTableRepository.cs",
+   "method": "public DataTable GetUserSettings(string username)",
+   "parameters": [
+    "@user_code"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ],
+ "COMPARESPLIT": [],
+ "HR_GETROOTMENUCODE": [],
+ "RA_CONNECTION_GET": [
+  {
+   "file": "Apzon.Services\\Apzon.Services.Repository.Commons\\CommonsRepository.cs",
+   "method": "public DataTable GetEInvoiceToken(string usercode)",
+   "parameters": [
+    "@UserName"
+   ],
+   "columnsRead": [],
+   "commandType": "StoredProcedure"
+  }
+ ]
+}

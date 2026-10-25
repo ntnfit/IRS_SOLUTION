@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="BaseRef" xml:space="preserve"><value>Base Ref.</value></data>
+  <data name="VatGroup" xml:space="preserve"><value>Tax Code</value></data>
+  <data name="VatPrcnt" xml:space="preserve"><value>Currency Rate</value></data>
+  <data name="WhsCode" xml:space="preserve"><value>Whse Code</value></data>
+  <data name="ExpnsCode1" xml:space="preserve"><value>Freight 1</value></data>
+  <data name="ExpnsCode2" xml:space="preserve"><value>Freight 2</value></data>
+  <data name="ExpnsCode3" xml:space="preserve"><value>Freight 3</value></data>
+  <data name="TotalFrgn" xml:space="preserve"><value>Total (FC)</value></data>
+  <data name="Freight2OcrCode" xml:space="preserve"><value>Freight2 Dimension 1</value></data>
+  <data name="Freight1OcrCode" xml:space="preserve"><value>Freight1 Dimension 1</value></data>
+  <data name="InvQty" xml:space="preserve"><value>Qty (Inventory UoM)</value></data>
+  <data name="NoInvtryMv" xml:space="preserve"><value>Without Qty Posting</value></data>
+  <data name="ItemCode" xml:space="preserve"><value>Item Code</value></data>
+  <data name="SlpCode" xml:space="preserve"><value>Sales Employee</value></data>
+  <data name="UgpCode" xml:space="preserve"><value>UoM Group</value></data>
+  <data name="BaseType" xml:space="preserve"><value>Base Type</value></data>
+  <data name="BaseLine" xml:space="preserve"><value>Base Row</value></data>
+  <data name="unitMsr" xml:space="preserve"><value>UoM Name</value></data>
+  <data name="Stock1" xml:space="preserve"><value>Freight 1 Inventory/Fixed Asset</value></data>
+  <data name="Stock3" xml:space="preserve"><value>Freight 3 Inventory/Fixed Asset</value></data>
+  <data name="Stock2" xml:space="preserve"><value>Freight 2 Inventory/Fixed Asset</value></data>
+  <data name="QuantityOnStock" xml:space="preserve"><value>In Stock</value></data>
+  <data name="PriceBefDi" xml:space="preserve"><value>Unit Price</value></data>
+  <data name="VatSumFrgn1" xml:space="preserve"><value>Freight 1 Tax FC</value></data>
+  <data name="VatSumFrgn2" xml:space="preserve"><value>Freight 2 Tax FC</value></data>
+  <data name="VatSumFrgn3" xml:space="preserve"><value>Freight 3 Tax FC</value></data>
+  <data name="AcctCode" xml:space="preserve"><value>G/L Account</value></data>
+  <data name="UomCode" xml:space="preserve"><value>UoM Code</value></data>
+  <data name="PQTReqdate" xml:space="preserve"><value>Pur Quotation: Required Date</value></data>
+  <data name="QuantityOnWareHouse" xml:space="preserve"><value>Qty in Warehouse</value></data>
+  <data name="VatGroup1" xml:space="preserve"><value>Freight 1 Tax Group</value></data>
+  <data name="VatGroup3" xml:space="preserve"><value>Freight 3 Tax Group</value></data>
+  <data name="VatGroup2" xml:space="preserve"><value>Freight 2 Tax Group</value></data>
+  <data name="PackQty" xml:space="preserve"><value>Package Quantity</value></data>
+  <data name="IsAcquistn1" xml:space="preserve"><value>Freight 1 Acquis</value></data>
+  <data name="IsAcquistn3" xml:space="preserve"><value>Freight 3 Acquis</value></data>
+  <data name="IsAcquistn2" xml:space="preserve"><value>Freight 2 Acquis</value></data>
+  <data name="NumPerMsr" xml:space="preserve"><value>Items per Unit</value></data>
+  <data name="TotalFrgn2" xml:space="preserve"><value>Freight 2 Amout FC</value></data>
+  <data name="TotalFrgn3" xml:space="preserve"><value>Freight 3 Amout FC</value></data>
+  <data name="TotalFrgn1" xml:space="preserve"><value>Freight 1 Amout FC</value></data>
+  <data name="UseBaseUn" xml:space="preserve"><value>Inventory UoM</value></data>
+  <data name="TreeType" xml:space="preserve"><value>TreeType</value></data>
+  <data name="OcrCode" xml:space="preserve"><value>Dimension 1</value></data>
+  <data name="OpenInvQty" xml:space="preserve"><value>Open Inv. Qty</value></data>
+  <data name="Price" xml:space="preserve"><value>Price after Discount</value></data>
+  <data name="VatPrcnt1" xml:space="preserve"><value>Freight 1 Tax %</value></data>
+  <data name="VatPrcnt3" xml:space="preserve"><value>Freight 3 Tax %</value></data>
+  <data name="VatPrcnt2" xml:space="preserve"><value>Freight 2 Tax %</value></data>
+  <data name="ShipDate" xml:space="preserve"><value>Del. Date</value></data>
+  <data name="TargetType" xml:space="preserve"><value>Target Type</value></data>
+  <data name="Quantity" xml:space="preserve"><value>Quantity</value></data>
+  <data name="Currency" xml:space="preserve"><value>Currency</value></data>
+  <data name="VatSumFrgn" xml:space="preserve"><value>Vat Amount (FC)</value></data>
+  <data name="DelivrdQty" xml:space="preserve"><value>Delivered Qty</value></data>
+  <data name="VatSum1" xml:space="preserve"><value>Freight 1 Tax LC</value></data>
+  <data name="VatSum3" xml:space="preserve"><value>Freight 3 Tax LC</value></data>
+  <data name="VatSum2" xml:space="preserve"><value>Freight 2 Tax LC</value></data>
+  <data name="BOMTreeType" xml:space="preserve"><value>BOMTreeType</value></data>
+  <data name="TrgetEntry" xml:space="preserve"><value>Target Key</value></data>
+  <data name="SubCatNum" xml:space="preserve"><value>BP Catalog No.</value></data>
+  <data name="LineTotal" xml:space="preserve"><value>Total</value></data>
+  <data name="OpenQty" xml:space="preserve"><value>OpenQty</value></data>
+  <data name="LineNum" xml:space="preserve"><value>Line Num</value></data>
+  <data name="LineVat" xml:space="preserve"><value>Vat Amount</value></data>
+  <data name="DiscPrcnt" xml:space="preserve"><value>Discount</value></data>
+  <data name="Dscription" xml:space="preserve"><value>Item Name</value></data>
+  <data name="LineStatus" xml:space="preserve"><value>LineStatus</value></data>
+  <data name="CogsOcrCo2" xml:space="preserve"><value>COGS Distribution Rule Code2</value></data>
+  <data name="BaseEntry" xml:space="preserve"><value>Base Key</value></data>
+  <data name="LstPchPrce1" xml:space="preserve"><value>Freight 1 Last Purchase Price</value></data>
+  <data name="LstPchPrce3" xml:space="preserve"><value>Freight 3 Last Purchase Price</value></data>
+  <data name="LstPchPrce2" xml:space="preserve"><value>Freight 2 Last Purchase Price</value></data>
+  <data name="LineTotal1" xml:space="preserve"><value>Freight 1 Amout (LC)</value></data>
+  <data name="LineTotal3" xml:space="preserve"><value>Freight 3 Amout (LC)</value></data>
+  <data name="LineTotal2" xml:space="preserve"><value>Freight 2 Amout (LC)</value></data>
+  <data name="Text" xml:space="preserve"><value>Remark</value></data>
+  <data name="Freight3OcrCode" xml:space="preserve"><value>Freight3 Dimension 1</value></data>
+  </root>

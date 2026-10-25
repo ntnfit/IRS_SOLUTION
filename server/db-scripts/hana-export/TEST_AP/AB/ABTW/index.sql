@@ -1,0 +1,1 @@
+CREATE UNIQUE CPBTREE INDEX "ABTW_SYSTEM_KEY" ON "TEST_AP"."ABTW" ( "ItemCode" ASC, "SysNumber" ASC, "WhsCode" ASC, "LogInstanc" ASC )

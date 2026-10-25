@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Apzon.Services</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net462</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Xml">
+      <HintPath>$(LibDir)System.Xml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    
+    <Reference Include="System.Data">
+      <HintPath>$(LibDir)System.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    <Reference Include="Sap.Data.Hana.v4.5">
+      <HintPath>$(LibDir)Sap.Data.Hana.v4.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions">
+      <HintPath>$(LibDir)System.Transactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(LibDir)Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>$(LibDir)Microsoft.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apzon.HDBConnection\Apzon.HDBConnection.csproj" />
+    <ProjectReference Include="..\Apzon.Commons\Apzon.Commons.csproj" />
+    <ProjectReference Include="..\Apzon.Entities\Apzon.Entities.csproj" />
+  </ItemGroup>
+</Project>

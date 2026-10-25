@@ -1,0 +1,11 @@
+
+
+CREATE PROCEDURE Apz_D_DeleteEventListener (IN Id int)
+AS
+BEGIN
+	DELETE FROM APZ_D_OELN WHERE ID = :Id;
+	SELECT :Id FROM DUMMY;
+END
+
+
+

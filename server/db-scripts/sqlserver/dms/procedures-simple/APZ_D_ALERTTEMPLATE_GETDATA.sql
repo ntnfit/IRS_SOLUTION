@@ -1,0 +1,9 @@
+USE [SBODemoAU];
+GO
+CREATE OR ALTER PROCEDURE dbo.[APZ_D_AlertTemplate_GetData]
+AS
+BEGIN
+    SET NOCOUNT ON;
+Select * from APZ_D_OALT;
+END;
+GO

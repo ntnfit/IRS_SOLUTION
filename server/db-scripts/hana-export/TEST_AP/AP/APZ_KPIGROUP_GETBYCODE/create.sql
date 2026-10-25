@@ -1,0 +1,9 @@
+
+CREATE PROCEDURE APZ_KPIGroup_GetByCode(in code NVARCHAR(50))
+AS
+BEGIN
+	SELECT * FROM APZ_OKGP WHERE "Code" = :code;
+END
+
+
+

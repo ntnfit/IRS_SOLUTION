@@ -1,0 +1,11 @@
+
+CREATE FUNCTION APZ_EXISTSTABLE(tablename VARCHAR(50))
+RETURNS result_exits INTEGER
+LANGUAGE SQLSCRIPT READS SQL DATA AS
+BEGIN
+	result_exits = ifnull((SELECT COUNT(*) FROM "PUBLIC"."M_TABLES" WHERE schema_name =CURRENT_SCHEMA AND table_name=UPPER(:tablename)), 0);
+END;
+
+
+
+

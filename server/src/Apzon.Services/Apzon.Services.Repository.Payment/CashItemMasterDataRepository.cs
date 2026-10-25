@@ -1,0 +1,192 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Linq;
+using Apzon.Commons;
+using Apzon.Commons.Enums;
+using Apzon.Commons.Helper;
+using Apzon.Entities.Models.Common;
+using Apzon.Services.Interfaces.Payment;
+
+namespace Apzon.Services.Repository.Payment;
+
+public class CashItemMasterDataRepository : BaseService<DataSet>, ICashItemMasterData
+{
+	public const string DocTemp = "#APZ_CASH";
+
+	public const string LineTemp = "#APZ_CASH1";
+
+	public CashItemMasterDataRepository(IDatabaseService databaseService)
+		: base(databaseService)
+	{
+	}
+
+	public DataTable GetAllCash()
+	{
+		try
+		{
+			DataTable dataTable = ExecuteDataTable("Select * from APZ_CASH order by \"CashCode\";", CommandType.Text);
+			SetDefaultValueToTable("APZ_CASH", dataTable);
+			return dataTable;
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return new DataTable();
+		}
+	}
+
+	public DataTable FindDataNextLast(string id, int type)
+	{
+		try
+		{
+			string query = "APZ_Cash_FindNextLastFrist";
+			List<SqlParameter> list = new List<SqlParameter>();
+			list.Add(new SqlParameter("@id", id));
+			list.Add(new SqlParameter("@type", type));
+			return ExecuteDataTable(query, CommandType.StoredProcedure, list.ToArray());
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), "FindDataNextLast  FAILED ", ex.Message);
+			return new DataTable();
+		}
+	}
+
+	public DataTable GetDetailByCode(string cashCode)
+	{
+		try
+		{
+			string query = "APZ_Cash_GetDetailByCode";
+			return ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@cashCode", cashCode));
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return new DataTable();
+		}
+	}
+
+	public HttpResult Save(DataSet ds, string action)
+	{
+		try
+		{
+			Enums.TransactionType transtype = Enums.TransactionType.A;
+			switch (action)
+			{
+			case "A":
+				transtype = Enums.TransactionType.A;
+				break;
+			case "U":
+				transtype = Enums.TransactionType.U;
+				break;
+			case "D":
+				transtype = Enums.TransactionType.D;
+				break;
+			}
+			return Process(ApzObjectTypes.oCashIMD, -1, transtype, ds);
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return new HttpResult(Enums.MessageCode.ExceptionMessage, ex.Message);
+		}
+	}
+
+	public override HttpResult ProcessData(ApzObjectTypes objtype, int bplId, ref Enums.TransactionType transtype, DataSet dsSave, ref string objId, ref string objNum)
+	{
+		HttpResult ret = new HttpResult();
+		return transtype switch
+		{
+			Enums.TransactionType.U => SaveData(dsSave, transtype, ref objId, ref objNum), 
+			Enums.TransactionType.A => SaveData(dsSave, transtype, ref objId, ref objNum), 
+			Enums.TransactionType.D => DeleteData(ref ret, ref objId, ref objNum), 
+			_ => new HttpResult(Enums.MessageCode.Error, "Could not execute function"), 
+		};
+	}
+
+	public HttpResult SaveData(DataSet ds, Enums.TransactionType tranType, ref string objId, ref string objNum)
+	{
+		try
+		{
+			if (ds == null || ds.Tables.Count == 0)
+			{
+				return new HttpResult(Enums.MessageCode.Error, "Data must not null!");
+			}
+			DataTable dataTable = ds.Tables[0];
+			DataTable tableStruct = GetTableStruct("APZ_CASH");
+			if (!tableStruct.IsNotNull())
+			{
+				throw new Exception("Could not get data structure");
+			}
+			IEnumerable<string> source = from DataColumn t in tableStruct.Columns
+				select t.ColumnName;
+			dataTable = dataTable.DefaultView.ToTable(distinct: false, source.ToArray());
+			CreateTempTable(dataTable, "#APZ_CASH");
+			BulkCopy(dataTable, "#APZ_CASH");
+			DataTable dataTable2 = ds.Tables[1];
+			DataTable tableStruct2 = GetTableStruct("APZ_CASH1");
+			if (!tableStruct2.IsNotNull())
+			{
+				throw new Exception("Could not get data structure");
+			}
+			IEnumerable<string> source2 = from DataColumn t in tableStruct2.Columns
+				select t.ColumnName;
+			dataTable2 = dataTable2.DefaultView.ToTable(distinct: false, source2.ToArray());
+			CreateTempTable(dataTable2, "#APZ_CASH1");
+			BulkCopy(dataTable2, "#APZ_CASH1");
+			string value = Function.ToString(tranType);
+			SqlParameter sqlParameter = new SqlParameter("@type", value);
+			DataTable dataTable3 = ExecuteDataTable("APZ_Cash_Saves", CommandType.StoredProcedure, sqlParameter);
+			if (dataTable3 != null && dataTable3.Rows.Count > 0)
+			{
+				if (string.IsNullOrEmpty(Function.ToString(dataTable3.Rows[0][1])))
+				{
+					objId = Function.ToString(dataTable3.Rows[0][0]);
+					objNum = objId;
+					return new HttpResult(Enums.MessageCode.Success, "", objId);
+				}
+				return new HttpResult(Enums.MessageCode.Error, $"{Function.ParseInt(dataTable3.Rows[0][0])}-{Function.ToString(dataTable3.Rows[0][1])}");
+			}
+			return new HttpResult(Enums.MessageCode.Error, (tranType == Enums.TransactionType.A) ? "Save error!" : "Update error");
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return new HttpResult(Enums.MessageCode.ExceptionMessage, ex.Message);
+		}
+	}
+
+	public string DeleteDocs(string ids)
+	{
+		try
+		{
+			return Process(ApzObjectTypes.oCashIMD, -1, Enums.TransactionType.D, new DataSet(), ids).Message;
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return ex.Message;
+		}
+	}
+
+	public HttpResult DeleteData(ref HttpResult ret, ref string objId, ref string objNum)
+	{
+		try
+		{
+			SqlParameter sqlParameter = new SqlParameter("@ids", objId);
+			if (ExecuteNonQuery("APZ_Cash_DeleteDocs", CommandType.StoredProcedure, sqlParameter) > 0)
+			{
+				return new HttpResult(Enums.MessageCode.Success, "", "");
+			}
+			return new HttpResult(Enums.MessageCode.Error, "", "Delete Error!");
+		}
+		catch (Exception ex)
+		{
+			Logging.Write("ERROR", new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+			return new HttpResult(Enums.MessageCode.ExceptionMessage, ex.Message);
+		}
+	}
+}

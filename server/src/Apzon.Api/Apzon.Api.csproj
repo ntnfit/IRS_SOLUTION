@@ -1,0 +1,132 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Apzon.Api</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net462</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>$(LibDir)Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>$(LibDir)Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>$(LibDir)Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>$(LibDir)Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>$(LibDir)System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>$(LibDir)System.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>$(LibDir)Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>$(LibDir)System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(LibDir)Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    
+    
+    
+    
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>$(LibDir)Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>$(LibDir)System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>$(LibDir)Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>$(LibDir)System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>$(LibDir)System.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WhatsAppApi">
+      <HintPath>$(LibDir)WhatsAppApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>$(LibDir)CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebApi.OutputCache.V2">
+      <HintPath>$(LibDir)WebApi.OutputCache.V2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>$(LibDir)EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>$(LibDir)Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>$(LibDir)System.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>$(LibDir)System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Json">
+      <HintPath>$(LibDir)System.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>$(LibDir)Microsoft.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>$(LibDir)CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apzon.Commons\Apzon.Commons.csproj" />
+    <ProjectReference Include="..\Apzon.DataServices\Apzon.DataServices.csproj" />
+    <ProjectReference Include="..\Apzon.Entities\Apzon.Entities.csproj" />
+    <ProjectReference Include="..\Apzon.Services\Apzon.Services.csproj" />
+    <ProjectReference Include="..\Apzon.Kit\Apzon.Kit.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Binary .resources copied from the original build (decompiler did not emit this .resx). -->
+    <EmbeddedResource Include="RecoveredResources/*.resources" LogicalName="%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

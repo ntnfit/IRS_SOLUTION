@@ -1,0 +1,9 @@
+PROCEDURE
+BASE_SCHEMA: "TEST_AP"
+TABLE: "TEST_AP"."CRSP_Monthly_Customer_Status_Report_Customers"
+TABLE: "TEST_AP"."CRSP_Monthly_Customer_Status_Report_MonthBegin"
+TABLE: "TEST_AP"."JDT1"
+PROCEDURE: "TEST_AP"."_TMSP_VALIDATESPPARAM"
+TABLE: "TEST_AP"."CRSP_Monthly_Customer_Status_Report_BPMonthly"
+TABLE: "TEST_AP"."CRSP_Monthly_Customer_Status_Report_TblResult"
+TABLE: "TEST_AP"."OADM"

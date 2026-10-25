@@ -1,0 +1,1 @@
+CREATE VIEW "TEST_AP"."ixvITL_Min" ( "LogEntry", "ItemCode", "SysNumber" ) AS SELECT MIN("LogEntry") AS "LogEntry", "ItemCode", "SysNumber" FROM ITL1 GROUP BY "ItemCode", "SysNumber" WITH READ ONLY

@@ -1,0 +1,9 @@
+
+CREATE PROCEDURE APZ_KPIScore_CFLKPIGroup
+AS
+BEGIN
+	SELECT "Code", "Name" FROM APZ_OKGP	WHERE "Active" = 'Y';
+END
+
+
+

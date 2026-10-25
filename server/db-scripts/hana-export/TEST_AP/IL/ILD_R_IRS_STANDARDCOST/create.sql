@@ -1,0 +1,600 @@
+CREATE procedure ILD_R_IRS_StandardCost
+(
+	in FromDate date,
+	in ToDate date,
+	out tab_result table (
+	WOID int,
+	WONo varchar(50),
+	DocEntry int,
+	DocNum int,
+	SystemDate date,
+	PostingDate date,
+	DocType int,
+	-- 
+	FGCode varchar(50),
+	FGName nvarchar(150),
+	CmpltQty numeric(21,6),
+	UnitPriceFG numeric(21,6),
+	AmountFG numeric(21,6),
+	--
+	ItemCode varchar(50),
+	ItemName nvarchar(100),
+	BomRate numeric(21,6), 
+	StdQty 	numeric(21,6),
+	UnitPrice  numeric(21,6),-- Tinh toan sau
+	StdAmount numeric(21,6), -- Tinh toan sau
+	ItmsGrpCod 	int,
+	ItmsGrpName	nvarchar(100),
+	--
+	Cumulative_Qty numeric(21,6),
+	Cumulative_Value numeric(21,6),
+	WareHouse	nvarchar(50),
+	LineNum 	int,
+	SystemDate_UseCompare numeric(21,6),
+	PostingDate_UseCompare numeric(21,6),
+	SystemDate_Time varchar(20),
+	PostingDate_Time varchar(20),
+	-- Thong tin lenh san xuat ra,
+	DisID  int,
+	DisNo  varchar(50)
+	) 
+)
+as
+begin
+create local temporary table #tbl 
+ (
+ 	WOID int,
+	WONo varchar(50),
+	DocEntry int,
+	DocNum int,
+	SystemDate date,
+	PostingDate date,
+	DocType int,
+	-- 
+	FGCode varchar(50),
+	FGName nvarchar(150),
+	CmpltQty numeric(21,6),
+	UnitPriceFG numeric(21,6),
+	AmountFG numeric(21,6),
+	--
+	ItemCode varchar(50),
+	ItemName nvarchar(100),
+	BomRate numeric(21,6), 
+	StdQty 	numeric(21,6),
+	UnitPrice  numeric(21,6),-- Tinh toan sau
+	StdAmount numeric(21,6), -- Tinh toan sau
+	ItmsGrpCod 	int,
+	ItmsGrpName	nvarchar(100),
+	--
+	Cumulative_Qty numeric(21,6),
+	Cumulative_Value numeric(21,6),
+	WareHouse	nvarchar(50),
+	LineNum 	int,
+	SystemDate_UseCompare numeric(21,6),
+	PostingDate_UseCompare numeric(21,6),
+	SystemDate_Time varchar(20),
+	PostingDate_Time varchar(20),
+	-- Thong tin lenh san xuat ra,
+	DisID  int,
+	DisNo  varchar(50)
+ );
+--- Phieu receipt 
+create local temporary table #Receipt
+(
+	WONo varchar(50),
+	DocEntry int,
+	DocNum int,
+	SystemDate date,
+	PostingDate date,
+	
+	Qty numeric(21,6),
+	Price  numeric(21,6),
+	Amount numeric(21,6),
+	ItemCode varchar(50),
+	ItemName nvarchar(100),
+	WhsCode varchar(50),
+	
+	SystemDate_Time varchar(20),
+	PostingDate_Time varchar(20),
+	
+	SystemDate_UseCompare numeric(21,6),
+	PostingDate_UseCompare numeric(21,6)
+);
+
+insert into #Receipt (DocEntry, DocNum,
+						Qty,Price, Amount, WONo,ItemCode,ItemName, WhsCode,
+						SystemDate ,PostingDate,
+						--
+						SystemDate_Time,
+						PostingDate_Time,
+						--
+						SystemDate_UseCompare,
+						PostingDate_UseCompare) 
+select   "DocEntry",  "DocNum",
+		 "Quantity", "Price",  "LineTotal",   "WONo",  "ItemCode",  "Dscription", "WhsCode",
+		 TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2") as "Create_Date_Time",
+		 TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2") as "DocDate_Date_Time",
+		 --
+		TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2" as "SystemDate_Time",
+		TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2" as "PostingDate_Time",
+		--,TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2" as "Create_Date_Time_String",
+
+--
+TO_decimal(TO_VARCHAR(TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2"),'YYYYMMDDHH24MISS')),
+--PostingDate_UseCompare
+TO_decimal(TO_VARCHAR(TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2"),'YYYYMMDDHH24MISS'))
+from
+(
+		select a."DocEntry", a."DocNum", 
+		
+				b."Quantity", b."Price", b."LineTotal", b."BaseRef" as "WONo", b."ItemCode", b."Dscription",
+				b."WhsCode", a."DocTime", 
+				
+				
+				TO_VARCHAR(a."CreateDate",'YYYY-MM-DD') as "CreateDate",
+				TO_VARCHAR(a."DocDate",'YYYY-MM-DD') as "DocDate",
+				 
+				  LEFT(CASE 
+		WHEN LENGTH(a."DocTime") = 3 THEN CAST('0' || a."DocTime" AS TIME) 
+		WHEN LENGTH(a."DocTime") = 2 THEN CAST('00' || a."DocTime" AS TIME) 
+		WHEN LENGTH(a."DocTime") = 1 THEN CAST('000' || a."DocTime" AS TIME) 
+		ELSE CAST(a."DocTime" AS TIME) END,5)  as "DocTime_2"
+				
+				
+				
+		from OIGN a
+		inner join IGN1 b  on a."DocEntry" = b."DocEntry"
+		inner join OITM c  on b."ItemCode"  = c."ItemCode"
+		where c."ItmsGrpCod"  in (120,121,127) 
+		--and b."BaseRef"  = '302300005'
+			and b."BaseType"  =  202  and a."DocDate" between :FromDate and :ToDate
+	
+	 ) as Nguon1;
+-----=============================================== Phieu Issued - Lenh San Xuat (Lệnh rã)
+create local temporary table #Issued_LenhRa
+(
+	WONo varchar(50),
+	WOID int,
+	DisID int,
+	DisNo varchar(50),
+	DocEntry int,
+	DocNum int,
+	SystemDate date,
+	PostingDate date,
+	
+	Qty numeric(21,6),
+	Price  numeric(21,6),
+	Amount numeric(21,6),
+	ItemCode varchar(50),
+	ItemName nvarchar(100),
+	WhsCode varchar(50),
+	
+	SystemDate_Time varchar(20),
+	PostingDate_Time varchar(20),
+	
+	SystemDate_UseCompare numeric(21,6),
+	PostingDate_UseCompare numeric(21,6)
+);
+insert into #Issued_LenhRa (DocEntry, DocNum,
+						Qty,Price, Amount, DisID,DisNo,ItemCode,ItemName, WhsCode,
+						SystemDate ,PostingDate,
+						--
+						SystemDate_Time,
+						PostingDate_Time,
+						--
+						SystemDate_UseCompare,
+						PostingDate_UseCompare) 
+select   "DocEntry",  "DocNum",
+		 "Quantity", "Price",  "LineTotal", "DisID",  "DisNo",  "ItemCode",  "Dscription", "WhsCode",
+		 TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2") as "Create_Date_Time",
+		 TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2") as "DocDate_Date_Time",
+		 --
+		TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2" as "SystemDate_Time",
+		TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2" as "PostingDate_Time",
+		--
+		TO_decimal(TO_VARCHAR(TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2"),'YYYYMMDDHH24MISS')),
+		--PostingDate_UseCompare
+		TO_decimal(TO_VARCHAR(TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime_2"),'YYYYMMDDHH24MISS'))
+from
+(
+		select a."DocEntry", a."DocNum", 
+		
+				b."Quantity", b."Price", b."LineTotal",b."BaseEntry" as  "DisID", b."BaseRef" as "DisNo", b."ItemCode", b."Dscription",
+				b."WhsCode", a."DocTime", 
+				
+				
+				TO_VARCHAR(a."CreateDate",'YYYY-MM-DD') as "CreateDate",
+				TO_VARCHAR(a."DocDate",'YYYY-MM-DD') as "DocDate",
+				 
+		LEFT(CASE 
+		WHEN LENGTH(a."DocTime") = 3 THEN CAST('0' || a."DocTime" AS TIME) 
+		WHEN LENGTH(a."DocTime") = 2 THEN CAST('00' || a."DocTime" AS TIME) 
+		WHEN LENGTH(a."DocTime") = 1 THEN CAST('000' || a."DocTime" AS TIME) 
+		ELSE CAST(a."DocTime" AS TIME) END,5)  as "DocTime_2"
+				
+		from OIGE a
+		inner join IGE1 b  on a."DocEntry" = b."DocEntry"
+		inner join OITM c  on b."ItemCode"  = c."ItemCode"
+		inner join OWOR d on d."DocNum"  = b."BaseRef"
+		where c."ItmsGrpCod"  in (120,121,127) 
+				and d."Type" = 'D' --Disassembly
+				and b."BaseType"  =  202  and a."DocDate" between :FromDate and :ToDate
+	
+	 ) as Nguon1;
+
+-----=============================================== end Issued_LenhRa
+--
+create local temporary table #LSX
+(
+	WOID int,
+	WONo int,
+	FGCode varchar(50),
+	PlannedQty_Header numeric(19,6), -- 1
+	ItemCode varchar(50),
+	ItemName nvarchar(150),
+	LineNum int,
+	BomRate numeric(19,6),
+	PlannedQty_Line numeric(19,6), -- 2
+	-- Gia tri can tinh toan
+	Qty numeric(19,6),
+	ItmsGrpCod 	int,
+	ItmsGrpName	nvarchar(100),
+	WareHouse	nvarchar(50)
+	
+);
+--
+insert into  #LSX (WOID,WONo,FGCode, PlannedQty_Header, 
+					ItemCode,ItemName,LineNum, 
+					BomRate, 
+					PlannedQty_Line, ItmsGrpCod,ItmsGrpName,WareHouse)
+
+select a."DocEntry", a."DocNum",a."ItemCode", a."PlannedQty",
+		b."ItemCode",c."ItemName",b."LineNum", 
+		b."PlannedQty"/a."PlannedQty" as  "BomRate",
+		b."PlannedQty",
+		d."ItmsGrpCod",
+		d."ItmsGrpNam",
+		b."wareHouse"
+from OWOR a
+inner join WOR1 b on a."DocEntry" = b."DocEntry"
+inner join OITM c on c."ItemCode" = b."ItemCode"
+inner join OITB d on d."ItmsGrpCod"  = c."ItmsGrpCod"
+
+where a."DocNum" in  (select distinct WONo from #Receipt)
+and ifnull(b."PlannedQty",0) >0
+order by a."DocNum",b."LineNum";
+--- 
+update a
+set a.Qty  = ifnull(a.PlannedQty_Line,0)/(a.PlannedQty_Header * b.Qty)
+from #LSX a
+left join #Receipt b on a.WONo  = b.WONo and a.FGCode =  b.ItemCode;
+
+---====================== Insert dữ liêu phiếu receipt thành phẩm --> Table tbl
+insert into #tbl (WOID,WONo, DocEntry,  DocNum, SystemDate, PostingDate,FGCode,FGName,CmpltQty,UnitPriceFG,AmountFG,
+				--
+				ItemCode,ItemName,BomRate,StdQty,ItmsGrpCod,ItmsGrpName, WareHouse, LineNum,
+				--
+				SystemDate_UseCompare,
+				PostingDate_UseCompare,
+				--
+				SystemDate_Time,
+				PostingDate_Time,
+				DocType)
+				
+select b.WOID,a.WONo, a.DocEntry,  a.DocNum, a.SystemDate, a.PostingDate,a.ItemCode,a.ItemName,a.Qty,a.Price,a.Amount,
+		--
+		b.ItemCode, b.ItemName,b.BomRate,b.Qty, b.ItmsGrpCod,b.ItmsGrpName,
+		b.WareHouse,
+		b.LineNum,
+		a.SystemDate_UseCompare,
+		a.PostingDate_UseCompare,
+		--
+		a.SystemDate_Time,
+		a.PostingDate_Time,
+		59 as "DocType_Receipt"
+from #Receipt a
+left join  #LSX b on a.WONo  = b.WONo and a.ItemCode = b.FGCode;
+
+----- Thông tin SSCC với lệnh sản xuất gốc
+SSCC_LSXGoc = select  distinct d."DocEntry" as "WOID" ,d."DocNum" as "WONO",
+	 			-- SSCC
+				receipt."BatchNum" as "SSCC",
+				receipt."ItemCode"
+						
+	from "OINM" a  
+	inner join "OWOR" d on a."AppObjAbs"=d."DocEntry"
+	left join (select   "BatchNum","BaseType", "BaseEntry", "ItemCode"  from IBT1 where "BaseType" = 59) receipt 
+				on receipt."BaseEntry" =  a."CreatedBy" and receipt."BaseType" = 59 and receipt."ItemCode" = a."ItemCode"
+	left join OBTN f on receipt."BatchNum" = f."DistNumber"
+	
+	where a."TransType"  =  59 
+			and a."ApplObj"='202' and a."DocDate" between :FromDate and :ToDate;	
+---- Thông tin SSCC với lệnh rã
+SSCC_LenhRa =  	select  distinct  c."DocEntry" as "DisID", c."DocNum" as "DisNo", e."ItemCode",e."Dscription" as  "ItemName",
+						 e."CreatedBy",	issued."BatchNum" as  "SSCC"
+	 		
+				 from OWOR c
+				 left join  OINM e on  e."AppObjAbs" = c."DocEntry"		
+				 inner join OITM f on f."ItemCode"  = e."ItemCode"  
+								     		      
+				left join (select "BatchNum","BaseType", "BaseEntry", "ItemCode", "Quantity" 
+											from IBT1 
+											where "BaseType" =  60) issued 
+				on issued."BaseEntry" =  e."CreatedBy" and issued."ItemCode" = e."ItemCode"
+				where  e."DocDate" between  :FromDate and :ToDate 
+						and   e."ApplObj"  = '202'   
+						and c."Type"  = 'D' 
+						and f."ItmsGrpCod" in (120,121,127);	
+--------
+
+update a
+set a.WONo = c."WONO",
+	a.WOID  = c."WOID"
+from #Issued_LenhRa a
+inner join :SSCC_LenhRa b on  a.ItemCode =  b."ItemCode" and a.DisNo =  b."DisNo"
+inner join :SSCC_LSXGoc c on b."SSCC" = c."SSCC" and c."ItemCode" =  b."ItemCode";
+--where  ifnull(a.WONo,'')  ='';
+
+---====================== Insert dữ liệu phiếu issued lệnh rã -->  table #Tbl
+insert into #tbl (WONo,WOID,DisID,DisNo, DocEntry,  DocNum, SystemDate, PostingDate,FGCode,FGName,CmpltQty,UnitPriceFG,AmountFG,
+				--
+				ItemCode,ItemName,BomRate,StdQty,ItmsGrpCod,ItmsGrpName, WareHouse, LineNum,
+				--
+				SystemDate_UseCompare,
+				PostingDate_UseCompare,
+				--
+				SystemDate_Time,
+				PostingDate_Time,
+				DocType)
+				
+select a.WONo, a.WOID ,a.DisId,a.DisNo, a.DocEntry,  a.DocNum, a.SystemDate, a.PostingDate,a.ItemCode,a.ItemName,a.Qty,a.Price,a.Amount,
+		--
+		b.ItemCode, b.ItemName,b.BomRate,b.Qty, b.ItmsGrpCod,b.ItmsGrpName,
+		b.WareHouse,
+		b.LineNum,
+		a.SystemDate_UseCompare,
+		a.PostingDate_UseCompare,
+		--
+		a.SystemDate_Time,
+		a.PostingDate_Time,
+		60 as "DocType_Issued"
+
+from #Issued_LenhRa a
+left join  #LSX b on  a.ItemCode = b.FGCode and a.WONo  = b.WONo ;-- rework thi item lsx va phieu receipt se <>--> left join
+----
+update a
+set StdQty  =  round(CmpltQty * BomRate,3)
+from #tbl a;
+----- Tao table OINM temp
+OINM_Temp = select "InQty" ,"OutQty" , "ItemCode" , "Warehouse","TransValue",
+					 TO_decimal(TO_VARCHAR("Create_Date_Time",'YYYYMMDDHH24MISS')) as "SystemDate_UseCompare",  
+					 TO_decimal(TO_VARCHAR("DocDate_Date_Time",'YYYYMMDDHH24MISS')) as "PostingDate_UseCompare"
+					
+					from (
+					select  "InQty" ,"OutQty" , "ItemCode" , "Warehouse", "TransValue",
+					TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime") as "Create_Date_Time",
+					TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime") as "DocDate_Date_Time"
+					from 
+					(
+					select  "InQty"  ,   "OutQty" , "ItemCode" , "Warehouse","TransValue",
+					
+									TO_VARCHAR("CreateDate",'YYYY-MM-DD') as "CreateDate",
+									TO_VARCHAR("DocDate",'YYYY-MM-DD') as "DocDate",
+									 LEFT(CASE 
+							WHEN LENGTH("DocTime") = 3 THEN CAST('0' || "DocTime" AS TIME) 
+							WHEN LENGTH("DocTime") = 2 THEN CAST('00' || "DocTime" AS TIME) 
+							WHEN LENGTH("DocTime") = 1 THEN CAST('000' || "DocTime" AS TIME) 
+							ELSE CAST("DocTime" AS TIME) END,5)  as "DocTime"
+					from OINM b 
+					where "CreateDate" < :Todate ) as Nguon1) as Nguon2;
+
+
+ --- old
+/*
+ update a
+ set a.Cumulative_Qty  = (select  sum("InQty") - sum("OutQty") from OINM b 
+ 								where a.ItemCode =  b."ItemCode"  and a.WareHouse  = b."Warehouse"
+ 									and b."CreateDate" <= a.SystemDate)
+ from  #tbl a;
+
+---
+ update a
+ set a.Cumulative_Value  = (select  sum("TransValue")   from OINM b 
+ 								where a.ItemCode =  b."ItemCode" and a.WareHouse  = b."Warehouse"
+ 									and b."CreateDate" <= a.SystemDate)
+ from  #tbl a;
+*/
+ update a
+ set a.Cumulative_Qty  = (select  sum("InQty") - sum("OutQty") from :OINM_Temp b 
+ 								where a.ItemCode =  b."ItemCode"  and a.WareHouse  = b."Warehouse"
+ 									and b."SystemDate_UseCompare" <= a.SystemDate_UseCompare)
+ from  #tbl a;
+ 
+ ---
+ update a
+ set a.Cumulative_Value  = (select  sum("TransValue") from :OINM_Temp b 
+ 								where a.ItemCode =  b."ItemCode"  and a.WareHouse  = b."Warehouse"
+ 									and b."SystemDate_UseCompare" <= a.SystemDate_UseCompare)
+ from  #tbl a;
+ --
+
+ --
+
+
+
+----phieu issue de lay gia tri item khong ton kho: may moc, nhan cong
+create local temporary table #Issued
+(
+	DocEntry int,
+	WONo varchar(50),
+	Qty numeric(21,6),
+	Price  numeric(21,6),
+	Amount_Issued numeric(21,6),
+	ItemCode varchar(50),
+	WhsCode  varchar(50),
+	SystemDate_UseCompare numeric(21,6),
+	PostingDate_UseCompare numeric(21,6)
+	
+);
+
+insert into #Issued (DocEntry,WONo, Qty,Price, Amount_Issued, ItemCode, WhsCode,
+						SystemDate_UseCompare,
+						PostingDate_UseCompare ) 
+
+
+select "DocEntry","WONo","Quantity","Price","LineTotal","ItemCode","WhsCode",
+ TO_decimal(TO_VARCHAR("Create_Date_Time",'YYYYMMDDHH24MISS')) as "SystemDate_UseCompare",  
+ TO_decimal(TO_VARCHAR("DocDate_Date_Time",'YYYYMMDDHH24MISS')) as "PostingDate_UseCompare"
+from 
+(
+
+		select Nguon1.*,
+				TO_TIMESTAMP(TO_VARCHAR(Nguon1."CreateDate",'YYYY-MM-DD')||' '||Nguon1."DocTime") as "Create_Date_Time",
+				TO_TIMESTAMP(TO_VARCHAR(Nguon1."DocDate",'YYYY-MM-DD')||' '||Nguon1."DocTime") as "DocDate_Date_Time"
+		
+		from 
+		
+			(select  a."DocEntry", a."BaseRef" as "WONo",a."Quantity",a."Price", a."LineTotal", a."ItemCode", 
+				--e."CreateDate",
+				a."WhsCode",
+				TO_VARCHAR(e."CreateDate",'YYYY-MM-DD') as "CreateDate",
+				TO_VARCHAR(e."DocDate",'YYYY-MM-DD') as "DocDate",
+				LEFT(CASE 
+					WHEN LENGTH(e."DocTime") = 3 THEN CAST('0' || e."DocTime" AS TIME) 
+					WHEN LENGTH(e."DocTime") = 2 THEN CAST('00' || e."DocTime" AS TIME) 
+					WHEN LENGTH(e."DocTime") = 1 THEN CAST('000' || e."DocTime" AS TIME) 
+					ELSE CAST(e."DocTime" AS TIME) END,5)  as "DocTime"
+			from IGE1 a
+			inner join OIGE e on a."DocEntry" = e."DocEntry" 
+			inner join OITM c  on a."ItemCode"  = c."ItemCode"
+			where c."ItmsGrpCod"  in (125,126) 
+					and a."BaseType"  =  202  and e."CreateDate" < :Todate
+			order by  a."DocEntry",a."ItemCode", e."CreateDate" ) as Nguon1) as Nguon2;
+
+
+
+----- tao ra bang tam:  Issued_Fillter 
+Issued_Fillter =  select * 
+				 from #Issued
+				 where DocEntry   in (select Max(DocEntry) from #Issued group by SystemDate_UseCompare  )
+				 order by SystemDate_UseCompare;
+---
+
+---
+/*
+ update a
+ set a.Cumulative_Qty  = b.Qty						 							 							 
+ from  #tbl a
+ inner join  :Issued_Fillter b on a.ItemCode =  b.ItemCode
+  where  a.ItmsGrpCod in (125,126)
+  			and b.CreateDate  < a.SystemDate;
+*/
+---
+ update a
+ set a.Cumulative_Qty  = b.Qty,
+	 a.Cumulative_Value  = b.Amount_Issued,
+	 	a.UnitPrice  = b.Price,
+	 	a.StdAmount  = b.Price * a.StdQty
+	 	--b.Amount_Issued						 							 							 
+ from  #tbl a
+ inner join   :Issued_Fillter  b on  a.ItemCode =  b.ItemCode
+  where  a.ItmsGrpCod in (125,126)
+  			and b.SystemDate_UseCompare  <= a.SystemDate_UseCompare
+  			and b.DocEntry =  
+  			 (select   Max(c.DocEntry) from :Issued_Fillter c where  b.ItemCode = c.ItemCode and c.SystemDate_UseCompare  <= a.SystemDate_UseCompare );
+---
+/*
+ update a
+ set a.Cumulative_Value  = b.Amount_Issued,
+ 	a.UnitPrice  = b.Price,
+ 	a.StdAmount  = b.Amount_Issued
+ 							 							 					 
+ from  #tbl a
+ inner join  :Issued_Fillter b on a.ItemCode =  b.ItemCode 
+ where  a.ItmsGrpCod in (125,126)
+  			and b.CreateDate  < a.SystemDate;
+*/
+----
+update   #tbl
+set  UnitPrice  = ifnull(Cumulative_Value,0)/Cumulative_Qty
+where ifnull(Cumulative_Qty,0) >0 and ItmsGrpCod not in (125,126);
+---
+
+update  #tbl
+set  StdAmount = ifnull(UnitPrice,0)   * ifnull(StdQty,0)
+where  ItmsGrpCod not in (125,126);
+---
+update  a
+		set CMPLTQTY  = NULL,  UNITPRICEFG  = NULL,  AMOUNTFG  =NULL 
+		from #tbl a
+		where   LineNum  <>0;
+-- Update Amount nguyen vat lieu chinh: green coffee
+update a
+set StdAmount =  ifnull(a.AMOUNTFG,0) - (select sum(STDAMOUNT) 
+											from   #tbl b 
+										where a.WONO =  b.WONO and  a.DOCNUM =  b.DOCNUM
+											and ItemCode not in (select   "ItemCode"   from OITM where "ItmsGrpCod"  = 113 and "ItemCode" <>  '20100002'))
+											--ITMSGRPCOD  <> 113  )
+						  
+from #tbl a
+where ITMSGRPCOD  = 113 and ItemCode <> '20100002';
+
+-- Update Unitprice nguyen vat lieu chinh: green coffee
+update a
+
+set UNITPRICE =   ifnull(STDAMOUNT,0)/STDQTY
+from #tbl a
+where ITMSGRPCOD  = 113 and ifnull(STDQTY,0) >0;
+---
+update a
+set STDAMOUNT  = ifnull(a.AMOUNTFG,0)
+from #tbl a
+where ifnull(STDAMOUNT,0)  = 0;
+---
+update a
+set UNITPRICE  = ifnull(STDAMOUNT,0)/STDQTY
+from #tbl a
+where ifnull(UNITPRICE,0)  = 0 and  ifnull(STDQTY,0) >0;
+
+
+----
+update a
+set CmpltQty = -CmpltQty,
+		AmountFG = -AmountFG,
+		StdQty = -StdQty,
+		StdAmount = -StdAmount
+from #tbl a
+where ifnull(a.DisNo,'') <> '';
+---
+update a
+set  a.ItmsGrpCod = c."ItmsGrpCod",
+	 a.ItmsGrpName = c."ItmsGrpNam",
+	 a.WOID = d."DocEntry"
+from #tbl a 
+inner join OITM b on a.FGCode  = b."ItemCode"
+inner join OITB c on b."ItmsGrpCod"  = c."ItmsGrpCod"
+left join OWOR d on a.WONo  = d."DocNum"
+where ifnull(ItmsGrpName,'')  = '';
+ 
+--- Delele item khong co trong lenh san xuat (Lenh Ra)
+
+ 
+---(select b.DisID from #tbl b where IFNULL(DisID,0) <> 0)
+DisIDs  =  select distinct DisID, ItemCode from #tbl where ifnull(DisID,0)  <> 0;
+delete 
+from #tbl where DisID||ItemCode not in (select "DocEntry"||"ItemCode" from WOR1 where "DocEntry" in (select DisID from :DisIDs))
+and ifnull(DisID,0) <> 0;
+-- Lam tron
+update a
+set StdAmount  = round(StdAmount,2)
+from #tbl a;
+--
+tab_result =  select * from #tbl order by  WONo, LineNum;
+---- drop table
+drop table #LSX;
+drop table #Receipt;
+drop table #Issued_LenhRa;
+drop table #Issued;
+drop table #tbl;
+end;
+

@@ -1,0 +1,1 @@
+CREATE GLOBAL TEMPORARY ROW TABLE "TEST_AP"."CRSPAnnualSalesAnalysisQuarterInsert_TMPMonth"  ( "DocEntry" INT CS_INT, "Quarter" INT CS_INT )  ON COMMIT PRESERVE ROWS 

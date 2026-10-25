@@ -1,0 +1,15 @@
+
+CREATE PROCEDURE APZ_SalesBlanketAgreement_GetListItemGroup (
+
+)
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+READS SQL DATA
+AS
+BEGIN
+	SELECT "ItmsGrpCod", "ItmsGrpNam" FROM OITB;
+END;
+
+
+
+

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="WBSTemplate" xml:space="preserve"><value>WBS Template</value></data>
+  <data name="FatherNum" xml:space="preserve"><value>FatherNum</value></data>
+  <data name="Priority" xml:space="preserve"><value>Priority</value></data>
+  <data name="Milestone" xml:space="preserve"><value>Milestone</value></data>
+  <data name="BaseLine" xml:space="preserve"><value>BaseLine</value></data>
+  <data name="ToDate" xml:space="preserve"><value>To Date</value></data>
+  <data name="OcrCode4" xml:space="preserve"><value>OcrCode4</value></data>
+  <data name="OcrCode5" xml:space="preserve"><value>OcrCode5</value></data>
+  <data name="OcrCode2" xml:space="preserve"><value>OcrCode2</value></data>
+  <data name="OcrCode3" xml:space="preserve"><value>OcrCode3</value></data>
+  <data name="Status" xml:space="preserve"><value>Status</value></data>
+  <data name="VisOrder" xml:space="preserve"><value>VisOrder</value></data>
+  <data name="Resource" xml:space="preserve"><value>Resources</value></data>
+  <data name="OcrCode" xml:space="preserve"><value>Dịch vụ</value></data>
+  <data name="Wbs" xml:space="preserve"><value>WBS</value></data>
+  <data name="Notes" xml:space="preserve"><value>Notes</value></data>
+  <data name="FromDate" xml:space="preserve"><value>From Date</value></data>
+  <data name="TaskName" xml:space="preserve"><value>Name</value></data>
+  <data name="TaskCode" xml:space="preserve"><value>Code</value></data>
+  <data name="Dependent" xml:space="preserve"><value>Predecessors</value></data>
+  </root>

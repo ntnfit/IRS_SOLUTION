@@ -1,0 +1,11 @@
+PROCEDURE
+BASE_SCHEMA: "TEST_AP"
+TABLE: "TEST_AP"."Customer_Open_Item_List_TempOpenDocumentViewByDocDate"
+TABLE: "TEST_AP"."OBOE"
+TABLE: "TEST_AP"."ORCT"
+TABLE: "TEST_AP"."CRSP_Customer_Open_Item_List_TmpResult"
+TABLE: "TEST_AP"."Customer_Open_Item_List_TempInstallmentsDocument"
+TABLE: "TEST_AP"."Customer_Open_Item_List_TempOpenDocumentViewByPosting"
+TABLE: "TEST_AP"."ODPS"
+PROCEDURE: "TEST_AP"."_TMSP_VALIDATESPPARAM"
+TABLE: "TEST_AP"."Customer_Open_Item_List_TempJournalSource"

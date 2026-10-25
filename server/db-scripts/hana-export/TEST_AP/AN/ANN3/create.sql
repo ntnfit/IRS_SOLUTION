@@ -1,0 +1,3 @@
+CREATE COLUMN TABLE "TEST_AP"."ANN3" ("ObjectCode" NVARCHAR(20) NOT NULL , "Series" INTEGER CS_INT DEFAULT 0 NOT NULL , "DocSubType" NVARCHAR(2) DEFAULT '--' NOT NULL , "logInstanc" INTEGER CS_INT NOT NULL , PRIMARY KEY ("ObjectCode", "DocSubType", "Series", "logInstanc")) UNLOAD PRIORITY 0  AUTO MERGE ;
+ALTER TABLE "TEST_AP"."ANN3" WITH PARAMETERS ('CONCAT_ATTRIBUTE'=('$Series$logInstanc$','Series','logInstanc'));
+CREATE INDEX "ANN3_SERIES" ON "TEST_AP"."ANN3" ( "Series" ASC, "logInstanc" ASC )

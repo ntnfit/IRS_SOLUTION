@@ -1,0 +1,3 @@
+namespace Apzon.Entities.Models;
+
+public delegate void InventoryTransferLineRowChangedDlgt(InventoryTransferLineTable sender, InventoryTransferLineRowChangedEventArgs args);

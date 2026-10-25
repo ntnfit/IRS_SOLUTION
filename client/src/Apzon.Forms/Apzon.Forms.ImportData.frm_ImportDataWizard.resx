@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="label1.Text" xml:space="preserve"><value>To map business objects from each field in the source file to the target company database.
+ 1. In the left pane, select the business object.
+ 2. In the "Mapping Rules" tab, map the source fields to the target fields.
+To change mapping, click the "Target Fields" column. From the dropdown list, select the required option.
+To view the file selected, choose the "Source Data" tab, and to view target data, choose the "Target Data" tab.
+To continue, choose the "Next" button.</value></data>
+  <data name="editorButtonImageOptions1.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAwAMAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAEHRFWHRUaXRsZQBQaWU7
+Q2hhcnQ742ZgOgAAA1tJREFUOE9tk2lMU1kYhg+iBsbtL5qMk1FEMSSGEI2TSUyMJCrjFmGcaq8K
+KqCEAkUYorgzKC4N4DCAYFMUhGoVRBaFWltHqBKsZWnLVhRqgVJvi2CqjH/eOeda/eVNnnzn297v
+3HvPIdPDVjJte03o40PxNaYkRlrSkkv60qUvrRmp/zFrPppU2pGSuJvmZ7I6Vj/F8+TP8leETA9Z
+hWb1oeilPalJxqHLF+B+0oxPAz2gOcEyn8VZvnafeBmtn+H0fCZSRTvrJT71e8WBFmmy06GsgMds
+xFTrY7jVtXA31QiW+Sxul1+Durz+oyjzRjATkVx7QciO4BV+nQnxxvEaFab0Orge3Bbgvdb1QAlX
+rRLOKjl42wjqDHbE5+s6loau92fDyVOOE/dnncaE7iGcqhvfZbSsEDZTL1reTKJrzIOsSgPE56qj
+qYAv0XNc0+itMjgqSzF2sxhj5V68a3uRDIOvuqEZcENjnYB28D1Uz4fBZTeqqcBsoheJ+LeFMtiL
+ZRgpzcNISR7sJbnCejg3C31tRtRZXBT+C2Yed40OcOceOqmAH2mJjMKbSycxcEyCoZyTsOWfFxjM
+Po5P1ga81jdC1fmO4kSFwYHi1lFUtDuw+3TDZyrgTzSbt/IDJ1LQmxaH3tRY9B9LxODZdPQfl8DT
+VwOP6RZ61UoUtowgT2dD3r82FOiGEJV5n+3An9Su2/C4SxKLHukh9Ej2w8JIjEZHTBQ+GEowqZcJ
+dNwrwkXNMGRaG86ourFNWqURXkERtjZOu32HMN0cvwemwxRqDdx2TLX9Q//OX5RsAYMyH1eoQExO
+M8IPFMRSgZlkxdz581Shv3S9EEXClMCh++DvAu2iCDo5F+7mTC8nMKE5i2r6fTYdUTTR5jkUdvyJ
+b8ZPgWG3Q1a7nm6NgOnIXpiYQNRGvH92CXxjGtyPMuiJPAVDrgjK6FXvIlaFL2d9myVKQsZvFjGR
+WckBi0PLloR014SuQevOLWj7Ywsmn1/F6P00WEpjUJ/0K+S7VjZzYQFBtF64VBsTKqmA4m8yXlbA
+RHwpc3MCfk4qWhSklf8Y5K4Uh6B8z0r39V3B2ou/BcaxvLfOx2O5Q46GxxPikF/9BktQZlF+oMyj
+LKDM9/os7uMxV5GvKBYGkf8BzFNSbw5teUIAAAAASUVORK5CYIIL</value></data><data name="label8.Text" xml:space="preserve"><value>To define datasource for business objects, do the following:
+1. From the "Select File Type" dropdown list, select a file delimiter character.
+2. Select parent or child business object(s) to the imported.
+3. Choose the adjacent browse to define the navigation path.
+To continue, choose the "Next" button.
+</value></data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAu
+MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAA
+ACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkD
+AAAADwMAAACaCAAAAk1TRnQBSQFMAgEBAgEAATABAAEwAQABEAEAARABAAT/AQkBEAj/AUIBTQE2
+AQQGAAE2AQQCAAEoAwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYAB
+AAKAAgADwAEAAcAB3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEA
+AykBAANVAQADTQEAA0IBAAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8B
+AAHWAucBAAGQAakBrQIAAf8BMwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHM
+AgABMwH/AgABZgMAAWYBMwIAAmYCAAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgAC
+mQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZ
+AgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8B
+MwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZ
+AQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZAWYBAAEzApkBAAEzAZkBzAEAATMB
+mQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLMAQABMwHMAf8BAAEzAf8BMwEA
+ATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEAAWYBAAFmAQABZgEAAZkB
+AAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEAAWYBMwHMAQABZgEz
+Af8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZAWYBAAFmApkB
+AAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/AQABZgH/
+AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEAAZkB
+AAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwB
+AAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIA
+AZkB/wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYB
+AAHMAQABmQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEz
+Af8BAAHMAWYCAAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwB
+mQEzAQABzAGZAWYBAAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEA
+A8wBAALMAf8BAAHMAf8CAAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwB
+AAEzAQAB/wEAAWYBAAH/AQABmQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEA
+Af8BMwH/AQAB/wFmAgAB/wFmATMBAAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkC
+AAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHM
+AWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8B
+AAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOW
+AQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB
+/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEAC/8BGwEaE/8gAAv/AZQBIAH2Ev8gAAr/Ab0BlAEg
+D/8B7AHvAv8gAAP/ARYBbwH0BP8C4wFGDv8B6gIAAv8gAAL/AZoB4wEWASAD/wG9AU0BJQGUCP8B
+7AEPAQ4BFAHzAW0CAAH0Av8gAAL/Ab0BRwEmARcBRgL/AU0B4wEgCP8BAAEOAe0B7wFtAwAE/yAA
+A/8BTQEmAU0BIAH/AZoBRwEXAW8H/wEAARIE/wH0AQAB7wT/IAAD/wG9AUcBJgFNAUYBTQEWASAH
+/wHvAQAG/wGSAQAE/yAABP8BvQJHAeMBRwFGAW8H/wLqB/8BAAT/IAAF/wG9AU0BJgF1ASAI/wLq
+B/8BAAT/IAAF/wEWAU0BlAHjAZQBvQf/Ae8BAAb/AfcBAAT/IAAD/wH0AeMBTQGUASUBFgJ1AZQB
+8wb/AQABbQX/AQAB7wT/IAAC/wHzAU0B4wGUAkYC/wG9ApQBbwHzBP8B9AEAAQ8B9wEHAesBAAFt
+Bf8gAAL/AuMBdQHjASAF/wHzAb0B9Ab/AW0BDgEAAUMBvAb/IAAB/wG9AeMBlAEWASAa/yAAAv8B
+vQGUARYb/yAAAUIBTQE+BwABPgMAASgDAAFAAwABEAMAAQEBAAEBBQABgBcAA/+XAAs=</value></data><data name="editorButtonImageOptions2.Image" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0
+ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAwAMAAAKJUE5HDQoaCgAA
+AA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAEHRFWHRUaXRsZQBQaWU7
+Q2hhcnQ742ZgOgAAA1tJREFUOE9tk2lMU1kYhg+iBsbtL5qMk1FEMSSGEI2TSUyMJCrjFmGcaq8K
+KqCEAkUYorgzKC4N4DCAYFMUhGoVRBaFWltHqBKsZWnLVhRqgVJvi2CqjH/eOeda/eVNnnzn297v
+3HvPIdPDVjJte03o40PxNaYkRlrSkkv60qUvrRmp/zFrPppU2pGSuJvmZ7I6Vj/F8+TP8leETA9Z
+hWb1oeilPalJxqHLF+B+0oxPAz2gOcEyn8VZvnafeBmtn+H0fCZSRTvrJT71e8WBFmmy06GsgMds
+xFTrY7jVtXA31QiW+Sxul1+Durz+oyjzRjATkVx7QciO4BV+nQnxxvEaFab0Orge3Bbgvdb1QAlX
+rRLOKjl42wjqDHbE5+s6loau92fDyVOOE/dnncaE7iGcqhvfZbSsEDZTL1reTKJrzIOsSgPE56qj
+qYAv0XNc0+itMjgqSzF2sxhj5V68a3uRDIOvuqEZcENjnYB28D1Uz4fBZTeqqcBsoheJ+LeFMtiL
+ZRgpzcNISR7sJbnCejg3C31tRtRZXBT+C2Yed40OcOceOqmAH2mJjMKbSycxcEyCoZyTsOWfFxjM
+Po5P1ga81jdC1fmO4kSFwYHi1lFUtDuw+3TDZyrgTzSbt/IDJ1LQmxaH3tRY9B9LxODZdPQfl8DT
+VwOP6RZ61UoUtowgT2dD3r82FOiGEJV5n+3An9Su2/C4SxKLHukh9Ej2w8JIjEZHTBQ+GEowqZcJ
+dNwrwkXNMGRaG86ourFNWqURXkERtjZOu32HMN0cvwemwxRqDdx2TLX9Q//OX5RsAYMyH1eoQExO
+M8IPFMRSgZlkxdz581Shv3S9EEXClMCh++DvAu2iCDo5F+7mTC8nMKE5i2r6fTYdUTTR5jkUdvyJ
+b8ZPgWG3Q1a7nm6NgOnIXpiYQNRGvH92CXxjGtyPMuiJPAVDrgjK6FXvIlaFL2d9myVKQsZvFjGR
+WckBi0PLloR014SuQevOLWj7Ywsmn1/F6P00WEpjUJ/0K+S7VjZzYQFBtF64VBsTKqmA4m8yXlbA
+RHwpc3MCfk4qWhSklf8Y5K4Uh6B8z0r39V3B2ou/BcaxvLfOx2O5Q46GxxPikF/9BktQZlF+oMyj
+LKDM9/os7uMxV5GvKBYGkf8BzFNSbw5teUIAAAAASUVORK5CYIIL</value></data></root>

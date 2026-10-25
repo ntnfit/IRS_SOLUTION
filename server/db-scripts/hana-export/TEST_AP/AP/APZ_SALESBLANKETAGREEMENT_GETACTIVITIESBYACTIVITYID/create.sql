@@ -1,0 +1,15 @@
+
+CREATE PROCEDURE APZ_SalesBlanketAgreement_GetActivitiesByActivityID (
+	IN ClgCodes nvarchar(50)
+)
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+READS SQL DATA
+AS
+BEGIN
+	SELECT * FROM OCLG WHERE "ClgCode" = :ClgCodes;
+END;
+
+
+
+
